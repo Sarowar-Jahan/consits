@@ -1,0 +1,136 @@
+/* typography css */
+
+
+// ----------------------------
+// Font Family
+// ---------------------------
+
+/* Unbounded  */
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
+
+
+
+
+
+
+:root {
+  --font_unbounded: "Unbounded", sans-serif;
+  --font_awesome: 'Font Awesome 6 pro';
+}
+
+
+
+// Defalut Style
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font_unbounded);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--secondary);
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  color: var(--primary);
+  line-height: 1.22;
+  font-family: var(--font_generalsanssemibold);
+  font-weight: 600;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+  color: inherit;
+
+  &:hover {
+    color: var(--primary);
+  }
+
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+strong {
+  font-weight: 500;
+}
+
+video,
+iframe,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+br {
+  @media #{$sm} {
+    display: none;
+  }
+}
+
+main {
+  display: inline-block;
+  width: 100%;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
