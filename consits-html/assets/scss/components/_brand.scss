@@ -30,13 +30,18 @@
 }
 
 .brand-area-inner {
-    padding-top: 75px;
+    padding-top: 80px;
     padding-bottom: 80px;
 }
 
 .brand-header {
     .section-subtitle {
         color: var(--primary);
+        justify-content: center;
+
+        @media #{$xs} {
+            line-height: 1.33;
+        }
     }
 
     .subtitle-line-first {
@@ -53,7 +58,7 @@
 }
 
 .brands-wrapper-box {
-    margin-top: 35px;
+    margin-top: 40px;
 }
 
 

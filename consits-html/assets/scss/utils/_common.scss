@@ -146,13 +146,12 @@
 .section-subtitle {
   font-weight: 600;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 14px;
   text-transform: capitalize;
   color: var(--theme);
   display: flex;
   gap: 15px;
   align-items: center;
-  justify-content: center;
   white-space: nowrap;
 
   @media #{$lg} {
@@ -200,10 +199,10 @@
 
 /* Section title styling with responsive font sizes */
 .section-title {
-  font-size: 44px;
+  font-size: 50px;
 
   @media #{$xxl} {
-    font-size: 42px;
+    font-size: 45px;
   }
 
   @media #{$xl} {

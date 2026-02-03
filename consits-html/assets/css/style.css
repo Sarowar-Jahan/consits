@@ -72,7 +72,7 @@ h6 {
   padding: 0;
   margin: 0;
   color: var(--primary);
-  line-height: 1.22;
+  line-height: 1.14;
   font-family: var(--font_generalsanssemibold);
   font-weight: 600;
 }
@@ -388,13 +388,12 @@ h6 {
 .section-subtitle {
   font-weight: 600;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 14px;
   text-transform: capitalize;
   color: var(--theme);
   display: flex;
   gap: 15px;
   align-items: center;
-  justify-content: center;
   white-space: nowrap;
 }
 @media only screen and (max-width: 1199px) {
@@ -440,11 +439,11 @@ h6 {
 
 /* Section title styling with responsive font sizes */
 .section-title {
-  font-size: 44px;
+  font-size: 50px;
 }
 @media only screen and (max-width: 1919px) {
   .section-title {
-    font-size: 42px;
+    font-size: 45px;
   }
 }
 @media only screen and (max-width: 1399px) {
@@ -4225,7 +4224,7 @@ section {
 }
 
 .hero-area-inner {
-  padding-top: 313px;
+  padding-top: 318px;
   padding-bottom: 224px;
   min-height: 100vh;
   display: flex;
@@ -4234,13 +4233,13 @@ section {
 }
 @media only screen and (max-width: 1919px) {
   .hero-area-inner {
-    padding-top: 213px;
+    padding-top: 218px;
     padding-bottom: 124px;
   }
 }
 @media only screen and (max-width: 1399px) {
   .hero-area-inner {
-    padding-top: 193px;
+    padding-top: 198px;
     padding-bottom: 104px;
   }
 }
@@ -4327,8 +4326,11 @@ section {
   z-index: 1;
   text-align: center;
 }
+.hero-content .section-subtitle {
+  justify-content: center;
+}
 .hero-content .title-wrapper {
-  margin-top: 12px;
+  margin-top: 17px;
 }
 .hero-content .btn-wrapper {
   margin-top: 27px;
@@ -4376,6 +4378,7 @@ section {
   bottom: 0;
   right: 0;
   overflow-y: clip;
+  display: grid;
 }
 @media only screen and (max-width: 1919px) {
   .hero-review-sidebar {
@@ -4583,12 +4586,18 @@ section {
 }
 
 .brand-area-inner {
-  padding-top: 75px;
+  padding-top: 80px;
   padding-bottom: 80px;
 }
 
 .brand-header .section-subtitle {
   color: var(--primary);
+  justify-content: center;
+}
+@media (max-width: 575px) {
+  .brand-header .section-subtitle {
+    line-height: 1.33;
+  }
 }
 .brand-header .subtitle-line-first {
   width: 100%;
@@ -4602,7 +4611,7 @@ section {
 }
 
 .brands-wrapper-box {
-  margin-top: 35px;
+  margin-top: 40px;
 }
 
 .brand-slider-active {
