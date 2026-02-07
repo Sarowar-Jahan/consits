@@ -1,6 +1,6 @@
 /* about css */
 /* about area style  */
-.about-area-inner.section-spacing {
+.about-area-inner {
     display: grid;
     grid-template-columns: 1fr 412px;
     gap: 40px 63px;
@@ -10,20 +10,21 @@
     }
 }
 
-.content-wrapper {
-    margin-top: 37px;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 40px 66px;
-
-    @media #{$lg} {
-        grid-template-columns: 1fr;
-    }
-}
 
 .about-content {
     .title-wrapper {
         margin-top: 11px;
+    }
+
+    .content-wrapper {
+        margin-top: 37px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 40px 66px;
+
+        @media #{$lg} {
+            grid-template-columns: 1fr;
+        }
     }
 }
 

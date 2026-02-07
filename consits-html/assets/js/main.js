@@ -320,6 +320,18 @@
     });
   }
 
+  // odometer active 
+  $(document).ready(function () {
+    $('.odometer').waypoint(function (direction) {
+      if (direction === 'down') {
+        let countNumber = $(this.element).attr("data-count");
+        $(this.element).html(countNumber);
+      }
+    }, {
+      offset: '80%'
+    });
+  });
+
 })(jQuery);
 
 

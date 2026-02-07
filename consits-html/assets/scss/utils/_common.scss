@@ -200,6 +200,7 @@
 /* Section title styling with responsive font sizes */
 .section-title {
   font-size: 50px;
+  text-transform: capitalize;
 
   @media #{$xxl} {
     font-size: 45px;
