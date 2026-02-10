@@ -332,6 +332,59 @@
     });
   });
 
+  // project slider
+  if (('.project-slider').length) {
+    var project_slider = new Swiper(".project-slider", {
+      loop: false,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 1,
+      spaceBetween: 30,
+      speed: 1800,
+      watchSlidesProgress: true,
+      navigation: {
+        prevEl: ".project-button-prev",
+        nextEl: ".project-button-next",
+      },
+      pagination: {
+        el: '.project-pagination',
+        type: 'fraction',
+        clickable: true,
+        formatFractionCurrent: function (number) {
+          return ('0' + number).slice(-2);
+        },
+        formatFractionTotal: function (number) {
+          return ('0' + number).slice(-2);
+        },
+        renderFraction: function (currentClass, totalClass) {
+          return '<span class="' + currentClass + '"></span>' +
+            ' <span class="mid-line">/</span> ' +
+            '<span class="' + totalClass + '"></span>';
+        }
+      },
+      breakpoints: {
+        // when window width is >= px
+        576: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 2,
+        },
+        1201: {
+          slidesPerView: 3,
+        },
+        1367: {
+          slidesPerView: 3,
+        },
+      }
+    });
+  }
+
 })(jQuery);
 
 
