@@ -234,6 +234,8 @@
         text-transform: capitalize;
         color: var(--white);
         margin-top: 10px;
+        max-width: 236px;
+        margin-inline: auto;
 
         @media #{$lg} {
             font-size: 14px;

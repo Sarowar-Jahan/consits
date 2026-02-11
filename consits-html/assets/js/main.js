@@ -335,7 +335,7 @@
   // project slider
   if (('.project-slider').length) {
     var project_slider = new Swiper(".project-slider", {
-      loop: false,
+      loop: true,
       autoplay: {
         delay: 2000,
         disableOnInteraction: false,
@@ -363,6 +363,47 @@
             ' <span class="mid-line">/</span> ' +
             '<span class="' + totalClass + '"></span>';
         }
+      },
+      breakpoints: {
+        // when window width is >= px
+        576: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 2,
+        },
+        1201: {
+          slidesPerView: 3,
+        },
+        1367: {
+          slidesPerView: 3,
+        },
+      }
+    });
+  }
+
+  // feature slider
+  if (('.feature-slider').length) {
+    var feature_slider = new Swiper(".feature-slider", {
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 1,
+      spaceBetween: 30,
+      speed: 1800,
+      watchSlidesProgress: true,
+      navigation: {
+        prevEl: ".feature-button-prev",
+        nextEl: ".feature-button-next",
+      },
+      pagination: {
+        el: '.feature-pagination',
+        clickable: true,
       },
       breakpoints: {
         // when window width is >= px
