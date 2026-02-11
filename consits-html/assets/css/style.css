@@ -5525,4 +5525,135 @@ section {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+/* team css */
+/* team area style  */
+.team-header {
+  display: grid;
+  gap: 40px 60px;
+  grid-template-columns: 1fr auto;
+  align-items: flex-end;
+}
+.team-header .title-wrapper {
+  margin-top: 11px;
+}
+.team-header .section-title {
+  max-width: 680px;
+}
+
+.team-wrapper-box {
+  margin-top: 50px;
+}
+
+.team-wrapper {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.team-box {
+  position: relative;
+  clip-path: polygon(0 0, calc(100% - 70px) 0, 100% 70px, 100% 100%, 0 100%);
+}
+.team-box:hover .content {
+  background-color: var(--theme);
+}
+.team-box:hover .name {
+  color: var(--white);
+}
+.team-box:hover .post {
+  color: var(--white);
+}
+.team-box:hover .social .share-icon {
+  background-color: var(--primary);
+}
+.team-box .thumb {
+  border: 1px solid var(--border);
+  padding: 19px 0 19px 19px;
+  border-right: 0;
+  margin-bottom: 25px;
+}
+.team-box .thumb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team-box .content {
+  background-color: var(--smoke);
+  position: absolute;
+  width: calc(100% - 19px);
+  bottom: 0;
+  right: 0;
+  padding: 24px 20px 23px;
+  transition: all 0.5s;
+}
+.team-box .name {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: capitalize;
+  transition: all 0.3s;
+}
+.team-box .name a {
+  transition: none;
+}
+.team-box .post {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  display: inline-block;
+  color: var(--theme);
+  margin-top: 5px;
+  transition: all 0.5s;
+}
+.team-box .social {
+  position: absolute;
+  bottom: 28px;
+  right: 20px;
+  z-index: 1;
+}
+.team-box .social:hover .social-link {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+  bottom: calc(100% + 8px);
+}
+.team-box .social .social-link {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(0.2);
+  transform-origin: bottom;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.team-box .social .social-link a {
+  width: 35px;
+  height: 35px;
+  background-color: var(--white);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--theme);
+}
+.team-box .social .social-link a:hover {
+  background-color: var(--theme);
+  color: var(--white);
+}
+.team-box .social .share-icon {
+  width: 35px;
+  height: 35px;
+  background-color: var(--theme);
+  color: var(--white);
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s;
 }/*# sourceMappingURL=style.css.map */
