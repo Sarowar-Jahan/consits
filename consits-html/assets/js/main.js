@@ -426,6 +426,36 @@
     });
   }
 
+  // text-slider active 
+  if (document.querySelectorAll(".text-slider-active").length > 0) {
+    var text_slider_active = new Swiper(".text-slider-active", {
+      slidesPerView: 'auto',
+      loop: true,
+      autoplay: true,
+      spaceBetween: 0,
+      speed: 10000,
+      allowTouchMove: false,
+      autoplay: {
+        delay: 1,
+      },
+    });
+  }
+
+  // text-slider-2 active 
+  if (document.querySelectorAll(".text-slider-2-active").length > 0) {
+    var text_slider_2_active = new Swiper(".text-slider-2-active", {
+      slidesPerView: 'auto',
+      loop: true,
+      autoplay: true,
+      spaceBetween: 0,
+      speed: 10000,
+      allowTouchMove: false,
+      autoplay: {
+        delay: 1,
+      },
+    });
+  }
+
 })(jQuery);
 
 

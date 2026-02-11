@@ -1,0 +1,44 @@
+/* text-slider css */
+/* text slider area style  */
+.text-slider-active {
+    background-color: var(--theme);
+    padding-top: 24px;
+    padding-bottom: 20px;
+
+    .swiper-slide {
+        width: auto;
+    }
+}
+
+.text-slider-2-active {
+    background-color: var(--primary);
+    direction: rtl;
+    padding-top: 21px;
+    padding-bottom: 23px;
+
+    .swiper-slide {
+        width: auto;
+    }
+}
+
+
+.text-slider-wrapper {
+    .swiper-wrapper {
+        transition-timing-function: linear !important;
+    }
+}
+
+
+.text-slider-item {
+    .title {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        text-transform: capitalize;
+        color: var(--white);
+        display: flex;
+        gap: 35px;
+        align-items: center;
+        margin-left: 15px;
+    }
+}
