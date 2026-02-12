@@ -5693,4 +5693,47 @@ section {
   gap: 35px;
   align-items: center;
   margin-left: 15px;
+}
+
+/* blog css */
+/* blog area style  */
+.blog-area {
+  position: relative;
+  z-index: 1;
+}
+
+.blog-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: var(--smoke);
+}
+.blog-bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blog-header {
+  text-align: center;
+}
+.blog-header .section-subtitle {
+  justify-content: center;
+}
+.blog-header .title-wrapper {
+  margin-top: 11px;
+}
+
+.blogs-wrapper-box {
+  margin-top: 50px;
+}
+
+.blogs-wrapper {
+  display: grid;
+  gap: 30px 30px;
+  grid-template-columns: repeat(3, 1fr);
 }/*# sourceMappingURL=style.css.map */
