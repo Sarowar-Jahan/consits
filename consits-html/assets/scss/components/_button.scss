@@ -1,74 +1,4 @@
 /* button css */
-
-.ui-btn-group {
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  font-family: var(--font_dmsans);
-
-  &.btn-whte {
-    .b {
-      border: 1px solid white;
-      color: var(--white);
-    }
-
-    .c {
-      border: 1px solid white;
-      color: var(--white);
-    }
-  }
-
-}
-
-.ui-btn-group {
-
-  span {
-    letter-spacing: 0;
-  }
-
-  &:hover {
-
-    .b {
-      transform: rotate(-20deg);
-    }
-
-    .c {
-      transform: translate(-7px, 0px);
-    }
-  }
-
-}
-
-.ui-btn-group .b {
-  padding: 9px 25px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1;
-  color: var(--black);
-  background-color: transparent;
-  border: 2px solid var(--black);
-  border-radius: 50px;
-  transition: all 0.3s;
-
-}
-
-.ui-btn-group .c {
-  padding: 9px 11px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1;
-  color: var(--black);
-  background-color: transparent;
-  border: 2px solid var(--black);
-  border-radius: 50px;
-  transition: all 0.3s;
-
-  i {
-    rotate: -30deg;
-  }
-}
-
-
 .ui-btn {
   justify-content: center;
   position: relative;
@@ -875,5 +805,61 @@
   100% {
     transform: scale(1.6);
     opacity: 0;
+  }
+}
+
+
+.ui-btn-dashed-border {
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+
+  &:hover {
+    .icon {
+      &:before {
+        animation: t-spinner 10s linear infinite;
+      }
+    }
+  }
+
+  .icon {
+    width: 44px;
+    height: 44px;
+    background-color: var(--theme);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+
+    @media #{$lg} {
+      width: 36px;
+      height: 36px;
+    }
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      outline: 1.3px dashed var(--theme);
+      border-radius: 50%;
+      top: 0;
+      left: 0;
+      transition: all 0.3s;
+    }
+  }
+
+  .text {
+    font-family: var(--font_unbounded);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: var(--primary);
+
+    @media #{$lg} {
+      font-size: 16px;
+    }
   }
 }

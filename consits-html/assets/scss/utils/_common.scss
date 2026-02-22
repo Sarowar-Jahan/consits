@@ -38,8 +38,12 @@
   max-width: 1410px;
 }
 
-.ui-container-1680 {
-  max-width: 1680px;
+.ui-container-1670 {
+  max-width: 1670px;
+}
+
+.ui-container-1710 {
+  max-width: 1710px;
 }
 
 
@@ -77,12 +81,16 @@
   }
 }
 
-.ui-text-white {
+.ui-color-white {
   color: var(--white);
 }
 
-.ui-text-primary {
+.ui-color-primary {
   color: var(--primary);
+}
+
+.ui-color-theme {
+  color: var(--theme);
 }
 
 .text-gray {

@@ -40,6 +40,16 @@
     display: grid;
     gap: 40px 46px;
     grid-template-columns: repeat(4, 1fr);
+
+    @media #{$lg} {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    @media #{$sm} {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
 }
 
 .counter-box {
@@ -83,7 +93,7 @@
     .content {
         background-color: var(--white);
         border-radius: 10px;
-        padding: 22px 15px 23px 64px;
+        padding: 22px 15px 23px 54px;
         transition: all 0.3s;
 
     }
@@ -94,10 +104,28 @@
         line-height: 1;
         transition: all 0.3s;
 
+        @media #{$xxl} {
+            font-size: 56px;
+        }
+
+        @media #{$lg} {
+            font-size: 46px;
+        }
+
+        @media #{$sm} {
+            font-size: 36px;
+        }
+
         .odometer.odometer-auto-theme,
         .odometer.odometer-theme-default {
             font-family: var(--font_unbounded);
             line-height: 1;
+            display: inline-flex;
+            vertical-align: baseline;
+        }
+
+        .odometer-inside {
+            display: inline-flex;
         }
     }
 

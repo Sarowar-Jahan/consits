@@ -43,6 +43,16 @@
     display: grid;
     gap: 30px 30px;
     grid-template-columns: repeat(3, 1fr);
+
+    @media #{$md} {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    @media #{$sm} {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
 }
 
 .blog {
@@ -73,6 +83,10 @@
         background-color: var(--white);
         clip-path: polygon(40px 0, calc(100% - 40px) 0, 100% 100%, 0 100%);
 
+        @media #{$lg} {
+            left: 15px;
+        }
+
         &:before {
             position: absolute;
             width: calc(100% - 32px);
@@ -88,11 +102,15 @@
 
     .content {
         padding: 25px 30px 30px;
+
+        @media #{$lg} {
+            padding: 10px 15px 15px;
+        }
     }
 
     .meta {
         display: flex;
-        gap: 10px 20px;
+        gap: 5px 20px;
         flex-wrap: wrap;
     }
 
@@ -104,6 +122,10 @@
         display: inline-flex;
         gap: 10px;
         align-items: center;
+
+        @media #{$lg} {
+            font-size: 14px;
+        }
 
         i {
             color: var(--theme);
@@ -119,6 +141,10 @@
         gap: 10px;
         align-items: center;
 
+        @media #{$lg} {
+            font-size: 14px;
+        }
+
         i {
             color: var(--theme);
         }
@@ -127,9 +153,17 @@
     .title {
         font-weight: 600;
         font-size: 24px;
-        line-height: 32px;
+        line-height: 1.33;
         text-transform: capitalize;
         margin-top: 18px;
+
+        @media #{$xxl} {
+            font-size: 22px;
+        }
+
+        @media #{$lg} {
+            font-size: 18px;
+        }
     }
 
     .btn-wrapper {

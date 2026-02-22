@@ -337,7 +337,7 @@
     var project_slider = new Swiper(".project-slider", {
       loop: true,
       autoplay: {
-        delay: 2000,
+        delay: 222000,
         disableOnInteraction: false,
       },
       slidesPerView: 1,

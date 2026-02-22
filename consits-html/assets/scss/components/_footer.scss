@@ -7,35 +7,57 @@
 
 .newsletter-shape-1 {
     position: absolute;
-    width: 240px;
+    width: 260px;
     height: 100%;
     left: 0;
     top: 0;
-    mask-image: url(../imgs/shape/shape-9.png);
-    mask-size: 100% 100%;
-    mask-repeat: no-repeat;
+    background-color: var(--white);
+    padding-right: 20px;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 120px) 100%, 0 100%);
+
+    @media #{$xxl} {
+        width: 200px;
+        padding-right: 5px;
+    }
+
+    @media #{$md} {
+        display: none;
+    }
 
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        clip-path: polygon(0 0, 100% 0, calc(100% - 120px) 100%, 0 100%);
+
     }
 }
 
 .newsletter-shape-2 {
     position: absolute;
-    width: 240px;
+    width: 260px;
     height: 100%;
     right: 0;
     top: 0;
-    mask-image: url(../imgs/shape/shape-10.png);
-    mask-size: 100% 100%;
-    mask-repeat: no-repeat;
+    background-color: var(--white);
+    padding-left: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 120px 100%);
+
+    @media #{$xxl} {
+        width: 200px;
+        padding-left: 5px;
+    }
+
+    @media #{$md} {
+        display: none;
+    }
 
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 120px 100%);
+
     }
 }
 
@@ -45,6 +67,8 @@
     display: grid;
     gap: 30px 60px;
     grid-template-columns: 1fr 548px;
+    position: relative;
+    z-index: 1;
 
     @media #{$lg} {
         grid-template-columns: 1fr 448px;
@@ -58,6 +82,9 @@
 .footer-newsletter-content {
     padding-left: 40px;
 
+    @media #{$md} {
+        padding-left: 0;
+    }
 
     .title {
         font-weight: 600;
@@ -68,12 +95,7 @@
         max-width: 560px;
 
         @media #{$lg} {
-            font-size: 24px;
-
-        }
-
-        @media #{$sm} {
-            font-size: 20px;
+            font-size: 28px;
         }
     }
 
@@ -82,6 +104,10 @@
 
 .footer-newsletter-form {
     margin-top: 17px;
+
+    @media #{$md} {
+        margin-top: 0;
+    }
 }
 
 .footer-subscribe-form {
@@ -115,6 +141,7 @@
         .ui-btn {
             padding: 18px 23px;
             background-color: var(--black);
+            border-color: transparent;
         }
     }
 }
@@ -156,6 +183,10 @@
     gap: 40px 60px;
     grid-template-columns: 384px 1fr;
     padding-bottom: 70px;
+
+    @media #{$md} {
+        grid-template-columns: 1fr;
+    }
 }
 
 .footer-widget-wrapper {
@@ -180,6 +211,10 @@
 .footer-social-box {
     background-color: var(--theme);
     padding: 40px 40px 40px;
+
+    @media #{$md} {
+        padding: 20px 20px 20px;
+    }
 
     .title {
         font-weight: 600;
@@ -235,7 +270,7 @@
 }
 
 .footer-meta-box {
-    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
     position: relative;
     padding-top: 62px;
     padding-bottom: 60px;
@@ -247,6 +282,14 @@
         position: absolute;
         right: -29px;
         bottom: -1px;
+
+        @media #{$lg} {
+            width: 120px;
+        }
+
+        @media #{$sm} {
+            width: 80px;
+        }
     }
 }
 
@@ -276,10 +319,14 @@
     .contact {
         font-weight: 600;
         font-size: 20px;
-        line-height: 26px;
+        line-height: 1.3;
         text-transform: capitalize;
         color: var(--white);
         margin-top: 4px;
+
+        @media #{$sm} {
+            font-size: 16px;
+        }
 
         a:hover {
             color: var(--white-2);
@@ -365,7 +412,7 @@
     align-items: center;
     padding-top: 23px;
     padding-bottom: 23px;
-    border-top: 1px dotted rgba(255, 255, 255, 0.2);
+    border-top: 1px dashed rgba(255, 255, 255, 0.2);
 
     @media #{$md} {
         grid-template-columns: auto;
@@ -379,6 +426,10 @@
         font-size: 16px;
         line-height: 26px;
         color: var(--white);
+
+        @media #{$md} {
+            text-align: center;
+        }
 
         a {
             color: var(--theme);
@@ -395,6 +446,10 @@
     display: flex;
     gap: 5px 16px;
     flex-wrap: wrap;
+
+    @media #{$md} {
+        justify-content: center;
+    }
 
     a {
         font-weight: 500;
