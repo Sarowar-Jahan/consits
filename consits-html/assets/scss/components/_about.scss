@@ -237,3 +237,62 @@
     }
 
 }
+
+/* about-2 area style  */
+.about-2-inner {
+    display: grid;
+    grid-template-columns: 57% 1fr;
+
+    @media #{$lg} {
+        grid-template-columns: 50% 1fr;
+    }
+
+    @media #{$md} {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.about-2-thumb {
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+
+.about-2-content-wrapper {
+    background-color: var(--theme);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-2-content {
+    padding: 32px 40px;
+
+    @media #{$sm} {
+        padding: 17px 20px;
+
+    }
+
+    .text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: var(--white);
+        max-width: 630px;
+    }
+
+    .btn-wrapper {
+        margin-top: 33px;
+    }
+
+    .ui-btn {
+        background-color: var(--black);
+        border-color: transparent;
+    }
+
+}

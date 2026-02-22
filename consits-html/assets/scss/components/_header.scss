@@ -40,7 +40,7 @@
         img {
             width: 288px;
 
-            @media #{$lg} {
+            @media #{$xxl} {
                 width: 248px;
             }
 
@@ -53,6 +53,10 @@
     .header-nav {
         margin-right: 110px;
 
+        @media #{$xxl} {
+            margin-right: 60px;
+        }
+
         @media #{$md} {
             display: none;
         }
@@ -63,6 +67,10 @@
         >ul {
             display: flex;
             gap: 30px;
+
+            @media #{$xl} {
+                gap: 10px;
+            }
 
             >li {
 
@@ -86,11 +94,14 @@
         li a {
             font-size: 16px;
             font-weight: 600;
-            line-height: 22px;
+            line-height: 21px;
             padding: 41px 24px;
             background-color: transparent;
             color: var(--white);
 
+            @media #{$xxl} {
+                padding: 33px 20px;
+            }
         }
     }
 
@@ -149,7 +160,7 @@
     .header-offcanvas {
         display: none;
 
-        @media #{$md} {
+        @media #{$lg} {
             display: inline-block;
         }
     }
@@ -179,6 +190,10 @@
 /* header-top area style  */
 .header-top {
     background-color: var(--black);
+
+    @media #{$lg} {
+        display: none;
+    }
 }
 
 .header-top-inner {
@@ -284,6 +299,10 @@
         line-height: 22px;
         text-transform: capitalize;
         color: var(--white);
+
+        a:hover {
+            color: var(--white-2);
+        }
     }
 }
 
@@ -324,7 +343,7 @@
         img {
             width: 288px;
 
-            @media #{$lg} {
+            @media #{$xxl} {
                 width: 248px;
             }
 
@@ -337,6 +356,10 @@
     .header-2-nav {
         margin-right: 110px;
 
+        @media #{$xxl} {
+            margin-right: 60px;
+        }
+
         @media #{$md} {
             display: none;
         }
@@ -347,6 +370,10 @@
         >ul {
             display: flex;
             gap: 30px;
+
+            @media #{$xl} {
+                gap: 10px;
+            }
 
             >li {
 
@@ -374,6 +401,10 @@
             padding: 38px 24px;
             background-color: transparent;
             color: var(--black);
+
+            @media #{$xxl} {
+                padding: 33px 20px;
+            }
 
         }
     }
@@ -434,7 +465,7 @@
     .header-2-offcanvas {
         display: none;
 
-        @media #{$md} {
+        @media #{$lg} {
             display: inline-block;
         }
     }
@@ -442,14 +473,14 @@
     .side-toggle {
         width: 50px;
         height: 50px;
-        background-color: #F4F0FE;
+        background-color: var(--theme);
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 50%;
         font-size: 16px;
         font-weight: 700;
-        color: var(--action);
+        color: var(--white);
         transition: all 0.3s;
 
         &:hover {

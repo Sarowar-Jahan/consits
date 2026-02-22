@@ -405,10 +405,10 @@
   }
 
   &-logo {
-    width: 120px;
+    width: 150px;
 
     @media #{$xs} {
-      width: 95px;
+      width: 100px;
     }
 
     img {

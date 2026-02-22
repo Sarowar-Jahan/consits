@@ -261,7 +261,7 @@
 
   // meanmenu activation 
   $('.main-menu').meanmenu({
-    meanScreenWidth: "1300",
+    meanScreenWidth: "1199",
     meanMenuContainer: '.mobile-menu',
     meanMenuCloseSize: '28px',
   });
@@ -449,6 +449,21 @@
       autoplay: true,
       spaceBetween: 0,
       speed: 10000,
+      allowTouchMove: false,
+      autoplay: {
+        delay: 1,
+      },
+    });
+  }
+
+  // text-slider-3 active 
+  if (document.querySelectorAll(".text-slider-3-active").length > 0) {
+    var text_slider_3_active = new Swiper(".text-slider-3-active", {
+      slidesPerView: 'auto',
+      loop: true,
+      autoplay: true,
+      spaceBetween: 0,
+      speed: 5000,
       allowTouchMove: false,
       autoplay: {
         delay: 1,
