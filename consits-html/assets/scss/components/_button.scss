@@ -815,14 +815,14 @@
   align-items: center;
 
   &:hover {
-    .icon {
+    .btn-icon {
       &:before {
         animation: t-spinner 10s linear infinite;
       }
     }
   }
 
-  .icon {
+  .btn-icon {
     width: 44px;
     height: 44px;
     background-color: var(--theme);
@@ -850,7 +850,7 @@
     }
   }
 
-  .text {
+  .btn-text {
     font-family: var(--font_unbounded);
     font-weight: 500;
     font-size: 18px;
