@@ -211,6 +211,12 @@
     }
 }
 
+.team-details-wrapper-box {
+    @media #{$md} {
+        order: 2;
+    }
+}
+
 .team-details-wrapper {
     padding: 34px 40px 40px;
     background-color: var(--smoke);
