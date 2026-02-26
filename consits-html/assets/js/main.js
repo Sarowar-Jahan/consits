@@ -4,6 +4,8 @@
 
 // Data Css js
 // sticky header
+// nice select
+// WOW active
 // Register GSAP Plugins
 // Smooth active
 // GSAP Fade Animation 
@@ -52,6 +54,15 @@
     });
   }
   pinned_header();
+
+  // nice select 
+  $(document).ready(function () {
+    $('select').niceSelect();
+  });
+
+  // WOW active
+  new WOW().init();
+
 
   // Register GSAP Plugins
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother, CustomEase);

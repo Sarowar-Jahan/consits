@@ -294,6 +294,10 @@ h6 {
   max-width: 1710px;
 }
 
+.ui-container-1800 {
+  max-width: 1800px;
+}
+
 /* Background color classes */
 .ui-bg-primary {
   background-color: var(--primary);
@@ -5817,7 +5821,7 @@ section {
   opacity: 0;
   transition: all 0.5s;
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1199px) {
   .project-box .content-wrapper {
     width: calc(100% - 30px);
     height: calc(100% - 30px);
@@ -5860,7 +5864,7 @@ section {
     margin: 0 25px 0;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1199px) {
   .project-box .content {
     margin: 0 15px 0;
     padding: 12px 10px 10px;
@@ -5885,7 +5889,7 @@ section {
     font-size: 20px;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1199px) {
   .project-box .title {
     font-size: 18px;
   }
@@ -6063,6 +6067,23 @@ section {
 }
 .project-details .gallery-wrapper + .text-wrapper {
   margin-top: 52px;
+}
+
+/* projects-2 area style  */
+.projects-2-wrapper {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media only screen and (max-width: 991px) {
+  .projects-2-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .projects-2-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* feature css */
@@ -6585,6 +6606,334 @@ section {
   align-items: center;
   cursor: pointer;
   transition: all 0.5s;
+}
+
+/* team-details area styly  */
+.team-details-area-inner {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 420px;
+}
+@media only screen and (max-width: 1199px) {
+  .team-details-area-inner {
+    grid-template-columns: 1fr 370px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .team-details-area-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+.team-details-wrapper {
+  padding: 34px 40px 40px;
+  background-color: var(--smoke);
+  border-radius: 20px;
+}
+@media only screen and (max-width: 1919px) {
+  .team-details-wrapper {
+    padding: 24px 30px 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .team-details-wrapper {
+    padding: 14px 20px 20px;
+  }
+}
+
+.team-details .team-title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 1199px) {
+  .team-details .team-title {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .team-details .team-title {
+    font-size: 20px;
+  }
+}
+.team-details .text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+.team-details .text:not(:first-child) {
+  margin-top: 16px;
+}
+.team-details .feature-list li {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+.team-details .feature-list li:not(:first-child) {
+  margin-top: 12px;
+}
+.team-details .feature-list li .icon {
+  width: 18px;
+  min-width: 18px;
+  height: 18px;
+  background-color: var(--theme);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--white);
+  font-size: 10px;
+  margin-top: 3px;
+}
+.team-details .progress-wrapper-box {
+  margin-top: 25px;
+}
+.team-details .progress-wrapper {
+  display: grid;
+  gap: 22px;
+}
+.team-details .progress-box .progress-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.team-details .progress-box .progress-title span {
+  float: right;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--secondary);
+  display: inline-block;
+}
+.team-details .progress-box .progress-category {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  display: inline-block;
+}
+.team-details .progress-box .progress {
+  height: 12px;
+  background-color: var(--white);
+  border-radius: 10px;
+  border: 1px solid var(--theme);
+  padding: 2px;
+}
+.team-details .progress-box .progress-bar {
+  background-color: var(--theme);
+  border-radius: 10px;
+}
+.team-details .team-title + .text-wrapper {
+  margin-top: 15px;
+}
+.team-details .text-wrapper + .team-title {
+  margin-top: 27px;
+}
+.team-details .feature-list + .team-title {
+  margin-top: 25px;
+}
+.team-details .progress-wrapper-box + .team-title {
+  margin-top: 34px;
+}
+.team-details .text-wrapper + .feature-list {
+  margin-top: 19px;
+}
+.team-details .team-contact-wrap {
+  margin-top: 25px;
+}
+.team-details .team-contact-wrap .submit-btn {
+  margin-top: 32px;
+}
+.team-details .contact-formwrap {
+  display: grid;
+  gap: 22px 32px;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media only screen and (max-width: 767px) {
+  .team-details .contact-formwrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.team-details .contact-formwrap .span-2 {
+  grid-column: span 2;
+}
+@media only screen and (max-width: 767px) {
+  .team-details .contact-formwrap .span-2 {
+    grid-column: auto;
+  }
+}
+.team-details .contact-formfield {
+  background-color: transparent;
+}
+.team-details .contact-formfield input {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: var(--black);
+  transition: all 0.5s;
+  background: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid var(--border);
+}
+.team-details .contact-formfield input:focus {
+  background-color: none;
+}
+.team-details .contact-formfield input::-moz-placeholder {
+  color: var(--secondary);
+}
+.team-details .contact-formfield input::placeholder {
+  color: var(--secondary);
+}
+.team-details .contact-formfield textarea {
+  width: 100%;
+  height: 139px;
+  border: none;
+  outline: none;
+  color: var(--black);
+  transition: all 0.5s;
+  background: none;
+  resize: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid var(--border);
+}
+.team-details .contact-formfield textarea:focus {
+  background-color: none;
+}
+.team-details .contact-formfield textarea::-moz-placeholder {
+  color: var(--secondary);
+}
+.team-details .contact-formfield textarea::placeholder {
+  color: var(--secondary);
+}
+.team-details .contact-formfield select {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: var(--secondary);
+  transition: all 0.5s;
+  background: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid var(--border);
+}
+.team-details .contact-formfield select:focus {
+  background-color: none;
+}
+.team-details .contact-formfield select::-moz-placeholder {
+  color: var(--secondary);
+}
+.team-details .contact-formfield select::placeholder {
+  color: var(--secondary);
+}
+.team-details .contact-formfield .nice-select {
+  height: 50px;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  border-bottom: 1px solid var(--border);
+}
+.team-details .contact-formfield .nice-select .current {
+  height: 50px;
+  display: block;
+  color: var(--secondary);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 23px;
+}
+.team-details .contact-formfield .nice-select .option {
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  color: var(--black);
+  font-weight: 500;
+  font-size: 16px;
+}
+.team-details .contact-formfield .nice-select:after {
+  display: none;
+}
+
+.team-sidebar-info-box {
+  padding: 30px 30px;
+  background-color: var(--smoke);
+  border-radius: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .team-sidebar-info-box {
+    padding: 20px 20px;
+  }
+}
+.team-sidebar-info-box .thumb {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.team-sidebar-info-box .thumb img {
+  width: 100%;
+}
+.team-sidebar-info-box .meta-list {
+  margin-top: 34px;
+}
+.team-sidebar-info-box .meta-item:not(:first-child) {
+  border-top: 1px solid rgb(216, 221, 225);
+  padding-top: 15px;
+  margin-top: 13px;
+}
+.team-sidebar-info-box .meta-item .name {
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+.team-sidebar-info-box .meta-item .title {
+  font-family: var(--font_unbounded);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: var(--black);
+  display: block;
+}
+.team-sidebar-info-box .meta-item .info {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  display: block;
+  margin-top: 7px;
+}
+.team-sidebar-info-box .meta-item .name + .info {
+  margin-top: 5px;
+}
+.team-sidebar-info-box .social-link {
+  margin-top: 15px;
+  display: flex;
+  gap: 9px;
+}
+.team-sidebar-info-box .social-link a {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--border);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+  border-radius: 50%;
+}
+.team-sidebar-info-box .social-link a:hover {
+  color: var(--white);
+  border-color: transparent;
+  background-color: var(--theme);
 }
 
 /* text-slider css */

@@ -151,7 +151,7 @@
         opacity: 0;
         transition: all 0.5s;
 
-        @media #{$md} {
+        @media #{$lg} {
             width: calc(100% - 30px);
             height: calc(100% - 30px);
             top: 15px;
@@ -195,7 +195,7 @@
 
         }
 
-        @media #{$md} {
+        @media #{$lg} {
             margin: 0 15px 0;
             padding: 12px 10px 10px;
         }
@@ -222,7 +222,7 @@
             font-size: 20px;
         }
 
-        @media #{$md} {
+        @media #{$lg} {
             font-size: 18px;
         }
     }
@@ -422,4 +422,22 @@
         margin-top: 52px;
     }
 
+}
+
+
+/* projects-2 area style  */
+.projects-2-wrapper {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media #{$md} {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    @media #{$sm} {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
 }
