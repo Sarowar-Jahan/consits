@@ -1,0 +1,109 @@
+/* contact css */
+/* contact-info area style  */
+.contact-info-wrapper {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media #{$md} {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+}
+
+.contact-info-box {
+    background-color: var(--smoke);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    padding: 33px 30px 33px;
+
+    @media #{$lg} {
+        padding: 23px 20px 23px;
+    }
+
+    .icon {
+        width: 80px;
+        height: 80px;
+        border: 2px solid var(--theme);
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        background-color: var(--white);
+        padding: 12px;
+
+
+        @media #{$lg} {
+            width: 60px;
+            height: 60px;
+            right: 20px;
+            top: 20px;
+        }
+    }
+
+    .icon-shape {
+        position: absolute;
+        bottom: -20px;
+        right: 82px;
+    }
+
+    .title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.33;
+        text-transform: capitalize;
+        margin-right: 80px;
+
+        @media #{$lg} {
+            font-size: 20px;
+        }
+    }
+
+    .contact-list {
+        margin-top: 26px;
+
+        li {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            list-style: none;
+        }
+    }
+
+    &.info-bg-2 {
+        background-color: var(--theme);
+
+        .icon {
+            background-color: var(--black);
+            border-color: transparent;
+        }
+
+        .title {
+            color: var(--white);
+        }
+
+        .contact-list {
+            li {
+                color: var(--white);
+            }
+        }
+    }
+
+    &.info-bg-3 {
+        background-color: #F1F1F1;
+    }
+}
+
+/* contact-map area style  */
+.contact-map-box {
+    iframe {
+        width: 100%;
+        aspect-ratio: 100/38;
+        min-height: 300px;
+    }
+}
