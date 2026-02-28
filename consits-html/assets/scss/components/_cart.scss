@@ -1,0 +1,41 @@
+/* cart css */
+/* cart area style  */
+.cart-wrapper-box {
+
+
+
+    .btn-wrapper {
+        text-align: center;
+        margin-top: 60px;
+
+        @media #{$lg} {
+            margin-top: 40px;
+
+        }
+    }
+
+}
+
+.cart-message {
+    .text {
+        font-family: var(--font_unbounded);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: capitalize;
+        color: var(--black);
+        display: flex;
+        gap: 30px;
+        border: 1px solid var(--theme);
+        border-radius: 5px;
+        background-color: var(--smoke);
+        padding: 23px 24px;
+
+        @media #{$sm} {
+            gap: 10px;
+            padding: 13px 14px;
+        }
+    }
+
+
+}
