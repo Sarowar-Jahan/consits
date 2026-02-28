@@ -1061,6 +1061,7 @@
   }
 }
 
+
 .sidebar-newsletter-box {
   background-color: var(--theme);
   padding: 40px 40px 40px;
@@ -1258,6 +1259,128 @@
     }
 
   }
+
+  .sidebar-title+.title-line {
+    margin-top: 15px;
+  }
+}
+
+.sidebar-blog-box {
+  background-color: var(--smoke);
+  padding: 40px 40px 40px;
+  border-radius: 20px;
+
+  @media #{$xxl} {
+    padding: 30px 30px 30px;
+  }
+
+  @media #{$sm} {
+    padding: 20px 20px 20px;
+  }
+
+  .sidebar-title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.2;
+    text-transform: capitalize;
+
+    @media #{$lg} {
+      font-size: 24px;
+    }
+
+    @media #{$sm} {
+      font-size: 20px;
+    }
+  }
+
+  .title-line {
+    display: flex;
+    gap: 5px;
+    overflow: hidden;
+
+    span {
+      width: 40px;
+      height: 4px;
+      background-color: var(--theme);
+      display: inline-block;
+      transform: skewX(45deg);
+
+      @media #{$sm} {
+        height: 3px;
+
+      }
+
+      &:nth-child(1) {
+        margin-left: -4px;
+      }
+
+      &:nth-child(2) {
+        width: 16px;
+      }
+    }
+  }
+
+  .sidebar-blog-wrapper {
+    display: grid;
+    gap: 20px;
+  }
+
+  .sidebar-blog-wrapper-box {
+    margin-top: 30px;
+    margin-right: 30px;
+
+    @media #{$lg} {
+      margin-right: 0;
+    }
+  }
+
+  .sidebar-blog {
+    display: flex;
+    gap: 5px 20px;
+    align-items: center;
+
+    @media #{$xs} {
+      flex-direction: column;
+    }
+
+    .thumb {
+      width: 100px;
+      min-width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
+    }
+
+
+    .date {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      i {
+        color: var(--theme);
+      }
+    }
+
+    .title {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      margin-top: 5px;
+
+      a:hover {
+        color: var(--black-2);
+      }
+    }
+  }
+
 
   .sidebar-title+.title-line {
     margin-top: 15px;

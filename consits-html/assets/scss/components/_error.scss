@@ -3,10 +3,35 @@
 .error-wrapper-box {
     text-align: center;
 
+    .thumb {
+        svg {
+            max-width: 794px;
+            width: 100%;
+            height: auto;
 
+            @media #{$xxl} {
+                max-width: 594px;
+
+            }
+
+            @media #{$md} {
+                max-width: 494px;
+
+            }
+
+            @media #{$sm} {
+                max-width: 394px;
+
+            }
+        }
+    }
 
     .section-title-wrapper {
         margin-top: 51px;
+
+        @media #{$xxl} {
+            margin-top: 31px;
+        }
     }
 
     .text-wrapper {
@@ -16,10 +41,14 @@
     .text {
         font-weight: 500;
         font-size: 18px;
-        line-height: 30px;
+        line-height: 1.67;
         max-width: 641px;
         text-transform: capitalize;
         margin-inline: auto;
+
+        @media #{$sm} {
+            font-size: 16px;
+        }
     }
 
     .btn-wrapper {
