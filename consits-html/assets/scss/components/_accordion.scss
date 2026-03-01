@@ -1,0 +1,111 @@
+/* accordion css */
+/* accordion area style  */
+.faq-accordion-wrapper {
+    max-width: 1095px;
+    margin-inline: auto;
+
+    .accordion {
+        .accordion-button {
+            font-family: var(--font_unbounded);
+            font-size: 18px;
+            line-height: 1.33;
+            color: var(--black);
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-inline-start: 29px;
+            padding-inline-end: 4px;
+            background-color: var(--smoke);
+            box-shadow: none;
+            text-align: start;
+            font-weight: 600;
+            border-radius: 30px;
+            border: 1px solid rgba(2, 2, 2, 0.2);
+
+            @media #{$md} {
+                font-size: 16px;
+                padding-inline-start: 19px;
+            }
+
+
+
+
+            &::after {
+                content: "+";
+                color: var(--theme);
+                background-image: none;
+                line-height: 1;
+                width: 50px;
+                height: 50px;
+                font-size: 26px;
+                margin-inline-start: 50px;
+                margin-inline-start: auto;
+                margin-inline-end: 0;
+                background-color: var(--black);
+                border-radius: 50%;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &:not(.collapsed) {
+                pointer-events: none;
+                background-color: var(--theme);
+                border-color: transparent;
+                color: var(--white);
+
+                &::after {
+                    content: "-";
+                    background-color: var(--white);
+                }
+            }
+        }
+
+        .accordion-item {
+            border: none;
+            background-color: var(--black);
+            border-radius: 30px;
+            padding-bottom: 0px;
+
+
+            &:not(:first-child) {
+                margin-top: 20px;
+            }
+
+            &:last-of-type .accordion-button.collapsed {
+                border-radius: 30px;
+
+            }
+        }
+
+        .accordion-body {
+            font-family: var(--font_poppins);
+            font-size: 16px;
+            line-height: 26px;
+            padding-inline-start: 30px;
+            padding-inline-end: 40px;
+            padding-bottom: 20px;
+            padding-top: 22px;
+            color: var(--white);
+
+            @media #{$md} {
+                padding-inline-start: 20px;
+                padding-inline-end: 30px;
+            }
+        }
+    }
+}
+
+/* faq area style  */
+.faq-pagination-wrapper {
+    margin-top: 60px;
+
+    @media #{$lg} {
+        margin-top: 40px;
+
+    }
+
+    .ui-pagination {
+        justify-content: center;
+
+    }
+}

@@ -57,6 +57,7 @@
 
 .blog {
     background-color: var(--white);
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.08);
 
     .thumb {
         position: relative;
@@ -908,4 +909,125 @@
 .blog-sidebar-wrapper {
     display: grid;
     gap: 30px;
+}
+
+/* blog area style  */
+.blog-pagination-wrapper {
+    margin-top: 60px;
+
+    @media #{$lg} {
+        margin-top: 40px;
+
+    }
+
+    .ui-pagination {
+        justify-content: center;
+
+    }
+}
+
+
+/* blog-header style  */
+.blog-header-info {
+    display: grid;
+    gap: 20px 60px;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+
+    @media #{$sm} {
+        grid-template-columns: auto;
+
+    }
+
+    +.blogs-wrapper-box {
+        margin-top: 64px;
+
+        @media #{$xxl} {
+            margin-top: 44px;
+        }
+    }
+}
+
+.blog-results {
+    .text {
+        font-family: var(--font_unbounded);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: capitalize;
+        color: #2D2D2D;
+    }
+}
+
+.blog-sorting {
+    select {
+        width: auto;
+        height: 50px;
+        border: none;
+        outline: none;
+        color: var(--secondary);
+        transition: all 0.5s;
+        background: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        padding-bottom: 23px;
+        border-bottom: 1px solid var(--border);
+
+
+        &:focus {
+            background-color: none;
+        }
+
+        &::placeholder {
+            color: var(--secondary);
+        }
+
+    }
+
+    .nice-select {
+        height: 56px;
+        width: auto;
+        padding: 0 0;
+        border: 0;
+        background: var(--theme);
+        border-radius: 6px;
+
+        .current {
+            height: 56px;
+            display: block;
+            color: var(--white);
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            padding: 17px 20px;
+            background-color: var(--theme);
+            border-radius: 6px;
+            font-family: var(--font_unbounded);
+            width: 275px;
+        }
+
+        .option {
+            height: 40px;
+            line-height: 40px;
+            display: block;
+            color: var(--black);
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            font-family: var(--font_unbounded);
+
+        }
+
+        &:after {
+            display: block;
+            border-color: var(--white);
+            height: 10px;
+            width: 10px;
+            right: 20px;
+            margin-top: -7px;
+        }
+    }
+
 }
