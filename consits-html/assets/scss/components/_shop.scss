@@ -1,0 +1,295 @@
+/* shop css */
+/* shop-header style  */
+.shop-header-info {
+    display: grid;
+    gap: 20px 60px;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+
+    @media #{$sm} {
+        grid-template-columns: auto;
+
+    }
+
+    +.products-wrapper-box {
+        margin-top: 60px;
+
+        @media #{$lg} {
+            margin-top: 40px;
+        }
+    }
+}
+
+.shop-results {
+    .text {
+        font-family: var(--font_unbounded);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: capitalize;
+        color: #2D2D2D;
+    }
+}
+
+.shop-sorting {
+    select {
+        width: auto;
+        height: 50px;
+        border: none;
+        outline: none;
+        color: var(--secondary);
+        transition: all 0.5s;
+        background: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        padding-bottom: 23px;
+        border-bottom: 1px solid var(--border);
+
+
+        &:focus {
+            background-color: none;
+        }
+
+        &::placeholder {
+            color: var(--secondary);
+        }
+
+    }
+
+    .nice-select {
+        height: 56px;
+        width: auto;
+        padding: 0 0;
+        border: 0;
+        background: var(--theme);
+        border-radius: 6px;
+
+        .current {
+            height: 56px;
+            display: block;
+            color: var(--white);
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            padding: 17px 20px;
+            background-color: var(--theme);
+            border-radius: 6px;
+            font-family: var(--font_unbounded);
+            width: 275px;
+        }
+
+        .option {
+            height: 40px;
+            line-height: 40px;
+            display: block;
+            color: var(--black);
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            font-family: var(--font_unbounded);
+
+        }
+
+        &:after {
+            display: block;
+            border-color: var(--white);
+            height: 10px;
+            width: 10px;
+            right: 20px;
+            margin-top: -7px;
+        }
+    }
+
+}
+
+/* shop pagination style  */
+.shop-pagination-wrapper {
+    margin-top: 60px;
+
+    @media #{$lg} {
+        margin-top: 40px;
+
+    }
+
+    .ui-pagination {
+        justify-content: center;
+
+    }
+}
+
+/* shop area style  */
+.products-wrapper {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media #{$md} {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    @media #{$sm} {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+}
+
+
+/* product-box style  */
+.product-box {
+    position: relative;
+    background: var(--smoke);
+    padding: 40px 20px 21px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px), 0 20px, 20px 0);
+
+    &:hover {
+        .actions {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(0%, 0%) scale(1);
+        }
+
+        .price {
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(0);
+        }
+
+        .cart-btn {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+
+    &.span-2 {
+        grid-column: span 2;
+
+        @media #{$md} {
+            grid-column: auto;
+        }
+    }
+
+    .discount {
+        position: absolute;
+        top: 43px;
+        left: 0px;
+        background: var(--theme);
+        color: var(--white);
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        display: inline-block;
+        padding: 3px 6px;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .new {
+        position: absolute;
+        top: 43px;
+        left: 0px;
+        background: var(--theme);
+        color: var(--white);
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 3px 6px;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .actions {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s;
+        transform: translate(0%, 0%) scale(0);
+
+        button {
+            width: 35px;
+            height: 35px;
+            background: #EDE6E3;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: var(--theme);
+            cursor: pointer;
+            transition: all 0.3s;
+
+            &:hover {
+                background: var(--theme);
+                color: var(--white);
+            }
+        }
+    }
+
+    .thumb {
+        height: 208px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+    }
+
+    .content {
+        margin-top: 24px;
+    }
+
+    .title {
+        font-family: var(--font_unbounded);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .price-wrapper {
+        margin-top: 4px;
+        position: relative;
+
+
+    }
+
+    .price {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        color: var(--theme);
+        display: inline-block;
+        transition: all 0.3s;
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+
+    }
+
+    .cart-btn {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        color: var(--theme);
+        display: inline-block;
+        transition: all 0.3s;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1.5);
+
+    }
+
+}
