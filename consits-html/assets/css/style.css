@@ -8682,8 +8682,7 @@ section {
   max-width: 725px;
   margin-inline: auto;
 }
-
-.pricing-wrapper-box {
+.pricing-header + .pricing-wrapper-box {
   margin-top: 50px;
 }
 
@@ -8698,6 +8697,7 @@ section {
   grid-template-columns: 1fr 3fr;
   background-color: var(--white);
   width: 1320px;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.0784313725);
 }
 .ui-toggle_switcher .slide-toggle-btn {
   --switcher-width: 82px;
