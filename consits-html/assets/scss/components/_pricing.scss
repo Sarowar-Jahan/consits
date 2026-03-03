@@ -1,0 +1,240 @@
+/* pricing css */
+/* pricing area style  */
+.pricing-area {
+    position: relative;
+    z-index: 1;
+}
+
+.pricing-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: var(--smoke);
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.3;
+    }
+}
+
+.pricing-header {
+    text-align: center;
+
+    .section-subtitle {
+        justify-content: center;
+    }
+
+    .title-wrapper {
+        margin-top: 11px;
+    }
+
+    .section-title {
+        max-width: 725px;
+        margin-inline: auto;
+    }
+
+}
+
+.pricing-wrapper-box {
+    margin-top: 50px;
+}
+
+.pricing-tabs-wrapper {
+    @media #{$lg} {
+        overflow: scroll;
+    }
+}
+
+.ui-toggle_switcher {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: var(--white);
+    width: 1320px;
+
+
+
+    .slide-toggle-btn {
+        --switcher-width: 82px;
+        --switcher-border-width: 1px;
+        --switcher-indicator-width: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        user-select: none;
+        height: 150px;
+        padding: 34px 0 30px;
+
+        input {
+            display: none;
+        }
+    }
+
+    .before_label,
+    .after_label {
+        cursor: pointer;
+        font-family: var(--font_unbounded);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        color: var(--black);
+
+        &:not(.active) {
+            display: none;
+        }
+    }
+
+    .toggle-pane {
+        display: none;
+
+        &.show {
+            display: block;
+        }
+    }
+
+    .switcher {
+        display: inline-block;
+        width: var(--switcher-width);
+        height: 36px;
+        background: var(--theme);
+        border: none;
+        border-radius: 100px;
+        position: relative;
+        cursor: pointer;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 3px;
+            width: var(--switcher-indicator-width);
+            height: var(--switcher-indicator-width);
+            background-color: var(--white);
+            border-radius: 50%;
+            transition: transform 0.3s;
+            transform: translate(0px, -50%);
+        }
+    }
+
+    input:checked+.switcher::before {
+        transform: translate(calc(var(--switcher-width) - (var(--switcher-indicator-width) + 6 * var(--switcher-border-width))),
+                -50%);
+    }
+}
+
+.slide-toggle-wrapper {
+    .feature-list {
+        li {
+            font-family: var(--font_unbounded);
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            text-transform: capitalize;
+            color: var(--white);
+            background-color: var(--theme);
+            list-style: none;
+            padding: 29px 30px;
+
+            &:nth-child(odd) {
+                background-color: #FB8645;
+            }
+        }
+    }
+}
+
+.pricing-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.pricing-box {
+    border-left: 1px solid var(--border);
+
+    .box-header {
+        text-align: center;
+        padding: 40px 0px 35px;
+        height: 150px;
+
+        &.popular {
+            position: relative;
+            padding-left: 46px;
+        }
+    }
+
+    .tag-popular {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        text-transform: capitalize;
+        display: inline-block;
+        background-color: var(--theme);
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        writing-mode: sideways-lr;
+        color: var(--white);
+        padding: 0px 7px 0 9px;
+    }
+
+    .title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: capitalize;
+    }
+
+    .price {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 46px;
+        text-transform: capitalize;
+        margin-top: 5px;
+
+
+        span {
+            font-family: var(--font_poppins);
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 30px;
+            color: var(--secondary);
+        }
+    }
+
+    .feature-mark {
+        li {
+            list-style: none;
+            text-align: center;
+            padding: 27px 0;
+
+            &:nth-child(odd) {
+                background-color: var(--smoke-2);
+            }
+
+            .icon {
+                width: 25px;
+                height: 25px;
+                background-color: var(--theme);
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                color: var(--white);
+                font-size: 14px;
+
+                &.omitted {
+                    background-color: var(--secondary);
+                }
+            }
+        }
+    }
+
+
+
+}

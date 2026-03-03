@@ -482,6 +482,23 @@
     });
   }
 
+  // price tab switcher
+  const toggle_switcher = function () {
+    let $scope = $(".ui-toggle_switcher");
+
+    const checked = $("input", $scope);
+    const toggle_pane = $(".toggle-pane", $scope);
+    const toggle_label = $(".before_label, .after_label", $scope);
+
+    checked.change(function () {
+      toggle_pane.toggleClass("show");
+      toggle_label.toggleClass("active");
+    });
+  };
+
+  toggle_switcher();
+
+
 })(jQuery);
 
 
