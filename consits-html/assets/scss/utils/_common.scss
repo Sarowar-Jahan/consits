@@ -967,7 +967,7 @@
     padding: 30px 30px 30px;
   }
 
-  @media #{$sm} {
+  @media #{$lg} {
     padding: 20px 20px 20px;
   }
 
@@ -1071,7 +1071,7 @@
     padding: 30px 30px 30px;
   }
 
-  @media #{$sm} {
+  @media #{$lg} {
     padding: 20px 20px 20px;
   }
 
@@ -1182,7 +1182,7 @@
     padding: 30px 30px 30px;
   }
 
-  @media #{$sm} {
+  @media #{$lg} {
     padding: 20px 20px 20px;
   }
 
@@ -1274,7 +1274,7 @@
     padding: 30px 30px 30px;
   }
 
-  @media #{$sm} {
+  @media #{$lg} {
     padding: 20px 20px 20px;
   }
 
@@ -1410,7 +1410,7 @@
     border-radius: 50%;
     background-color: var(--smoke);
 
-    @media #{$md} {
+    @media #{$lg} {
       width: 50px;
       height: 50px;
     }
