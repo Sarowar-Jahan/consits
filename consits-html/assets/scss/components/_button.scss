@@ -831,6 +831,7 @@
     align-items: center;
     border-radius: 50%;
     position: relative;
+    transition: all 0.3s;
 
     @media #{$lg} {
       width: 36px;
@@ -857,6 +858,7 @@
     line-height: 24px;
     text-transform: capitalize;
     color: var(--primary);
+    transition: all 0.3s;
 
     @media #{$lg} {
       font-size: 16px;
