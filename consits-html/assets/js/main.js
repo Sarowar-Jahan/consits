@@ -331,6 +331,21 @@
     });
   }
 
+  // brand-2-slider activation
+  if ('.brand-2-slider-active') {
+    var brand_2_slider_active = new Swiper(".brand-2-slider-active", {
+      slidesPerView: 'auto',
+      loop: true,
+      autoplay: true,
+      spaceBetween: 92,
+      speed: 10000,
+      allowTouchMove: false,
+      autoplay: {
+        delay: 1,
+      },
+    });
+  }
+
   // odometer active 
   $(document).ready(function () {
     $('.odometer').waypoint(function (direction) {

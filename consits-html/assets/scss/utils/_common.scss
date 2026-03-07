@@ -50,6 +50,10 @@
   max-width: 1800px;
 }
 
+.ui-container-1890 {
+  max-width: 1890px;
+}
+
 
 /* Background color classes */
 .ui-bg-primary {
@@ -120,6 +124,10 @@
   @media #{$sm} {
     border: none;
   }
+}
+
+.round-6 {
+  border-radius: 6px;
 }
 
 /* Full background image styling */
