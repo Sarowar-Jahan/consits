@@ -448,6 +448,43 @@
     });
   }
 
+  // project-3 slider
+  if (('.project-3-slider').length) {
+    var project_3_slider = new Swiper(".project-3-slider", {
+      loop: true,
+      autoplay: {
+        delay: 222000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 1,
+      spaceBetween: 30,
+      speed: 1800,
+      watchSlidesProgress: true,
+      navigation: {
+        prevEl: ".project-3-button-prev",
+        nextEl: ".project-3-button-next",
+      },
+      breakpoints: {
+        // when window width is >= px
+        576: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        },
+        1201: {
+          slidesPerView: 4,
+        },
+        1367: {
+          slidesPerView: 4,
+        },
+      }
+    });
+  }
+
   // feature slider
   if (('.feature-slider').length) {
     var feature_slider = new Swiper(".feature-slider", {
