@@ -285,9 +285,9 @@
   }
 
   // GSAP title animation
-  if (document.querySelectorAll(".rr_title_anim").length > 0) {
-    if ($('.rr_title_anim').length > 0) {
-      let splitTitleLines = gsap.utils.toArray(".rr_title_anim");
+  if (document.querySelectorAll(".ui-title-anim").length > 0) {
+    if ($('.ui-title-anim').length > 0) {
+      let splitTitleLines = gsap.utils.toArray(".ui-title-anim");
       splitTitleLines.forEach(splitTextLine => {
         const tl = gsap.timeline({
           scrollTrigger: {

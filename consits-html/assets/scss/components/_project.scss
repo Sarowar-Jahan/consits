@@ -443,6 +443,25 @@
 }
 
 /* project-3 area style  */
+.project-3-inner {
+    position: relative;
+    z-index: 2;
+}
+
+.project-3-shape-1 {
+    position: absolute;
+    font-family: var(--font_unbounded);
+    font-weight: 700;
+    font-size: 110px;
+    line-height: 80px;
+    text-transform: capitalize;
+    color: #020202;
+    opacity: 0.08;
+    writing-mode: sideways-lr;
+    top: 74px;
+    left: calc(100% + 122px);
+}
+
 .project-3-header {
     display: grid;
     gap: 30px 60px;
@@ -455,7 +474,7 @@
     }
 
     .title-wrapper {
-        margin-top: 11px;
+        margin-top: 21px;
     }
 
     .section-title {
