@@ -291,6 +291,11 @@
     right: 0;
     top: 44px;
     z-index: -1;
+
+    @media #{$md} {
+        width: 100px;
+
+    }
 }
 
 .pricing-2-shape-2 {
@@ -298,6 +303,11 @@
     bottom: 0;
     left: 30px;
     z-index: -1;
+
+    @media #{$md} {
+        width: 80px;
+
+    }
 }
 
 .pricing-2-header {
@@ -322,13 +332,87 @@
     margin-top: 50px;
 }
 
+.pricing-2-tabs-wrapper {
+    .ui-toggle_switcher {
+        .slide-toggle-btn {
+            --switcher-width: 82px;
+            --switcher-border-width: 1px;
+            --switcher-indicator-width: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            margin-bottom: 60px;
+
+            @media #{$xxl} {
+                margin-bottom: 40px;
+            }
+
+
+            input {
+                display: none;
+            }
+        }
+
+        .before_label,
+        .after_label {
+            cursor: pointer;
+            font-family: var(--font_unbounded);
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: var(--black);
+            padding: 10px 37px;
+            border: 1px solid var(--black);
+            border-radius: 5px;
+
+            &.active {
+                border-color: transparent;
+                background-color: var(--theme);
+                color: var(--white);
+            }
+        }
+
+        .before_label {
+            border-right: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .after_label {
+            border-left: 0;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .toggle-pane {
+            display: none;
+
+            &.show {
+                display: block;
+            }
+        }
+    }
+}
+
 .pricing-2-wrapper {
     display: grid;
     gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
 
+    @media #{$lg} {
+        grid-template-columns: 1fr;
+
+    }
+
     .span-2 {
         grid-column: span 2;
+
+        @media #{$lg} {
+            grid-column: auto;
+        }
     }
 }
 
@@ -343,8 +427,19 @@
     align-items: center;
     justify-content: space-between;
 
+    @media #{$md} {
+        padding: 27px 20px 27px 19px;
+    }
+
     &:not(:first-child) {
         margin-top: 30px;
+    }
+
+    @media #{$md} {
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     .tag-popular {
@@ -381,6 +476,11 @@
         flex-direction: column;
         justify-content: center;
 
+        @media #{$lg} {
+            margin-inline: auto;
+
+        }
+
         .text {
             font-weight: 500;
             font-size: 18px;
@@ -407,9 +507,14 @@
     }
 
     .feature-list {
+        @media #{$md} {
+            margin-inline: auto;
+        }
+
         li {
             display: flex;
             gap: 10px;
+            text-align: start;
 
             &:not(:first-child) {
                 margin-top: 11px;
@@ -434,8 +539,17 @@
     }
 
     .content {
+        @media #{$lg} {
+            order: -1;
+        }
+
         .text {
             margin-top: 15px;
+            max-width: 246px;
+
+            @media #{$md} {
+                margin-inline: auto;
+            }
         }
 
         .ui-btn {
@@ -456,6 +570,10 @@
     justify-content: center;
     border-radius: 10px;
     text-align: center;
+
+    @media #{$md} {
+        padding: 26px 20px 30px;
+    }
 
     .tag-popular {
         position: absolute;
@@ -522,6 +640,8 @@
             display: flex;
             gap: 10px;
             color: var(--white);
+            text-align: start;
+
 
             &:not(:first-child) {
                 margin-top: 11px;
@@ -546,6 +666,10 @@
     }
 
     .content {
+        @media #{$lg} {
+            order: -1;
+        }
+
         .text {
             margin-top: 8px;
             color: var(--white);

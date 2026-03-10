@@ -10453,12 +10453,22 @@ section.hero-4-area {
   top: 44px;
   z-index: -1;
 }
+@media only screen and (max-width: 991px) {
+  .pricing-2-shape-1 {
+    width: 100px;
+  }
+}
 
 .pricing-2-shape-2 {
   position: absolute;
   bottom: 0;
   left: 30px;
   z-index: -1;
+}
+@media only screen and (max-width: 991px) {
+  .pricing-2-shape-2 {
+    width: 80px;
+  }
 }
 
 .pricing-2-header {
@@ -10479,13 +10489,78 @@ section.hero-4-area {
   margin-top: 50px;
 }
 
+.pricing-2-tabs-wrapper .ui-toggle_switcher .slide-toggle-btn {
+  --switcher-width: 82px;
+  --switcher-border-width: 1px;
+  --switcher-indicator-width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  margin-bottom: 60px;
+}
+@media only screen and (max-width: 1919px) {
+  .pricing-2-tabs-wrapper .ui-toggle_switcher .slide-toggle-btn {
+    margin-bottom: 40px;
+  }
+}
+.pricing-2-tabs-wrapper .ui-toggle_switcher .slide-toggle-btn input {
+  display: none;
+}
+.pricing-2-tabs-wrapper .ui-toggle_switcher .before_label,
+.pricing-2-tabs-wrapper .ui-toggle_switcher .after_label {
+  cursor: pointer;
+  font-family: var(--font_unbounded);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
+  padding: 10px 37px;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+}
+.pricing-2-tabs-wrapper .ui-toggle_switcher .before_label.active,
+.pricing-2-tabs-wrapper .ui-toggle_switcher .after_label.active {
+  border-color: transparent;
+  background-color: var(--theme);
+  color: var(--white);
+}
+.pricing-2-tabs-wrapper .ui-toggle_switcher .before_label {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.pricing-2-tabs-wrapper .ui-toggle_switcher .after_label {
+  border-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.pricing-2-tabs-wrapper .ui-toggle_switcher .toggle-pane {
+  display: none;
+}
+.pricing-2-tabs-wrapper .ui-toggle_switcher .toggle-pane.show {
+  display: block;
+}
+
 .pricing-2-wrapper {
   display: grid;
   gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
 }
+@media only screen and (max-width: 1199px) {
+  .pricing-2-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 .pricing-2-wrapper .span-2 {
   grid-column: span 2;
+}
+@media only screen and (max-width: 1199px) {
+  .pricing-2-wrapper .span-2 {
+    grid-column: auto;
+  }
 }
 
 .pricing-2-box {
@@ -10499,8 +10574,21 @@ section.hero-4-area {
   align-items: center;
   justify-content: space-between;
 }
+@media only screen and (max-width: 991px) {
+  .pricing-2-box {
+    padding: 27px 20px 27px 19px;
+  }
+}
 .pricing-2-box:not(:first-child) {
   margin-top: 30px;
+}
+@media only screen and (max-width: 991px) {
+  .pricing-2-box {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
 .pricing-2-box .tag-popular {
   position: absolute;
@@ -10535,6 +10623,11 @@ section.hero-4-area {
   flex-direction: column;
   justify-content: center;
 }
+@media only screen and (max-width: 1199px) {
+  .pricing-2-box .box-price {
+    margin-inline: auto;
+  }
+}
 .pricing-2-box .box-price .text {
   font-weight: 500;
   font-size: 18px;
@@ -10556,9 +10649,15 @@ section.hero-4-area {
   line-height: 24px;
   color: var(--secondary);
 }
+@media only screen and (max-width: 991px) {
+  .pricing-2-box .feature-list {
+    margin-inline: auto;
+  }
+}
 .pricing-2-box .feature-list li {
   display: flex;
   gap: 10px;
+  text-align: start;
 }
 .pricing-2-box .feature-list li:not(:first-child) {
   margin-top: 11px;
@@ -10577,8 +10676,19 @@ section.hero-4-area {
   text-transform: capitalize;
   color: var(--theme);
 }
+@media only screen and (max-width: 1199px) {
+  .pricing-2-box .content {
+    order: -1;
+  }
+}
 .pricing-2-box .content .text {
   margin-top: 15px;
+  max-width: 246px;
+}
+@media only screen and (max-width: 991px) {
+  .pricing-2-box .content .text {
+    margin-inline: auto;
+  }
 }
 .pricing-2-box .content .ui-btn {
   margin-top: 20px;
@@ -10596,6 +10706,11 @@ section.hero-4-area {
   justify-content: center;
   border-radius: 10px;
   text-align: center;
+}
+@media only screen and (max-width: 991px) {
+  .pricing-2-box-premium {
+    padding: 26px 20px 30px;
+  }
 }
 .pricing-2-box-premium .tag-popular {
   position: absolute;
@@ -10655,6 +10770,7 @@ section.hero-4-area {
   display: flex;
   gap: 10px;
   color: var(--white);
+  text-align: start;
 }
 .pricing-2-box-premium .feature-list li:not(:first-child) {
   margin-top: 11px;
@@ -10672,6 +10788,11 @@ section.hero-4-area {
   line-height: 26px;
   text-transform: capitalize;
   color: var(--white);
+}
+@media only screen and (max-width: 1199px) {
+  .pricing-2-box-premium .content {
+    order: -1;
+  }
 }
 .pricing-2-box-premium .content .text {
   margin-top: 8px;
