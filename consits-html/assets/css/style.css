@@ -5779,6 +5779,134 @@ section.hero-4-area {
   }
 }
 
+/* hero-5 area style  */
+.hero-5-area {
+  margin-top: 154px;
+}
+
+.hero-5-box {
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-5-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.hero-5-bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1);
+  transition: all 8s ease-out 0s;
+}
+
+.hero-5-content {
+  margin: 172px 0;
+  margin-left: auto;
+  max-width: 546px;
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 40px 40px;
+}
+.hero-5-content .review-box {
+  position: relative;
+  padding-left: 16px;
+}
+.hero-5-content .review-box:before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--theme);
+}
+.hero-5-content .review-box .rating {
+  display: flex;
+  gap: 2px;
+}
+.hero-5-content .review-box .rating i {
+  color: var(--theme);
+  font-size: 15px;
+}
+.hero-5-content .review-box .text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  text-transform: capitalize;
+  margin-top: 11px;
+}
+.hero-5-content .title-wrapper {
+  margin-top: 15px;
+}
+.hero-5-content .hero-5-title {
+  font-weight: 500;
+  font-size: 66px;
+  line-height: 74px;
+}
+.hero-5-content .text-wrapper {
+  margin-top: 19px;
+}
+.hero-5-content .text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: capitalize;
+}
+.hero-5-content .btn-wrapper {
+  margin-top: 31px;
+}
+
+.swiper-slide-active .hero-5-bg img {
+  transform: scale(1.12);
+}
+
+.hero-5-inner {
+  position: relative;
+}
+
+.hero-5-paginations {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+}
+
+.slider-active-paginations-wrapper {
+  max-width: 546px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.swiper-pagination-bullets {
+  display: inline-flex;
+  gap: 6px;
+  padding: 22px 43px 16px;
+  background-color: var(--white);
+  border-radius: 30px 30px 0 0;
+  width: auto !important;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 17px;
+  height: 17px;
+  background-color: var(--theme);
+  border-radius: 50%;
+  margin: 0 !important;
+  opacity: 0.3;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
 /* brand css */
 /* brand area style  */
 .brand-area {
