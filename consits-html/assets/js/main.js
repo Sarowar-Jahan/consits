@@ -448,6 +448,43 @@
     });
   }
 
+  // service-4 slider
+  if (('.service-4-slider').length) {
+    var service_4_slider = new Swiper(".service-4-slider", {
+      loop: true,
+      autoplay: {
+        delay: 222000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 1,
+      spaceBetween: 30,
+      speed: 1800,
+      watchSlidesProgress: true,
+      navigation: {
+        prevEl: ".service-4-button-prev",
+        nextEl: ".service-4-button-next",
+      },
+      breakpoints: {
+        // when window width is >= px
+        576: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        },
+        1201: {
+          slidesPerView: 4,
+        },
+        1367: {
+          slidesPerView: 4,
+        },
+      }
+    });
+  }
+
   // project-3 slider
   if (('.project-3-slider').length) {
     var project_3_slider = new Swiper(".project-3-slider", {
