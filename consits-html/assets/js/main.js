@@ -691,7 +691,42 @@
     animated_swiper(sliderActive1, sliderInit1);
   }
 
-
+  // testimonial slider
+  if (('.testimonial-slider').length) {
+    var testimonial_slider = new Swiper(".testimonial-slider", {
+      loop: true,
+      autoplay: {
+        delay: 222000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 1,
+      spaceBetween: 30,
+      speed: 1800,
+      watchSlidesProgress: true,
+      navigation: {
+        prevEl: ".testimonial-button-prev",
+        nextEl: ".testimonial-button-next",
+      },
+      breakpoints: {
+        // when window width is >= px
+        576: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        },
+        1201: {
+          slidesPerView: 3,
+        },
+        1367: {
+          slidesPerView: 3,
+        },
+      }
+    });
+  }
 
 })(jQuery);
 

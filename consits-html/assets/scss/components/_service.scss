@@ -784,6 +784,10 @@
 
     .btn-wrapper {
         margin-bottom: 10px;
+
+        @media #{$md} {
+            margin-bottom: 0;
+        }
     }
 }
 
