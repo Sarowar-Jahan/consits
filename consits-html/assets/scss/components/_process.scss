@@ -1,0 +1,205 @@
+/* process css */
+/* process area style  */
+.process-area {
+    position: relative;
+    z-index: 1;
+}
+
+.process-shape-1 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+
+    @media #{$xxl} {
+        width: 106px;
+        left: -20px;
+    }
+}
+
+.process-header {
+    text-align: center;
+
+    .section-subtitle {
+        justify-content: center;
+    }
+
+    .title-wrapper {
+        margin-top: 21px;
+    }
+
+    .section-title {
+        max-width: 755px;
+        margin-inline: auto;
+    }
+
+}
+
+.process-wrapper-box {
+    margin-top: 50px;
+}
+
+.process-wrapper {
+    display: grid;
+    gap: 40px 60px;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media #{$lg} {
+        gap: 40px 20px;
+    }
+
+    @media #{$md} {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    @media #{$sm} {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+
+.process-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    align-items: center;
+
+    &:nth-child(2n+2) {
+        flex-direction: column-reverse;
+
+        @media #{$md} {
+            flex-direction: column;
+        }
+
+        .number {
+            background-color: var(--theme);
+        }
+
+        .icon-box {
+            position: relative;
+
+            &:before {
+                position: absolute;
+                content: "";
+                width: 250px;
+                border-top: 2px dashed var(--theme);
+                z-index: -1;
+                right: 95%;
+                top: 75%;
+                transform: rotate(-35deg);
+                transform-origin: top right;
+
+                @media #{$lg} {
+                    right: 85%;
+                    top: 90%;
+                }
+
+                @media #{$md} {
+                    display: none;
+                }
+
+            }
+        }
+
+        .icon {
+            background-color: var(--theme);
+        }
+
+    }
+
+    &:nth-child(3) {
+        .icon-box {
+            position: relative;
+
+            &:before {
+                position: absolute;
+                content: "";
+                width: 250px;
+                border-top: 2px dashed var(--theme);
+                z-index: -1;
+                right: 95%;
+                bottom: 75%;
+                transform: rotate(35deg);
+                transform-origin: top right;
+
+                @media #{$lg} {
+                    right: 75%;
+                    bottom: 90%;
+                }
+
+                @media #{$md} {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .number {
+        width: 56px;
+        height: 56px;
+        background: #020202;
+        border-radius: 30px;
+        display: inline-flex;
+        font-family: var(--font_unbounded);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        justify-content: center;
+        align-items: center;
+
+        @media #{$md} {
+            width: 46px;
+            height: 46px;
+            font-size: 16px;
+        }
+    }
+
+    .title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.33;
+        text-transform: capitalize;
+
+        @media #{$lg} {
+            font-size: 20px;
+        }
+    }
+
+    .text {
+        margin-top: 15px;
+        max-width: 430px;
+    }
+
+    .icon-box {
+        padding: 11px;
+        border: 2px dashed var(--theme);
+        border-radius: 50%;
+        margin: 13px;
+        background-color: var(--white);
+
+        @media #{$md} {
+            padding: 6px;
+            margin: 3px;
+        }
+    }
+
+    .icon {
+        background-color: var(--black);
+        width: 140px;
+        height: 140px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+        @media #{$md} {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+}

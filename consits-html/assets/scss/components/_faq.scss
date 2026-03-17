@@ -116,7 +116,7 @@
     gap: 30px;
     grid-template-columns: 0.8fr 1fr;
 
-    @media #{$xl} {
+    @media #{$lg} {
         grid-template-columns: 1fr;
     }
 }
