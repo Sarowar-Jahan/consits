@@ -728,6 +728,28 @@
     });
   }
 
+  // hero-6 slider
+  if (('.hero-6-slider').length) {
+    var hero_6_slider = new Swiper(".hero-6-slider", {
+      loop: true,
+      autoplay: {
+        delay: 222000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 1,
+      spaceBetween: 30,
+      speed: 1800,
+      watchSlidesProgress: true,
+      navigation: {
+        prevEl: ".hero-6-button-prev",
+        nextEl: ".hero-6-button-next",
+      },
+    });
+  }
+
+
+
+
 })(jQuery);
 
 
