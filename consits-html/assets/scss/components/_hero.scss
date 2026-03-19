@@ -998,11 +998,6 @@ section.hero-4-area {
 }
 
 /* hero-6 area style  */
-.hero-6-area {
-    position: relative;
-    z-index: 1;
-}
-
 .hero-6-inner {
     position: relative;
 }
@@ -1048,6 +1043,18 @@ section.hero-4-area {
     text-align: center;
     margin-top: 362px;
 
+    @media #{$xxl} {
+        margin-top: 312px;
+    }
+
+    @media #{$xl} {
+        margin-top: 262px;
+    }
+
+    @media #{$lg} {
+        margin-bottom: 150px;
+    }
+
     .section-subtitle {
         justify-content: center;
 
@@ -1069,12 +1076,33 @@ section.hero-4-area {
         font-family: var(--font_unbounded);
         font-weight: 700;
         font-size: 70px;
-        line-height: 80px;
+        line-height: 1.14;
         text-align: center;
         text-transform: capitalize;
         color: #FFFFFF;
         max-width: 995px;
         margin-inline: auto;
+
+        @media #{$xxl} {
+            font-size: 60px;
+        }
+
+        @media #{$xl} {
+            font-size: 50px;
+            max-width: 795px;
+        }
+
+        @media #{$md} {
+            font-size: 45px;
+        }
+
+        @media #{$sm} {
+            font-size: 40px;
+        }
+
+        @media #{$xs} {
+            font-size: 35px;
+        }
     }
 
     .title-wrapper {
@@ -1097,29 +1125,40 @@ section.hero-4-area {
 
 }
 
+.hero-6-nav-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+
+    @media #{$md} {
+        top: 90%;
+    }
+}
+
 .hero-6-nav {
     display: flex;
     align-items: center;
     gap: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: calc(100% + 192px);
+    transform: translateX(-150px);
+    width: calc(100% + 300px);
     justify-content: space-between;
 
     @media #{$xxl} {
-        position: static;
-        margin-top: 40px;
-        width: auto;
         transform: none;
-        justify-content: unset;
+        width: 100%;
+    }
+
+    @media #{$md} {
+        justify-content: center;
     }
 }
 
 .hero-6-nav-button {
-    width: 56px;
-    height: 56px;
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1128,10 +1167,12 @@ section.hero-4-area {
     font-size: 18px;
     color: var(--black);
     background-color: var(--white);
+    pointer-events: all;
 
-    @media #{$lg} {
-        width: 46px;
-        height: 46px;
+
+    @media #{$xxl} {
+        width: 50px;
+        height: 50px;
         font-size: 16px;
     }
 

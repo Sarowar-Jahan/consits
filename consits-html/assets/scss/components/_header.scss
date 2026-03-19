@@ -690,6 +690,10 @@
         margin-top: 20px;
     }
 
+    @media #{$lg} {
+        margin-top: 15px;
+    }
+
     .header-4-main-inner {
         display: flex;
         align-items: center;
@@ -723,6 +727,19 @@
         justify-content: center;
         align-items: center;
         background-color: var(--black);
+        padding: 15px;
+
+        @media #{$xxl} {
+            width: 283px;
+        }
+
+        @media #{$lg} {
+            margin-right: auto;
+        }
+
+        @media #{$sm} {
+            width: 243px;
+        }
 
         img {
             width: 288px;
