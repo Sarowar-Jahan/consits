@@ -707,6 +707,19 @@
             display: inline-block;
         }
     }
+
+    .content-wrapper {
+        margin-top: 41px;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 420px 1fr;
+        align-items: center;
+
+        @media #{$md} {
+            grid-template-columns: 1fr;
+
+        }
+    }
 }
 
 .about-4-thumb-1 {
@@ -732,18 +745,6 @@
     }
 }
 
-.content-wrapper {
-    margin-top: 41px;
-    display: grid;
-    gap: 30px;
-    grid-template-columns: 420px 1fr;
-    align-items: center;
-
-    @media #{$md} {
-        grid-template-columns: 1fr;
-
-    }
-}
 
 .about-4-thumb-3 {
     border-radius: 20px;
