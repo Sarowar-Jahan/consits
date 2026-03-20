@@ -14507,6 +14507,114 @@ section.hero-4-area {
   margin-top: 22px;
 }
 
+/* testimonial-2 area style  */
+.testimonial-2-area {
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-2-shape-1 {
+  position: absolute;
+  left: 18px;
+  bottom: 0;
+  z-index: -1;
+}
+@media only screen and (max-width: 991px) {
+  .testimonial-2-shape-1 {
+    width: 166px;
+  }
+}
+
+.testimonial-2-header {
+  text-align: center;
+}
+.testimonial-2-header .section-subtitle {
+  justify-content: center;
+}
+.testimonial-2-header .title-wrapper {
+  margin-top: 21px;
+}
+.testimonial-2-header .section-title {
+  max-width: 555px;
+  margin-inline: auto;
+}
+
+.testimonial-2-wrapper-box {
+  margin-top: 50px;
+}
+
+.testimonial-2-item {
+  background-color: var(--smoke);
+  border-radius: 10px;
+  text-align: center;
+  padding: 0 30px 30px;
+  transition: all 0.5s;
+}
+.testimonial-2-item:hover {
+  background-color: var(--theme);
+}
+.testimonial-2-item:hover .avatar {
+  background-color: var(--smoke);
+}
+.testimonial-2-item:hover .name {
+  color: var(--white);
+}
+.testimonial-2-item:hover .post {
+  color: var(--white);
+}
+.testimonial-2-item:hover .text {
+  color: var(--white);
+}
+.testimonial-2-item:hover svg * {
+  fill: var(--white);
+}
+.testimonial-2-item .avatar {
+  display: inline-block;
+  padding: 30px 7.5px 7.5px;
+  background-color: var(--theme);
+  border-radius: 0 0 100px 100px;
+  transition: all 0.5s;
+}
+.testimonial-2-item .avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.testimonial-2-item .meta {
+  margin-top: 24px;
+}
+.testimonial-2-item .name {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: capitalize;
+  transition: all 0.5s;
+}
+.testimonial-2-item .post {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FA5E07;
+  display: inline-block;
+  margin-top: 7px;
+  transition: all 0.5s;
+}
+.testimonial-2-item .content {
+  margin-top: 5px;
+}
+.testimonial-2-item .text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  transition: all 0.5s;
+}
+.testimonial-2-item .icon {
+  margin-top: 23px;
+}
+.testimonial-2-item .icon svg * {
+  transition: all 0.5s;
+}
+
 /* cta css */
 /* cta area style  */
 .cta-area {

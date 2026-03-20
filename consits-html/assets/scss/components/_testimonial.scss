@@ -279,3 +279,139 @@
         margin-top: 22px;
     }
 }
+
+/* testimonial-2 area style  */
+.testimonial-2-area {
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-2-shape-1 {
+    position: absolute;
+    left: 18px;
+    bottom: 0;
+    z-index: -1;
+
+    @media #{$md} {
+        width: 166px;
+
+    }
+}
+
+
+
+.testimonial-2-header {
+    text-align: center;
+
+    .section-subtitle {
+        justify-content: center;
+    }
+
+    .title-wrapper {
+        margin-top: 21px;
+    }
+
+    .section-title {
+        max-width: 555px;
+        margin-inline: auto;
+    }
+
+}
+
+.testimonial-2-wrapper-box {
+    margin-top: 50px;
+}
+
+.testimonial-2-item {
+    background-color: var(--smoke);
+    border-radius: 10px;
+    text-align: center;
+    padding: 0 30px 30px;
+    transition: all 0.5s;
+
+    &:hover {
+        background-color: var(--theme);
+
+        .avatar {
+            background-color: var(--smoke);
+        }
+
+        .name {
+            color: var(--white);
+        }
+
+        .post {
+            color: var(--white);
+        }
+
+        .text {
+            color: var(--white);
+        }
+
+        svg * {
+            fill: var(--white);
+        }
+    }
+
+    .avatar {
+        display: inline-block;
+        padding: 30px 7.5px 7.5px;
+        background-color: var(--theme);
+        border-radius: 0 0 100px 100px;
+        transition: all 0.5s;
+
+
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+    }
+
+    .meta {
+        margin-top: 24px;
+    }
+
+    .name {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        text-transform: capitalize;
+        transition: all 0.5s;
+
+    }
+
+    .post {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FA5E07;
+        display: inline-block;
+        margin-top: 7px;
+        transition: all 0.5s;
+
+    }
+
+    .content {
+        margin-top: 5px;
+    }
+
+    .text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        transition: all 0.5s;
+
+    }
+
+
+
+    .icon {
+        margin-top: 23px;
+
+        svg * {
+            transition: all 0.5s;
+
+        }
+    }
+}
