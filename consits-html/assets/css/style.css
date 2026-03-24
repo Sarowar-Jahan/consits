@@ -14798,6 +14798,136 @@ section.hero-4-area {
   margin-top: 7px;
 }
 
+/* choose-2 area style  */
+.choose-2-area {
+  position: relative;
+  z-index: 1;
+  background-color: var(--black);
+  padding-bottom: 80px;
+}
+
+.choose-2-shape-1 {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+}
+
+.choose-2-content {
+  max-width: 615px;
+}
+@media only screen and (max-width: 1199px) {
+  .choose-2-content {
+    max-width: 465px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .choose-2-content {
+    max-width: 100%;
+  }
+}
+.choose-2-content .title-wrapper {
+  margin-top: 21px;
+}
+.choose-2-content .section-title {
+  color: var(--white);
+}
+
+.choose-2-feature-list {
+  max-width: 510px;
+  margin-top: 43px;
+  display: grid;
+  gap: 25px;
+}
+
+.choose-2-feature-item {
+  position: relative;
+  padding-left: 40px;
+}
+.choose-2-feature-item.active:before {
+  background-color: var(--theme);
+  opacity: 1;
+}
+.choose-2-feature-item:before {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: calc(100% - 18px);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.12;
+  background-color: var(--white);
+}
+.choose-2-feature-item .title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+.choose-2-feature-item .text {
+  color: var(--white);
+  margin-top: 15px;
+}
+
+.choose-2-thumb-wrapper {
+  position: absolute;
+  width: 43%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+@media only screen and (max-width: 991px) {
+  .choose-2-thumb-wrapper {
+    position: relative;
+    width: 100%;
+  }
+}
+.choose-2-thumb-wrapper .circle-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 190px;
+  height: 190px;
+  transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 1199px) {
+  .choose-2-thumb-wrapper .circle-text {
+    width: 140px;
+    height: 140px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .choose-2-thumb-wrapper .circle-text {
+    transform: none;
+    top: 20px;
+    left: 20px;
+  }
+}
+.choose-2-thumb-wrapper .circle-text::before {
+  width: 120px;
+  height: 120px;
+}
+@media only screen and (max-width: 1199px) {
+  .choose-2-thumb-wrapper .circle-text::before {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.choose-2-thumb {
+  width: 100%;
+  height: 100%;
+}
+.choose-2-thumb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /* testimonial css */
 /* testimonial area style  */
 .testimonial-area {
