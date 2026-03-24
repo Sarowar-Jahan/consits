@@ -10753,6 +10753,151 @@ section.hero-4-area {
   background-color: var(--theme);
 }
 
+/* team-2 area style  */
+.team-2-header {
+  text-align: center;
+}
+.team-2-header .section-subtitle {
+  justify-content: center;
+}
+.team-2-header .title-wrapper {
+  margin-top: 21px;
+}
+.team-2-header .section-title {
+  max-width: 710px;
+  margin-inline: auto;
+}
+
+.team-2-wrapper-box {
+  margin-top: 50px;
+}
+
+.team-2-wrapper {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media only screen and (max-width: 991px) {
+  .team-2-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .team-2-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.team-2-box:hover .content {
+  background-color: var(--theme);
+}
+.team-2-box .thumb {
+  border-radius: 20px;
+  margin: 0 30px;
+  position: relative;
+  overflow: hidden;
+}
+@media only screen and (max-width: 1199px) {
+  .team-2-box .thumb {
+    margin: 0 10px;
+  }
+}
+.team-2-box .thumb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team-2-box .social {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1;
+}
+@media only screen and (max-width: 1199px) {
+  .team-2-box .social {
+    bottom: 10px;
+    left: 10px;
+  }
+}
+.team-2-box .social:hover .social-link {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+}
+.team-2-box .social .social-link {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  padding: 15px 0 54px;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 50%;
+  border: 1px solid var(--theme);
+  border-radius: 20px;
+  background-color: var(--white);
+  width: 100%;
+  transform: translateX(-50%) scale(0.2);
+  transform-origin: bottom;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.team-2-box .social .social-link a {
+  color: var(--black);
+  display: inline-flex;
+}
+.team-2-box .social .social-link a:hover {
+  color: var(--theme);
+}
+.team-2-box .social .share-icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--theme);
+  color: var(--white);
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.team-2-box .content {
+  background-color: var(--black);
+  border-radius: 20px;
+  padding: 183px 30px 23px;
+  margin-top: -160px;
+  transition: all 0.5s;
+}
+.team-2-box .name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: var(--white);
+  transition: all 0.3s;
+}
+@media only screen and (max-width: 1199px) {
+  .team-2-box .name {
+    font-size: 20px;
+  }
+}
+.team-2-box .name a {
+  transition: none;
+}
+.team-2-box .name a:hover {
+  color: var(--white);
+}
+.team-2-box .post {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  display: inline-block;
+  color: var(--white);
+  margin-top: 5px;
+  transition: all 0.5s;
+}
+
 /* text-slider css */
 /* text-slider area style  */
 .text-slider-active {
