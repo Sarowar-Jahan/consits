@@ -284,13 +284,12 @@
 .testimonial-2-area {
     position: relative;
     z-index: 1;
-    padding-bottom: 93px;
 }
 
 .testimonial-2-shape-1 {
     position: absolute;
     left: 18px;
-    bottom: 0;
+    bottom: 87px;
     z-index: -1;
 
     @media #{$md} {
