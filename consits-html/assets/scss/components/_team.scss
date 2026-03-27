@@ -585,6 +585,25 @@
 }
 
 /* team-2 area style  */
+.team-2-area {
+    position: relative;
+    z-index: 1;
+}
+
+.team-2-shape-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.team-2-shape-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
 .team-2-header {
     text-align: center;
 
