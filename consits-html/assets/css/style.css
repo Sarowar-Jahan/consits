@@ -286,6 +286,10 @@ h6 {
   max-width: 1410px;
 }
 
+.ui-container-1550 {
+  max-width: 1550px;
+}
+
 .ui-container-1670 {
   max-width: 1670px;
 }
@@ -3728,7 +3732,7 @@ section {
   border-radius: 50%;
 }
 .header-social-links a:hover {
-  background-color: var(--theme);
+  background-color: var(--white);
   opacity: 0.95;
 }
 
@@ -4362,6 +4366,191 @@ section {
 }
 .header-4-contact-item .text a:hover {
   color: var(--white-2);
+}
+
+/* header-5 area style  */
+.header-5-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header-5-area .header-5-main-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  height: 100px;
+  z-index: 1;
+}
+@media only screen and (max-width: 1919px) {
+  .header-5-area .header-5-main-inner {
+    height: 90px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .header-5-area .header-5-main-inner {
+    height: 80px;
+  }
+}
+.header-5-area .header-5-main-inner:before {
+  position: absolute;
+  content: "";
+  width: 2000px;
+  height: 100%;
+  background-color: var(--theme);
+  top: 0;
+  right: calc(100% - 325px);
+  z-index: -1;
+}
+@media only screen and (max-width: 1919px) {
+  .header-5-area .header-5-main-inner:before {
+    right: calc(100% - 275px);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header-5-area .header-5-main-inner:before {
+    right: calc(100% - 225px);
+  }
+}
+.header-5-area .sticky,
+.header-5-area .transformed {
+  background-color: #FFFFFF;
+}
+.header-5-area .header-5-logo {
+  margin-right: auto;
+}
+.header-5-area .header-5-logo img {
+  width: 288px;
+}
+@media only screen and (max-width: 1919px) {
+  .header-5-area .header-5-logo img {
+    width: 248px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header-5-area .header-5-logo img {
+    width: 208px;
+  }
+}
+.header-5-area .header-5-nav {
+  margin-right: 110px;
+}
+@media only screen and (max-width: 1919px) {
+  .header-5-area .header-5-nav {
+    margin-right: 60px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .header-5-area .header-5-nav {
+    display: none;
+  }
+}
+.header-5-area .main-menu > ul {
+  display: flex;
+  gap: 30px;
+}
+@media only screen and (max-width: 1399px) {
+  .header-5-area .main-menu > ul {
+    gap: 10px;
+  }
+}
+.header-5-area .main-menu > ul > li:hover > a {
+  color: var(--black);
+  background-image: linear-gradient(180.12deg, rgba(4, 34, 62, 0.12) 0.11%, rgba(250, 94, 7, 0.52) 114.15%);
+  border-color: 3px solid #FA5E07;
+}
+.header-5-area .main-menu > ul > li > a {
+  border-top: 3px solid transparent;
+}
+.header-5-area .main-menu li a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  padding: 38px 24px;
+  background-color: transparent;
+  color: var(--black);
+}
+@media only screen and (max-width: 1919px) {
+  .header-5-area .main-menu li a {
+    padding: 33px 20px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .header-5-area .header-5-search {
+    display: none;
+  }
+}
+.header-5-area .search-box {
+  width: 60px;
+  height: 60px;
+  border: 2px dashed var(--white);
+  border-radius: 50%;
+  color: var(--white);
+  font-size: 18px;
+  background-color: var(--black);
+}
+@media only screen and (max-width: 991px) {
+  .header-5-area .header-5-btn {
+    display: none;
+  }
+}
+.header-5-area .header-5-offcanvas {
+  display: none;
+}
+@media only screen and (max-width: 1199px) {
+  .header-5-area .header-5-offcanvas {
+    display: inline-block;
+  }
+}
+.header-5-area .side-toggle {
+  width: 50px;
+  height: 50px;
+  background-color: var(--theme);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--white);
+  transition: all 0.3s;
+}
+.header-5-area .side-toggle:hover {
+  background-color: var(--action);
+  color: var(--white);
+}
+
+.header-5-top {
+  background-color: var(--black);
+}
+@media only screen and (max-width: 1199px) {
+  .header-5-top {
+    display: none;
+  }
+}
+
+.header-5-top-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  position: relative;
+  z-index: 1;
+}
+.header-5-top-inner:before {
+  position: absolute;
+  content: "";
+  width: 2000px;
+  height: 100%;
+  background-color: var(--theme);
+  top: 0;
+  left: calc(100% - 385px);
+  z-index: -1;
+  clip-path: polygon(22px 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.header-5-main {
+  background-color: var(--white);
 }
 
 /* footer css */
