@@ -1272,6 +1272,35 @@ section.hero-4-area {
 
     .btn-wrapper {
         margin-top: 34px;
+        display: flex;
+        gap: 30px 40px;
+        flex-wrap: wrap;
+    }
+
+    .video-btn-box {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        .video-btn {
+            width: 40px;
+            min-width: 40px;
+            height: 40px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--white);
+            background-color: var(--theme);
+            border-radius: 50%;
+        }
+
+        .text {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            text-transform: capitalize;
+            color: var(--white);
+        }
     }
 }
 
@@ -1297,6 +1326,7 @@ section.hero-4-area {
     height: 100%;
     top: 0;
     left: 0;
+    z-index: -1;
 
     .top-borders {
         position: absolute;
