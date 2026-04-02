@@ -8353,6 +8353,198 @@ section.hero-4-area {
   margin-top: 7px;
 }
 
+/* about-6 area style  */
+.about-6-area {
+  position: relative;
+  z-index: 1;
+}
+
+.about-6-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.about-6-bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.1;
+}
+
+.about-6-area-inner {
+  display: grid;
+  gap: 40px 50px;
+  grid-template-columns: 550px 1fr;
+  align-items: center;
+}
+
+.about-6-thumb {
+  display: inline-block;
+  position: relative;
+  padding-left: 16px;
+  padding-bottom: 16px;
+  width: -moz-max-content;
+  width: max-content;
+}
+.about-6-thumb img {
+  max-width: 535px;
+  aspect-ratio: 100/102;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.about-6-thumb .thumb-border {
+  position: absolute;
+  content: "";
+  width: 370px;
+  height: 370px;
+  border: 3px solid #FA5E07;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.about-6-content .title-wrapper {
+  margin-top: 21px;
+}
+.about-6-content .text-wrapper {
+  margin-top: 22px;
+}
+.about-6-content .text {
+  max-width: 655px;
+}
+.about-6-content .btn-wrapper {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.about-6-content .founder {
+  display: flex;
+  gap: 15px;
+}
+.about-6-content .founder .avatar {
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--theme);
+  padding: 7px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.about-6-content .founder .avatar img {
+  width: 100%;
+  border-radius: 50%;
+}
+.about-6-content .founder .name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: capitalize;
+  margin-top: 6px;
+}
+.about-6-content .founder .meta-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  display: inline-block;
+  margin-top: 5px;
+}
+.about-6-content .feature-experience-wrapper {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.about-6-content .feature-list li {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  display: flex;
+  gap: 10px;
+}
+.about-6-content .feature-list li:not(:first-child) {
+  margin-top: 12px;
+}
+.about-6-content .feature-list li:before {
+  width: 7px;
+  height: 7px;
+  background-color: var(--theme);
+  border-radius: 50%;
+  content: "";
+  margin-top: 9px;
+}
+.about-6-content .video-box {
+  width: 333px;
+  height: 138px;
+  border-radius: 100px;
+  overflow: hidden;
+  position: relative;
+}
+.about-6-content .video-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-6-content .video-box .video-btn {
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--theme);
+  background-color: var(--white);
+  border-radius: 50%;
+  position: absolute;
+}
+.about-6-content .video-box .play-btn:after,
+.about-6-content .video-box .play-btn:before {
+  border-color: var(--white);
+}
+.about-6-content .video-features-wrapper {
+  position: relative;
+  z-index: 1;
+  margin-top: 35px;
+  margin-left: -273px;
+}
+.about-6-content .video-features-wrapper .bg-shape {
+  position: absolute;
+  content: "";
+  width: calc(100% - 44px);
+  height: calc(100% + 20px);
+  background-color: var(--white);
+  border-radius: 100px;
+  top: -10px;
+  left: -10px;
+  z-index: -1;
+}
+.about-6-content .video-features-box {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  background-color: var(--smoke);
+  border-radius: 100px;
+}
+
+.about-6-experience-text-box .year {
+  font-family: var(--font_unbounded);
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 57px;
+  color: #FA5E07;
+}
+.about-6-experience-text-box .text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: -3px;
+}
+
 /* service css */
 /* service area style  */
 .service-area {
@@ -11029,10 +11221,12 @@ section.hero-4-area {
   margin-top: 23px;
 }
 .feature-3-box .title {
+  font-family: var(--font_unbounded);
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
   text-transform: capitalize;
+  color: var(--black);
   transition: all 0.5s;
 }
 .feature-3-box .text {
