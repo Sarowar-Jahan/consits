@@ -9642,6 +9642,141 @@ section.hero-4-area {
   padding-top: 25px;
 }
 
+/* service-6 area style  */
+.service-6-area {
+  position: relative;
+  z-index: 1;
+}
+
+.service-6-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.service-6-bg:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--smoke);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.service-6-bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.06;
+}
+
+.service-6-header {
+  text-align: center;
+}
+.service-6-header .section-subtitle {
+  justify-content: center;
+}
+.service-6-header .title-wrapper {
+  margin-top: 21px;
+}
+.service-6-header .section-title {
+  max-width: 830px;
+  margin-inline: auto;
+}
+
+.services-6-wrapper-box {
+  margin-top: 50px;
+}
+
+.services-6-wrapper {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media only screen and (max-width: 991px) {
+  .services-6-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .services-6-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.service-6-box:hover .icon {
+  background-color: var(--black);
+}
+.service-6-box:hover .ui-btn-dashed-border .btn-icon {
+  background-color: var(--black);
+}
+.service-6-box:hover .ui-btn-dashed-border .btn-icon:before {
+  outline-color: var(--black);
+}
+.service-6-box .thumb {
+  position: relative;
+  border-radius: 10px 10px 30px 30px;
+  overflow: hidden;
+}
+.service-6-box .thumb img {
+  width: 100%;
+}
+.service-6-box .icon {
+  width: 70px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--theme);
+  border-radius: 0 0 30px 30px;
+  position: absolute;
+  left: 20px;
+  top: 0;
+  transition: all 0.3s;
+}
+.service-6-box .icon img {
+  width: 40px;
+}
+.service-6-box .content {
+  background-color: var(--white);
+  margin-inline: 20px;
+  margin-top: -85px;
+  position: relative;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+  border-radius: 10px 10px 80px 80px;
+  padding: 23px 20px 46px;
+  text-align: center;
+}
+.service-6-box .title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+  text-transform: capitalize;
+}
+.service-6-box .text {
+  margin-top: 15px;
+}
+.service-6-box .btn-wrapper {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.service-6-box .ui-btn-dashed-border .btn-icon {
+  width: 40px;
+  height: 40px;
+}
+.service-6-box .ui-btn-dashed-border .btn-icon:before {
+  width: 110%;
+  height: 110%;
+  top: -5%;
+  left: -5%;
+}
+
 /* counter css */
 /* counter area style  */
 .counter-area {
