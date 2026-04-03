@@ -1336,13 +1336,22 @@
         text-align: center;
         margin-bottom: 20px;
 
+        @media #{$lg} {
+            margin-inline: 10px;
+            padding: 23px 10px 46px;
+        }
+
     }
 
     .title {
         font-weight: 600;
         font-size: 22px;
-        line-height: 32px;
+        line-height: 1.45;
         text-transform: capitalize;
+
+        @media #{$lg} {
+            font-size: 18px;
+        }
     }
 
     .text {
@@ -1391,10 +1400,18 @@
         padding: 13px 19px 15px;
         color: var(--primary);
         border-radius: 30px 0 0 30px;
+
+        @media #{$sm} {
+            border-radius: 30px 30px 30px 30px;
+        }
     }
 
     .ui-btn {
         padding: 18px 31px;
         border-radius: 0 30px 30px 0;
+
+        @media #{$sm} {
+            border-radius: 30px 30px 30px 30px;
+        }
     }
 }
