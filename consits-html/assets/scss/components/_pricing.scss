@@ -1253,9 +1253,28 @@
 }
 
 /* pricing-5 area style  */
+.pricing-5-area {
+    position: relative;
+    z-index: 1;
+}
+
+.pricing-5-bg {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        opacity: 0.05;
+    }
+}
+
 .pricing-5-header {
-
-
     .title-wrapper {
         margin-top: 21px;
     }
