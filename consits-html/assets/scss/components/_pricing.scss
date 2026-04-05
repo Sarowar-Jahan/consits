@@ -1387,6 +1387,10 @@
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
     position: relative;
 
+    @media #{$md} {
+        padding: 26px 18px 28px;
+    }
+
 
     &.popular {
         background-color: var(--black);
@@ -1438,6 +1442,11 @@
         position: absolute;
         right: 32px;
         top: 38px;
+
+        @media #{$md} {
+            right: 22px;
+            top: 28px;
+        }
     }
 
     .text {

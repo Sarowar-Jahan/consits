@@ -132,6 +132,18 @@
         margin-left: 5px;
         transition: all 0.3s;
 
+        @media #{$xxl} {
+            font-size: 56px;
+            gap: 30px;
+
+        }
+
+        @media #{$lg} {
+            font-size: 46px;
+            gap: 20px;
+
+        }
+
         &.st-width-1 {
             -webkit-text-stroke-width: 1px;
         }

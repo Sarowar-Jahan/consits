@@ -12217,6 +12217,18 @@ section.hero-4-area {
   margin-left: 5px;
   transition: all 0.3s;
 }
+@media only screen and (max-width: 1919px) {
+  .text-slider-4-item .title {
+    font-size: 56px;
+    gap: 30px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .text-slider-4-item .title {
+    font-size: 46px;
+    gap: 20px;
+  }
+}
 .text-slider-4-item .title.st-width-1 {
   -webkit-text-stroke-width: 1px;
 }
@@ -14168,11 +14180,342 @@ section.hero-4-area {
   font-size: 16px;
 }
 .main-contact-wrap .contact-formfield .nice-select:after {
-  display: none;
+  width: 7px;
+  height: 7px;
+  border-color: var(--black);
+  right: 32px;
 }
 .main-contact-wrap .submit-btn {
   margin-top: 32px;
   text-align: center;
+}
+
+/* contact-2-area style */
+.contact-2-area {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-2-bg {
+  position: absolute;
+  width: 100%;
+  height: 660px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.contact-2-bg:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--black);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.contact-2-bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.2;
+}
+
+.contact-2-header {
+  display: grid;
+  gap: 30px 60px;
+  grid-template-columns: 1fr auto;
+  align-items: flex-end;
+}
+@media only screen and (max-width: 991px) {
+  .contact-2-header {
+    grid-template-columns: 1fr;
+  }
+}
+.contact-2-header .title-wrapper {
+  margin-top: 21px;
+}
+.contact-2-header .section-title {
+  color: var(--white);
+}
+.contact-2-header .text-wrapper {
+  margin-bottom: 5px;
+}
+.contact-2-header .text {
+  color: var(--white);
+  max-width: 360px;
+}
+
+.contact-2-form-wrapper-box {
+  margin-top: 52px;
+}
+
+.contact-2-form-wrapper {
+  background-color: var(--white);
+  padding: 54px 44px 60px;
+  border-radius: 20px;
+  margin-inline: -44px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+}
+@media only screen and (max-width: 1199px) {
+  .contact-2-form-wrapper {
+    padding: 34px 24px 30px;
+    margin-inline: -24px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contact-2-form-wrapper {
+    margin-inline: 0px;
+  }
+}
+
+.contact-2-form-map {
+  display: grid;
+  gap: 40px 65px;
+  grid-template-columns: 690px 1fr;
+}
+
+.contact-2-wrap {
+  padding: 33px 39px 39px;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+}
+.contact-2-wrap .title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: capitalize;
+}
+.contact-2-wrap .contact-formwrap {
+  display: grid;
+  gap: 24px 24px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .contact-2-wrap .contact-formwrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.contact-2-wrap .contact-formwrap .span-2 {
+  grid-column: span 2;
+}
+@media only screen and (max-width: 767px) {
+  .contact-2-wrap .contact-formwrap .span-2 {
+    grid-column: auto;
+  }
+}
+.contact-2-wrap .contact-formfield input {
+  width: 100%;
+  outline: none;
+  color: var(--black);
+  transition: all 0.5s;
+  background: var(--white);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  height: 60px;
+  padding: 0 24px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+.contact-2-wrap .contact-formfield input:focus {
+  border-color: var(--theme);
+}
+.contact-2-wrap .contact-formfield input::-moz-placeholder {
+  color: var(--secondary);
+}
+.contact-2-wrap .contact-formfield input::placeholder {
+  color: var(--secondary);
+}
+.contact-2-wrap .contact-formfield select {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: var(--secondary);
+  transition: all 0.5s;
+  background: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid var(--border);
+}
+.contact-2-wrap .contact-formfield select:focus {
+  background-color: none;
+}
+.contact-2-wrap .contact-formfield select::-moz-placeholder {
+  color: var(--secondary);
+}
+.contact-2-wrap .contact-formfield select::placeholder {
+  color: var(--secondary);
+}
+.contact-2-wrap .contact-formfield .nice-select {
+  height: 60px;
+  width: 100%;
+  padding: 17px 0;
+  border: 1px solid var(--border);
+  background: var(--white);
+  border-radius: 10px;
+}
+.contact-2-wrap .contact-formfield .nice-select .current {
+  height: 60px;
+  display: block;
+  color: var(--secondary);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 0 24px;
+}
+.contact-2-wrap .contact-formfield .nice-select .option {
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  color: var(--black);
+  font-weight: 500;
+  font-size: 16px;
+}
+.contact-2-wrap .contact-formfield .nice-select:after {
+  width: 7px;
+  height: 7px;
+  border-color: var(--black);
+  right: 24px;
+}
+.contact-2-wrap .submit-btn {
+  margin-top: 32px;
+  text-align: center;
+}
+.contact-2-wrap .ui-btn {
+  width: 100%;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.contact-2-wrap .product-category {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+.contact-2-wrap .radio-box {
+  display: block;
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 0;
+  cursor: pointer;
+  font-family: var(--font_unbounded);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--black);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.contact-2-wrap .radio-box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.contact-2-wrap .radio-box input:checked ~ .checkmark {
+  background-color: var(--theme);
+}
+.contact-2-wrap .radio-box input:checked ~ .checkmark:after {
+  display: block;
+}
+.contact-2-wrap .radio-box:hover input ~ .checkmark {
+  background-color: var(--theme);
+}
+.contact-2-wrap .radio-box .checkmark:after {
+  top: 0px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--theme);
+}
+.contact-2-wrap .checkmark {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: var(--white);
+  border: 3px solid var(--theme);
+  border-radius: 50%;
+}
+.contact-2-wrap .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.contact-2-map-box iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  border-radius: 15px;
+}
+
+.contact-2-meta-box {
+  position: relative;
+  margin-top: 60px;
+  display: flex;
+  gap: 30px 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-2-meta-item {
+  display: flex;
+  gap: 10px 15px;
+  align-items: center;
+}
+.contact-2-meta-item .icon {
+  width: 63px;
+  height: 63px;
+  border: 1px solid rgba(30, 32, 35, 0.1);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+.contact-2-meta-item .icon:before {
+  position: absolute;
+  content: "";
+  width: 39px;
+  height: 39px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
+  z-index: -1;
+}
+.contact-2-meta-item .text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+.contact-2-meta-item .contact {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: var(--black);
+  margin-top: 3px;
+}
+@media only screen and (max-width: 767px) {
+  .contact-2-meta-item .contact {
+    font-size: 16px;
+  }
+}
+.contact-2-meta-item .contact a:hover {
+  color: var(--theme);
 }
 
 /* error css */
@@ -15744,6 +16087,11 @@ section.hero-4-area {
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
   position: relative;
 }
+@media only screen and (max-width: 991px) {
+  .pricing-5-box {
+    padding: 26px 18px 28px;
+  }
+}
 .pricing-5-box.popular {
   background-color: var(--black);
   border-color: transparent;
@@ -15776,6 +16124,12 @@ section.hero-4-area {
   position: absolute;
   right: 32px;
   top: 38px;
+}
+@media only screen and (max-width: 991px) {
+  .pricing-5-box .title {
+    right: 22px;
+    top: 28px;
+  }
 }
 .pricing-5-box .text {
   font-weight: 500;
