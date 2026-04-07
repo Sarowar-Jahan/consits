@@ -893,7 +893,42 @@
     });
   }
 
-
+  // blog-7 slider
+  if (('.blog-7-slider').length) {
+    var blog_7_slider = new Swiper(".blog-7-slider", {
+      loop: true,
+      autoplay: {
+        delay: 222000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 1,
+      spaceBetween: 30,
+      speed: 1800,
+      watchSlidesProgress: true,
+      navigation: {
+        prevEl: ".blog-7-button-prev",
+        nextEl: ".blog-7-button-next",
+      },
+      breakpoints: {
+        // when window width is >= px
+        576: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 2,
+        },
+        1201: {
+          slidesPerView: 3,
+        },
+        1367: {
+          slidesPerView: 3,
+        },
+      }
+    });
+  }
 
 
 })(jQuery);

@@ -1296,15 +1296,28 @@
     position: relative;
     padding-bottom: 18px;
 
-    &:after {
+    .bottom-borders {
+        display: flex;
+        gap: 5px;
         position: absolute;
-        content: "";
-        width: 92px;
-        height: 3px;
-        left: 0;
         bottom: 0;
-        background: linear-gradient(90deg, #FA5E07 45.67%, rgba(148, 56, 4, 0.5) 100%);
-        border-radius: 2px;
+        left: 0;
+
+        .line {
+            width: 17px;
+            height: 2px;
+            background-color: var(--theme);
+
+            &:nth-child(1) {
+                width: 10px;
+                background-color: var(--white);
+            }
+
+            &:nth-child(3) {
+                width: 44px;
+                background-color: var(--white);
+            }
+        }
     }
 }
 
@@ -1688,10 +1701,11 @@
 
     .text {
         font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
+        font-size: 18px;
+        line-height: 30px;
+        text-transform: capitalize;
         color: var(--white);
-        margin-top: 17px;
+        margin-top: 15px;
     }
 }
 
@@ -1808,15 +1822,28 @@
         font-size: 20px;
     }
 
-    &:after {
+    .bottom-borders {
+        display: flex;
+        gap: 5px;
         position: absolute;
-        content: "";
-        width: 92px;
-        height: 3px;
-        left: 0;
         bottom: 0;
-        background: linear-gradient(90deg, #FA5E07 45.67%, rgba(148, 56, 4, 0.5) 100%);
-        border-radius: 2px;
+        left: 0;
+
+        .line {
+            width: 17px;
+            height: 2px;
+            background-color: var(--theme);
+
+            &:nth-child(1) {
+                width: 10px;
+                background-color: var(--white);
+            }
+
+            &:nth-child(3) {
+                width: 44px;
+                background-color: var(--white);
+            }
+        }
     }
 }
 
@@ -1937,11 +1964,8 @@
 }
 
 .footer-5-newsletter-form {
-    margin-top: 17px;
+    margin-top: 21px;
 
-    @media #{$md} {
-        margin-top: 0;
-    }
 }
 
 .footer-5-subscribe-form {
