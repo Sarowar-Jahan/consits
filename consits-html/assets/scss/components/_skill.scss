@@ -1,6 +1,6 @@
 /* skill css */
 /* skill area style  */
-.skills-area-inner.section-spacing {
+.skills-area-inner {
     display: grid;
     gap: 40px 80px;
     grid-template-columns: 1fr 624px;
@@ -167,5 +167,178 @@
         writing-mode: sideways-lr;
         bottom: 23px;
         right: 27px;
+    }
+}
+
+
+/* skills-2-area style */
+.skills-2-area {
+    position: relative;
+    z-index: 1;
+}
+
+.skills-2-bg {
+    position: absolute;
+    width: 100%;
+    height: 734px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    &:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: var(--smoke);
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.skill-2-header {
+    text-align: center;
+
+    .section-subtitle {
+        justify-content: center;
+    }
+
+    .title-wrapper {
+        margin-top: 21px;
+    }
+
+    .section-title {
+        max-width: 800px;
+        margin-inline: auto;
+    }
+
+    .text-wrapper {
+        margin-top: 12px;
+    }
+
+    .text {
+        max-width: 700px;
+        margin-inline: auto;
+    }
+}
+
+.skill-2-content-box {
+    margin-top: 54px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 100px rgba(0, 0, 0, 0.08);
+    border-radius: 30px;
+    padding: 60px 60px;
+    display: grid;
+    gap: 40px 60px;
+    grid-template-columns: 540px auto;
+}
+
+.skill-2-thumb {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .video-btn {
+        width: 60px;
+        min-width: 60px;
+        height: 60px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--white);
+        background-color: var(--theme);
+        border-radius: 50%;
+        position: absolute;
+        border: 1px solid var(--white);
+    }
+
+    .play-btn:after,
+    .play-btn:before {
+        border-color: var(--white);
+    }
+}
+
+.skill-2-content {
+    margin-top: -8px;
+
+    .title {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 1.28;
+        text-transform: capitalize;
+    }
+
+    .text-wrapper {
+        margin-top: 13px;
+    }
+
+    .text {
+        &:not(:first-child) {
+            margin-top: 25px;
+        }
+    }
+
+    .progress-wrapper-box {
+        margin-top: 25px;
+    }
+
+    .progress-wrapper {
+        display: grid;
+        gap: 21px;
+    }
+
+
+    .progress-box {
+        .progress-title {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px;
+            position: relative;
+
+            .progress-category {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 30px;
+                display: inline-block;
+                color: var(--black);
+            }
+
+            .value {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 30px;
+                color: var(--black);
+                display: inline-block;
+            }
+        }
+
+
+        .progress {
+            height: 6px;
+            background-color: rgba(2, 2, 2, 0.15);
+            border-radius: 3px;
+        }
+
+        .progress-bar {
+            background-color: var(--theme);
+            border-radius: 3px;
+        }
+    }
+
+    .btn-wrapper {
+        margin-top: 40px;
     }
 }
