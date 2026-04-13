@@ -930,6 +930,11 @@
     });
   }
 
+  // service-7 hover active 
+  $('.service-7-hover-active .service-7-box').on("mouseover", function () {
+    $(this).addClass('active').siblings().removeClass('active');
+  });
+
 
 })(jQuery);
 
