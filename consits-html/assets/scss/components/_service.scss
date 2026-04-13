@@ -1448,8 +1448,17 @@
 
 .service-7-box {
     border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
+    padding-bottom: 0px;
+    transition: all 0.5s;
+
 
     &.active {
+        padding-bottom: 60px;
+
+        .header {
+            margin-bottom: 60px;
+        }
+
         .icon {
             img {
                 transform: rotate(90deg);
@@ -1467,6 +1476,8 @@
         gap: 20px 30px;
         grid-template-columns: 65px 1fr auto;
         align-items: flex-start;
+        margin-bottom: 0;
+        transition: all 0.5s;
     }
 
     .number {
@@ -1497,8 +1508,6 @@
         display: grid;
         gap: 20px 43px;
         grid-template-columns: 145px 1fr 425px;
-        margin-top: 60px;
-        margin-bottom: 60px;
         margin-right: 175px;
         height: 0px;
         transition: all 0.5s;
