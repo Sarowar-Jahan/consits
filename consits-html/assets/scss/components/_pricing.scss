@@ -1531,3 +1531,243 @@
 
 
 }
+
+/* pricing-6 area style  */
+.pricing-6-area {
+    position: relative;
+    z-index: 1;
+    background-color: var(--smoke);
+}
+
+.pricing-6-bg {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        opacity: 0.05;
+    }
+}
+
+.pricing-6-inner {
+    position: relative;
+    z-index: 1;
+}
+
+.pricing-6-lines {
+    position: absolute;
+    width: calc(100% + 240px);
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: -1;
+
+    .line {
+        opacity: 0.15;
+        border-right: 1px dashed #444444;
+        height: 100%;
+    }
+}
+
+.pricing-6-header {
+    text-align: center;
+
+    .section-subtitle {
+        justify-content: center;
+    }
+
+    .title-wrapper {
+        margin-top: 21px;
+    }
+
+    .section-title {
+        max-width: 725px;
+        margin-inline: auto;
+    }
+}
+
+.pricing-6-wrapper-box {
+    margin-top: 50px;
+}
+
+.pricing-6-wrapper {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-start;
+
+    @media #{$lg} {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    @media #{$sm} {
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+.pricing-6-box {
+    background-color: var(--white);
+    border: 3px solid var(--theme);
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 30px;
+
+
+    &.popular {
+        border-color: var(--black);
+
+        .title-box {
+            background-color: var(--theme);
+            --shadow-color: var(--black);
+        }
+
+        .plan-info {
+            color: var(--white);
+        }
+
+        .ui-btn {
+            background-color: var(--black);
+            border-color: transparent;
+
+
+        }
+    }
+
+    .title-box {
+        background-color: var(--black);
+        border-radius: 17px;
+        --shadow-color: var(--theme);
+        box-shadow: 0 9px 0px var(--shadow-color);
+        padding: 30px 30px 21px;
+    }
+
+    .title {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1.2;
+        text-transform: capitalize;
+        color: var(--white);
+    }
+
+    .plan-info {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: var(--theme);
+        margin-top: 5px;
+    }
+
+    .box-price {
+        margin-top: 13px;
+        display: flex;
+        align-items: flex-end;
+        gap: 5px;
+
+        .text {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 7px;
+            color: var(--white);
+        }
+
+    }
+
+    .price {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 1.14;
+        color: var(--white);
+
+        @media #{$lg} {
+            font-size: 36px;
+        }
+
+
+    }
+
+    .feature-list {
+        margin: 35px 30px;
+
+        li {
+            display: flex;
+            gap: 10px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            color: var(--black);
+
+            &:not(:first-child) {
+                margin-top: 10px;
+            }
+
+            &.void {
+                color: var(--secondary);
+            }
+
+            .icon {
+                margin-top: -3px;
+            }
+        }
+    }
+
+    .content-separator-line {
+        display: grid;
+        gap: 2px;
+        margin: 0 30px;
+
+        .line {
+            width: 100%;
+            height: 1px;
+            background-color: rgba(252, 82, 32, 0.1);
+        }
+    }
+
+    .meta-wrapper {
+        margin: 25px 30px 0;
+        display: flex;
+        gap: 20px 30px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .note {
+        font-family: var(--font_unbounded);
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: var(--black);
+    }
+
+
+    .rating {
+        display: flex;
+        gap: 2px;
+
+        i {
+            color: var(--theme);
+            font-size: 14px;
+        }
+    }
+
+    .btn-wrapper {
+        margin-top: 36px;
+        margin-bottom: -33px;
+        margin-inline: 30px;
+    }
+
+
+}

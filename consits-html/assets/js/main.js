@@ -874,6 +874,25 @@
     });
   }
 
+  // testimonial-3 slider
+  if (('.testimonial-3-slider').length) {
+    var testimonial_3_slider = new Swiper(".testimonial-3-slider", {
+      loop: true,
+      autoplay: {
+        delay: 222000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 1,
+      spaceBetween: 30,
+      speed: 1800,
+      watchSlidesProgress: true,
+      navigation: {
+        prevEl: ".testimonial-3-button-prev",
+        nextEl: ".testimonial-3-button-next",
+      },
+    });
+  }
+
   // hero-6 slider
   if (('.hero-6-slider').length) {
     var hero_6_slider = new Swiper(".hero-6-slider", {

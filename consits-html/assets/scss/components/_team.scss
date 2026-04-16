@@ -776,9 +776,28 @@
 }
 
 /* team-3 area style  */
+.team-3-area-inner {
+    position: relative;
+    z-index: 1;
+}
 
+.team-3-lines {
+    position: absolute;
+    width: calc(100% + 240px);
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: -1;
 
-
+    .line {
+        opacity: 0.15;
+        border-right: 1px dashed #444444;
+        height: 100%;
+    }
+}
 
 .team-3-header {
     text-align: center;
