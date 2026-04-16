@@ -12318,6 +12318,153 @@ section.hero-4-area {
   border-radius: 50%;
 }
 
+/* project-5 area style  */
+.project-5-area {
+  position: relative;
+  z-index: 1;
+}
+
+.project-5-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.project-5-lines {
+  position: absolute;
+  width: calc(100% + 240px);
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  z-index: -1;
+}
+.project-5-lines .line {
+  opacity: 0.15;
+  border-right: 1px dashed #444444;
+  height: 100%;
+}
+
+.project-5-header {
+  display: grid;
+  gap: 30px 60px;
+  grid-template-columns: 1fr auto;
+  align-items: flex-end;
+}
+@media only screen and (max-width: 991px) {
+  .project-5-header {
+    grid-template-columns: 1fr;
+  }
+}
+.project-5-header .title-wrapper {
+  margin-top: 21px;
+}
+.project-5-header .section-title {
+  max-width: 770px;
+}
+.project-5-header .btn-wrapper {
+  margin-bottom: 10px;
+}
+
+.projects-5-wrapper-box {
+  margin-top: 50px;
+}
+
+.projects-5-wrapper .swiper {
+  overflow: visible;
+}
+.projects-5-wrapper .swiper-pagination-progressbar {
+  max-width: 643px;
+  position: relative;
+  margin-top: 60px;
+  margin-inline: auto;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--smoke);
+}
+.projects-5-wrapper .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: var(--theme);
+  border-radius: 3px;
+}
+
+.project-5-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.project-5-box:hover .content {
+  background-color: var(--black);
+  border-color: var(--theme);
+}
+.project-5-box .thumb {
+  position: relative;
+}
+.project-5-box .thumb :after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #020202;
+  opacity: 0.25;
+}
+.project-5-box .thumb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.project-5-box .content-wrapper {
+  margin-inline: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.project-5-box .content {
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 2px solid #FFFFFF;
+  backdrop-filter: blur(5px);
+  border-radius: 20px 20px 0px 0px;
+  padding: 20px 30px 25px;
+  transition: all 0.5s;
+}
+.project-5-box .category {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FA5E07;
+  display: inline-block;
+}
+.project-5-box .title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-top: 7px;
+}
+.project-5-box .title a:hover {
+  color: var(--white);
+}
+.project-5-box .view-details {
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  background-color: var(--theme);
+  border-radius: 50%;
+}
+.project-5-box .btn-wrapper {
+  position: absolute;
+  right: 30px;
+  z-index: 1;
+  top: -30px;
+}
+
 /* feature css */
 /* feature area style  */
 .feature-area {
