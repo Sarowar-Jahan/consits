@@ -155,3 +155,59 @@
         }
     }
 }
+
+/* text-slider-5 area style  */
+.text-slider-5-wrapper-box {
+    margin-top: 46px;
+    margin-bottom: 46px;
+
+    @media #{$lg} {
+        margin-top: 26px;
+        margin-bottom: 26px;
+    }
+}
+
+.text-slider-5-active {
+
+    .swiper-wrapper {
+        transition-timing-function: linear !important;
+    }
+
+    .swiper-slide {
+        width: auto;
+    }
+}
+
+.text-slider-5-item {
+    .title {
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 0.83;
+        color: var(--white);
+        margin-left: 2rem;
+
+        @media #{$xxl} {
+            font-size: 76px;
+        }
+
+        @media #{$xl} {
+            font-size: 66px;
+        }
+
+        @media #{$lg} {
+            font-size: 56px;
+        }
+
+        @media #{$md} {
+            font-size: 46px;
+        }
+
+        @media #{$sm} {
+            font-size: 32px;
+        }
+
+        @media #{$xs} {
+            font-size: 28px;
+        }
+    }
+}

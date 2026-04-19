@@ -759,6 +759,21 @@
     });
   }
 
+  // text-slider-5 active 
+  if (document.querySelectorAll(".text-slider-5-active").length > 0) {
+    var text_slider_5_active = new Swiper(".text-slider-5-active", {
+      slidesPerView: 'auto',
+      loop: true,
+      autoplay: true,
+      spaceBetween: 0,
+      speed: 20000,
+      allowTouchMove: false,
+      autoplay: {
+        delay: 1,
+      },
+    });
+  }
+
   // price tab switcher
   const toggle_switcher = function () {
     let $scope = $(".ui-toggle_switcher");
