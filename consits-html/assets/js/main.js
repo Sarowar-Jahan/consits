@@ -935,14 +935,22 @@
   if (('.testimonial-3-slider').length) {
     var testimonial_3_slider = new Swiper(".testimonial-3-slider", {
       loop: true,
+      effect: "fade",
+      fadeEffect: {
+        crossFade: true,
+      },
       autoplay: {
         delay: 222000,
         disableOnInteraction: false,
       },
       slidesPerView: 1,
       spaceBetween: 30,
-      speed: 1800,
+      speed: 1000,
       watchSlidesProgress: true,
+      pagination: {
+        el: ".testimonial-3-pagination",
+        clickable: true,
+      },
       navigation: {
         prevEl: ".testimonial-3-button-prev",
         nextEl: ".testimonial-3-button-next",

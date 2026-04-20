@@ -8827,6 +8827,41 @@ section.hero-4-area {
   overflow: hidden;
 }
 
+.brand-3-lines-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--smoke);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.brand-3-lines-wrapper .container {
+  height: 100%;
+}
+
+.brand-3-lines-inner {
+  position: relative;
+  height: 100%;
+}
+
+.brand-3-lines {
+  position: absolute;
+  width: calc(100% + 240px);
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  z-index: -1;
+}
+.brand-3-lines .line {
+  opacity: 0.15;
+  border-right: 1px dashed var(--black);
+  height: 100%;
+}
+
 .brand-3-area-bg {
   position: absolute;
   width: 100%;
@@ -20760,6 +20795,160 @@ section.hero-4-area {
 }
 .testimonial-2-item .icon svg * {
   transition: all 0.5s;
+}
+
+/* testimonial-3 area style  */
+.testimonial-3-wrapper {
+  position: relative;
+  z-index: 1;
+  background-color: var(--black);
+  border-top: 4px solid var(--theme);
+  border-bottom: 4px solid var(--theme);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.testimonial-3-wrapper:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: radial-gradient(63.06% 485.66% at 63.06% 45.17%, #0E2141 12.98%, rgba(13, 33, 68, 0) 96.15%);
+  z-index: 1;
+}
+
+.testimonial-3-shape-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.testimonial-3-shape-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.testimonial-3-slider .swiper-wrapper {
+  align-items: flex-end;
+}
+
+.testimonial-3-item {
+  position: relative;
+  padding: 76px 80px 64px;
+}
+.testimonial-3-item .content {
+  max-width: 680px;
+}
+.testimonial-3-item .icon-wrapper {
+  border: 2px dashed var(--theme);
+  border-radius: 50%;
+  padding: 4px;
+  display: inline-block;
+}
+.testimonial-3-item .icon {
+  width: 82px;
+  height: 82px;
+  background-color: var(--theme);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-3-item .icon img {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+}
+.testimonial-3-item .text {
+  font-family: var(--font_unbounded);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+.testimonial-3-item .text-wrapper {
+  margin-top: 44px;
+}
+.testimonial-3-item .meta {
+  margin-top: 19px;
+}
+.testimonial-3-item .name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+.testimonial-3-item .name:before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 4px;
+  background: #FA5E07;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.testimonial-3-item .post {
+  display: inline-block;
+  margin-top: 5px;
+  color: #FA5E07;
+}
+.testimonial-3-item .author {
+  position: absolute;
+  right: 113px;
+  bottom: 0;
+  z-index: -1;
+}
+.testimonial-3-item .author:before {
+  position: absolute;
+  content: "";
+  width: 287px;
+  height: 287px;
+  left: 75px;
+  top: 84px;
+  background: #FA5E07;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  z-index: -1;
+  outline: 30px solid rgba(250, 94, 7, 0.3);
+}
+
+.testimonial-3-paginations {
+  position: absolute;
+  right: -65px;
+  z-index: 1;
+  top: 50%;
+  transform: translateX(-50%) rotate(90deg);
+}
+.testimonial-3-paginations .slider-active-paginations-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.testimonial-3-paginations .swiper-pagination-bullets {
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+}
+.testimonial-3-paginations .swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 36px;
+  height: 8px;
+  background-color: transparent;
+  border: 2px solid var(--white);
+  border-radius: 30px;
+  margin: 0 !important;
+  opacity: 1;
+}
+.testimonial-3-paginations .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+  border-color: var(--theme);
+  background-color: var(--theme);
 }
 
 /* cta css */
