@@ -1400,3 +1400,129 @@
         margin-top: 5px;
     }
 }
+
+/* about-8 area style  */
+.about-8-content {
+    display: grid;
+    gap: 30px 60px;
+    grid-template-columns: 1fr 740px;
+
+    @media #{$md} {
+        grid-template-columns: 1fr;
+    }
+
+    .founder-info {
+        margin-top: 80px;
+
+        .text-wrapper {
+            margin-top: 12px;
+        }
+
+        .text {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            max-width: 293px;
+        }
+
+
+        .meta {
+            margin-top: 6px;
+        }
+
+        .name {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 26px;
+            text-transform: capitalize;
+        }
+
+
+        .post {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            margin-top: 3px;
+            display: inline-flex;
+        }
+    }
+
+    .about-8-title {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        text-transform: capitalize;
+    }
+
+    .text-wrapper {
+        margin-top: 24px;
+    }
+
+    .btn-wrapper {
+        margin-top: 34px;
+    }
+}
+
+.about-8-counter-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    margin-top: 90px;
+
+    @media #{$xs} {
+        grid-template-columns: auto;
+
+    }
+}
+
+.about-8-counter-box {
+    position: relative;
+
+    &:nth-child(1) {
+        &:before {
+            display: none;
+        }
+    }
+
+    &:before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 47px;
+        background-color: var(--secondary);
+        left: -64px;
+        top: 22px;
+        opacity: 0.20;
+
+        @media #{$xs} {
+            display: none;
+        }
+    }
+
+    .number {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 1.28;
+        color: var(--black);
+
+        .odometer.odometer-auto-theme,
+        .odometer.odometer-theme-default {
+            font-family: var(--font_unbounded);
+            line-height: 1.28;
+            display: inline-flex;
+            vertical-align: baseline;
+        }
+
+        .odometer-inside {
+            display: inline-flex;
+        }
+    }
+
+    .text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        text-transform: capitalize;
+        margin-top: 3px;
+    }
+}
