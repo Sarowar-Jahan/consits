@@ -12026,6 +12026,81 @@ section.hero-4-area {
   color: var(--white);
 }
 
+/* service-8 area style  */
+.service-8-area {
+  background-color: var(--smoke);
+}
+
+.service-8-header {
+  text-align: center;
+}
+.service-8-header .section-subtitle {
+  justify-content: center;
+}
+.service-8-header .title-wrapper {
+  margin-top: 21px;
+}
+.service-8-header .section-title {
+  max-width: 740px;
+  margin-inline: auto;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 1399px) {
+  .service-8-header .section-title {
+    max-width: 640px;
+  }
+}
+
+.service-8-wrapper-box {
+  margin-top: 45px;
+}
+
+.service-8-box {
+  display: grid;
+  gap: 40px 60px;
+  grid-template-columns: 600px 544px;
+  align-items: center;
+  justify-content: space-between;
+}
+.service-8-box .text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+.service-8-box .info-wrapper {
+  margin-top: 46px;
+  display: grid;
+  gap: 50px 80px;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+}
+.service-8-box .house-info-box {
+  display: grid;
+  gap: 15px;
+}
+.service-8-box .meta-info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(68, 68, 68, 0.2);
+}
+.service-8-box .meta-info .category {
+  font-family: var(--font_unbounded);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #020202;
+}
+.service-8-box .meta-info .number {
+  font-family: var(--font_unbounded);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #020202;
+}
+
 /* counter css */
 /* counter area style  */
 .counter-area {
