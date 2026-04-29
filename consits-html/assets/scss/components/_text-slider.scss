@@ -211,3 +211,50 @@
         }
     }
 }
+
+
+/* text-slider-6 area style  */
+.text-slider-6-active {
+
+    .swiper-wrapper {
+        transition-timing-function: linear !important;
+    }
+
+    .swiper-slide {
+        width: auto;
+    }
+}
+
+.text-slider-6-item {
+    .title {
+        font-weight: 700;
+        font-size: 124px;
+        line-height: 0.8;
+        text-transform: uppercase;
+        color: var(--white);
+
+        @media #{$xxl} {
+            font-size: 76px;
+        }
+
+        @media #{$xl} {
+            font-size: 66px;
+        }
+
+        @media #{$lg} {
+            font-size: 56px;
+        }
+
+        @media #{$md} {
+            font-size: 46px;
+        }
+
+        @media #{$sm} {
+            font-size: 32px;
+        }
+
+        @media #{$xs} {
+            font-size: 28px;
+        }
+    }
+}

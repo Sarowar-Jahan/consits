@@ -1631,17 +1631,8 @@ section.hero-4-area {
     transform: translateX(-50%);
 }
 
-.hero-9-title {
-    font-weight: 700;
-    font-size: 124px;
-    line-height: 0.74;
-    text-transform: capitalize;
-    color: #FFFFFF;
-    white-space: nowrap;
-}
-
 .hero-9-social-links {
-    margin-top: 151px;
+    margin-top: 146px;
     display: inline-flex;
     flex-direction: column;
     gap: 3px;
@@ -1651,20 +1642,42 @@ section.hero-4-area {
         font-weight: 500;
         font-size: 18px;
         line-height: 30px;
-        text-decoration-line: underline;
+
         text-transform: capitalize;
         color: #FFFFFF;
-        text-underline-offset: 3px;
-        text-decoration-color: transparent;
+        position: relative;
+
+        .short {
+            transition: all 0.3s;
+
+        }
+
+        .hover-text {
+            text-decoration-line: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: var(--white);
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: all 0.3s;
+        }
 
         &:hover {
-            text-decoration-color: var(--white);
+
+            .short {
+                opacity: 0;
+            }
+
+            .hover-text {
+                opacity: 1;
+            }
         }
     }
 }
 
 .hero-9-content {
-    padding-top: 294px;
+    padding-top: 291px;
     padding-bottom: 324px;
 
     .circle-text {

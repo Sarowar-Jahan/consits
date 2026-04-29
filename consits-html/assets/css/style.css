@@ -9237,17 +9237,8 @@ section.hero-4-area {
   transform: translateX(-50%);
 }
 
-.hero-9-title {
-  font-weight: 700;
-  font-size: 124px;
-  line-height: 0.74;
-  text-transform: capitalize;
-  color: #FFFFFF;
-  white-space: nowrap;
-}
-
 .hero-9-social-links {
-  margin-top: 151px;
+  margin-top: 146px;
   display: inline-flex;
   flex-direction: column;
   gap: 3px;
@@ -9257,18 +9248,32 @@ section.hero-4-area {
   font-weight: 500;
   font-size: 18px;
   line-height: 30px;
-  text-decoration-line: underline;
   text-transform: capitalize;
   color: #FFFFFF;
-  text-underline-offset: 3px;
-  text-decoration-color: transparent;
+  position: relative;
 }
-.hero-9-social-links a:hover {
+.hero-9-social-links a .short {
+  transition: all 0.3s;
+}
+.hero-9-social-links a .hover-text {
+  text-decoration-line: underline;
+  text-underline-offset: 3px;
   text-decoration-color: var(--white);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.hero-9-social-links a:hover .short {
+  opacity: 0;
+}
+.hero-9-social-links a:hover .hover-text {
+  opacity: 1;
 }
 
 .hero-9-content {
-  padding-top: 294px;
+  padding-top: 291px;
   padding-bottom: 324px;
 }
 .hero-9-content .circle-text {
@@ -15527,6 +15532,52 @@ section.hero-4-area {
 }
 @media (max-width: 575px) {
   .text-slider-5-item .title {
+    font-size: 28px;
+  }
+}
+
+/* text-slider-6 area style  */
+.text-slider-6-active .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+.text-slider-6-active .swiper-slide {
+  width: auto;
+}
+
+.text-slider-6-item .title {
+  font-weight: 700;
+  font-size: 124px;
+  line-height: 0.8;
+  text-transform: uppercase;
+  color: var(--white);
+}
+@media only screen and (max-width: 1919px) {
+  .text-slider-6-item .title {
+    font-size: 76px;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .text-slider-6-item .title {
+    font-size: 66px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .text-slider-6-item .title {
+    font-size: 56px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .text-slider-6-item .title {
+    font-size: 46px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .text-slider-6-item .title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 575px) {
+  .text-slider-6-item .title {
     font-size: 28px;
   }
 }
