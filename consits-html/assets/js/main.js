@@ -494,6 +494,29 @@
     });
   }
 
+  // project-7 slider
+  if (('.project-7-slider').length) {
+    var project_7_slider = new Swiper(".project-7-slider", {
+      loop: false,
+      autoplay: {
+        delay: 222000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 1,
+      spaceBetween: 30,
+      speed: 2500,
+      watchSlidesProgress: true,
+      navigation: {
+        prevEl: ".project-7-button-prev",
+        nextEl: ".project-7-button-next",
+      },
+      pagination: {
+        el: '.project-7-pagination',
+        clickable: true,
+      },
+    });
+  }
+
   // service-3 slider
   if (('.service-3-slider').length) {
     var service_3_slider = new Swiper(".service-3-slider", {
