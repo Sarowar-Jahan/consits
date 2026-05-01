@@ -499,7 +499,7 @@
     var project_7_slider = new Swiper(".project-7-slider", {
       loop: false,
       autoplay: {
-        delay: 222000,
+        delay: 2000,
         disableOnInteraction: false,
       },
       slidesPerView: 1,
@@ -641,6 +641,33 @@
           slidesPerView: 3,
         },
       }
+    });
+  }
+
+  // service-9 slider
+  if (('.service-9-slider').length) {
+    var service_9_slider = new Swiper(".service-9-slider", {
+      loop: true,
+      effect: "fade",
+      fadeEffect: {
+        crossFade: true,
+      },
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 1,
+      spaceBetween: 30,
+      speed: 1800,
+      watchSlidesProgress: true,
+      navigation: {
+        prevEl: ".service-9-button-prev",
+        nextEl: ".service-9-button-next",
+      },
+      pagination: {
+        el: '.service-9-pagination',
+        clickable: true,
+      },
     });
   }
 

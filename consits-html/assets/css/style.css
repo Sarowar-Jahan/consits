@@ -9192,6 +9192,10 @@ section.hero-4-area {
 }
 
 /* hero-9 area style  */
+section.hero-9-area {
+  overflow: hidden;
+}
+
 .hero-9-box {
   position: relative;
   z-index: 1;
@@ -9228,13 +9232,61 @@ section.hero-4-area {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 2;
+  margin-right: -50%;
 }
-
-.hero-9-thumb {
+.hero-9-thumb img {
+  max-width: 1146px;
+}
+@media only screen and (max-width: 1919px) {
+  .hero-9-thumb img {
+    max-width: 946px;
+  }
+}
+@media only screen and (max-width: 1919px) {
+  .hero-9-thumb img {
+    max-width: 806px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .hero-9-thumb img {
+    max-width: 606px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .hero-9-thumb img {
+    max-width: 100%;
+  }
+}
+.hero-9-thumb .circle-text {
+  width: 148px;
+  height: 148px;
+  background-color: transparent;
+  padding: 0;
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 17%;
+  bottom: 36%;
+}
+@media only screen and (max-width: 1919px) {
+  .hero-9-thumb .circle-text {
+    width: 128px;
+    height: 128px;
+  }
+}
+@media (max-width: 575px) {
+  .hero-9-thumb .circle-text {
+    display: none;
+  }
+}
+.hero-9-thumb .circle-text::before {
+  display: none;
+}
+.hero-9-thumb .circle-text .text {
+  padding: 17px;
+}
+.hero-9-thumb .circle-text .bg {
+  width: 100%;
+  height: 100%;
 }
 
 .hero-9-social-links {
@@ -9243,6 +9295,24 @@ section.hero-4-area {
   flex-direction: column;
   gap: 3px;
   margin-left: 127px;
+  position: relative;
+  z-index: 3;
+}
+@media only screen and (max-width: 1919px) {
+  .hero-9-social-links {
+    margin-top: 106px;
+    margin-left: 87px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .hero-9-social-links {
+    margin-left: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .hero-9-social-links {
+    margin-top: 76px;
+  }
 }
 .hero-9-social-links a {
   font-weight: 500;
@@ -9274,22 +9344,26 @@ section.hero-4-area {
 
 .hero-9-content {
   padding-top: 291px;
-  padding-bottom: 324px;
+  padding-bottom: 224px;
+  min-height: 100vh;
 }
-.hero-9-content .circle-text {
-  width: 148px;
-  height: 148px;
-  background-color: transparent;
-  padding: 0;
-  position: absolute;
-  left: 544px;
-  bottom: 291px;
+@media only screen and (max-width: 1919px) {
+  .hero-9-content {
+    padding-top: 241px;
+    padding-bottom: 124px;
+  }
 }
-.hero-9-content .circle-text::before {
-  display: none;
+@media only screen and (max-width: 1399px) {
+  .hero-9-content {
+    padding-top: 191px;
+    padding-bottom: 94px;
+  }
 }
-.hero-9-content .circle-text .text {
-  padding: 17px;
+@media only screen and (max-width: 767px) {
+  .hero-9-content {
+    padding-top: 141px;
+    padding-bottom: 54px;
+  }
 }
 
 /* brand css */
@@ -10882,6 +10956,11 @@ section.hero-4-area {
   gap: 30px 60px;
   grid-template-columns: 1fr 740px;
 }
+@media only screen and (max-width: 1199px) {
+  .about-8-content {
+    grid-template-columns: 1fr 640px;
+  }
+}
 @media only screen and (max-width: 991px) {
   .about-8-content {
     grid-template-columns: 1fr;
@@ -10889,6 +10968,11 @@ section.hero-4-area {
 }
 .about-8-content .founder-info {
   margin-top: 80px;
+}
+@media only screen and (max-width: 1199px) {
+  .about-8-content .founder-info {
+    margin-top: 20px;
+  }
 }
 .about-8-content .founder-info .text-wrapper {
   margin-top: 12px;
@@ -10930,9 +11014,15 @@ section.hero-4-area {
 
 .about-8-counter-wrapper {
   display: grid;
+  gap: 30px 0;
   grid-template-columns: auto auto auto;
   justify-content: space-between;
   margin-top: 90px;
+}
+@media only screen and (max-width: 1199px) {
+  .about-8-counter-wrapper {
+    margin-top: 60px;
+  }
 }
 @media (max-width: 575px) {
   .about-8-counter-wrapper {
@@ -10955,6 +11045,16 @@ section.hero-4-area {
   left: -64px;
   top: 22px;
   opacity: 0.2;
+}
+@media only screen and (max-width: 1199px) {
+  .about-8-counter-box:before {
+    left: -44px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .about-8-counter-box:before {
+    left: -17px;
+  }
 }
 @media (max-width: 575px) {
   .about-8-counter-box:before {
@@ -12467,6 +12567,115 @@ section.hero-4-area {
   color: #020202;
 }
 
+/* service-9 area style  */
+.service-9-header {
+  display: grid;
+  gap: 30px 60px;
+  grid-template-columns: 1fr auto;
+  align-items: flex-end;
+}
+@media only screen and (max-width: 991px) {
+  .service-9-header {
+    grid-template-columns: 1fr;
+  }
+}
+.service-9-header .title-wrapper {
+  margin-top: 21px;
+}
+.service-9-header .section-title {
+  max-width: 770px;
+  text-transform: uppercase;
+}
+.service-9-header .btn-wrapper {
+  margin-bottom: 10px;
+}
+
+.service-9-wrapper-box {
+  margin-top: 50px;
+}
+
+.service-9-box {
+  position: relative;
+  z-index: 1;
+}
+.service-9-box .service-9-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.service-9-box .service-9-bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.service-9-box .content {
+  text-align: center;
+  background-color: var(--smoke);
+  padding: 55px 60px 53px;
+  max-width: 688px;
+  margin-inline: auto;
+}
+@media only screen and (max-width: 1919px) {
+  .service-9-box .content {
+    padding: 35px 30px 33px;
+    max-width: 588px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .service-9-box .content {
+    max-width: 488px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .service-9-box .content {
+    max-width: 438px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .service-9-box .content {
+    max-width: 488px;
+  }
+}
+.service-9-box .number {
+  font-family: var(--font_unbounded);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: var(--black);
+  display: inline-block;
+}
+.service-9-box .title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  margin-top: 18px;
+}
+.service-9-box .thumb {
+  width: 100%;
+  aspect-ratio: 100/63;
+  margin-top: 33px;
+}
+.service-9-box .thumb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.service-9-box .text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 434px;
+  margin-inline: auto;
+  margin-top: 32px;
+}
+
 /* counter css */
 /* counter area style  */
 .counter-area {
@@ -13783,9 +13992,41 @@ section.hero-4-area {
 /* project-7 area style  */
 .projects-7-wrapper-box {
   position: absolute;
-  bottom: 267px;
+  top: 467px;
   right: 235px;
   max-width: 220px;
+  z-index: 2;
+}
+@media only screen and (max-width: 1919px) {
+  .projects-7-wrapper-box {
+    top: 387px;
+    right: 115px;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .projects-7-wrapper-box {
+    top: 317px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .projects-7-wrapper-box {
+    right: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .projects-7-wrapper-box {
+    top: 227px;
+  }
+}
+@media (max-width: 575px) {
+  .projects-7-wrapper-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+    max-width: 100%;
+    margin-inline: 50px;
+  }
 }
 
 .project-7-box .meta {
@@ -13814,6 +14055,9 @@ section.hero-4-area {
   line-height: 26px;
   color: #FFFFFF;
   margin-top: 12px;
+}
+.project-7-box .title a:hover {
+  color: var(--white);
 }
 .project-7-box .thumb {
   margin-top: 13px;
@@ -15622,32 +15866,32 @@ section.hero-4-area {
 }
 @media only screen and (max-width: 1919px) {
   .text-slider-6-item .title {
-    font-size: 76px;
+    font-size: 96px;
   }
 }
 @media only screen and (max-width: 1399px) {
   .text-slider-6-item .title {
-    font-size: 66px;
+    font-size: 76px;
   }
 }
 @media only screen and (max-width: 1199px) {
   .text-slider-6-item .title {
-    font-size: 56px;
+    font-size: 66px;
   }
 }
 @media only screen and (max-width: 991px) {
   .text-slider-6-item .title {
-    font-size: 46px;
+    font-size: 56px;
   }
 }
 @media only screen and (max-width: 767px) {
   .text-slider-6-item .title {
-    font-size: 32px;
+    font-size: 42px;
   }
 }
 @media (max-width: 575px) {
   .text-slider-6-item .title {
-    font-size: 28px;
+    font-size: 38px;
   }
 }
 

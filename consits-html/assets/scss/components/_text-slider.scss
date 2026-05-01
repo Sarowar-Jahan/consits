@@ -235,27 +235,27 @@
         margin-left: 2rem;
 
         @media #{$xxl} {
-            font-size: 76px;
+            font-size: 96px;
         }
 
         @media #{$xl} {
-            font-size: 66px;
+            font-size: 76px;
         }
 
         @media #{$lg} {
-            font-size: 56px;
+            font-size: 66px;
         }
 
         @media #{$md} {
-            font-size: 46px;
+            font-size: 56px;
         }
 
         @media #{$sm} {
-            font-size: 32px;
+            font-size: 42px;
         }
 
         @media #{$xs} {
-            font-size: 28px;
+            font-size: 38px;
         }
     }
 }

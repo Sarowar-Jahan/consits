@@ -1407,12 +1407,20 @@
     gap: 30px 60px;
     grid-template-columns: 1fr 740px;
 
+    @media #{$lg} {
+        grid-template-columns: 1fr 640px;
+    }
+
     @media #{$md} {
         grid-template-columns: 1fr;
     }
 
     .founder-info {
         margin-top: 80px;
+
+        @media #{$lg} {
+            margin-top: 20px;
+        }
 
         .text-wrapper {
             margin-top: 12px;
@@ -1465,9 +1473,14 @@
 
 .about-8-counter-wrapper {
     display: grid;
+    gap: 30px 0;
     grid-template-columns: auto auto auto;
     justify-content: space-between;
     margin-top: 90px;
+
+    @media #{$lg} {
+        margin-top: 60px;
+    }
 
     @media #{$xs} {
         grid-template-columns: auto;
@@ -1493,6 +1506,14 @@
         left: -64px;
         top: 22px;
         opacity: 0.20;
+
+        @media #{$lg} {
+            left: -44px;
+        }
+
+        @media #{$sm} {
+            left: -17px;
+        }
 
         @media #{$xs} {
             display: none;

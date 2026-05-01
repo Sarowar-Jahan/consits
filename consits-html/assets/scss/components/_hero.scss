@@ -1585,6 +1585,10 @@ section.hero-4-area {
 
 
 /* hero-9 area style  */
+section.hero-9-area {
+    overflow: hidden;
+}
+
 .hero-9-box {
     position: relative;
     z-index: 1;
@@ -1622,13 +1626,60 @@ section.hero-4-area {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-}
+    z-index: 2;
+    margin-right: -50%;
 
-.hero-9-thumb {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    img {
+        max-width: 1146px;
+
+        @media #{$xxl} {
+            max-width: 946px;
+        }
+
+        @media #{$xxl} {
+            max-width: 806px;
+        }
+
+        @media #{$md} {
+            max-width: 606px;
+        }
+
+        @media #{$sm} {
+            max-width: 100%;
+        }
+    }
+
+    .circle-text {
+        width: 148px;
+        height: 148px;
+        background-color: transparent;
+        padding: 0;
+        position: absolute;
+        left: 17%;
+        bottom: 36%;
+
+        @media #{$xxl} {
+            width: 128px;
+            height: 128px;
+        }
+
+        @media #{$xs} {
+            display: none;
+        }
+
+        &::before {
+            display: none;
+        }
+
+        .text {
+            padding: 17px;
+        }
+
+        .bg {
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
 .hero-9-social-links {
@@ -1637,6 +1688,22 @@ section.hero-4-area {
     flex-direction: column;
     gap: 3px;
     margin-left: 127px;
+    position: relative;
+    z-index: 3;
+
+    @media #{$xxl} {
+        margin-top: 106px;
+        margin-left: 87px;
+    }
+
+    @media #{$lg} {
+
+        margin-left: 50px;
+    }
+
+    @media #{$sm} {
+        margin-top: 76px;
+    }
 
     a {
         font-weight: 500;
@@ -1678,23 +1745,21 @@ section.hero-4-area {
 
 .hero-9-content {
     padding-top: 291px;
-    padding-bottom: 324px;
+    padding-bottom: 224px;
+    min-height: 100vh;
 
-    .circle-text {
-        width: 148px;
-        height: 148px;
-        background-color: transparent;
-        padding: 0;
-        position: absolute;
-        left: 544px;
-        bottom: 291px;
+    @media #{$xxl} {
+        padding-top: 241px;
+        padding-bottom: 124px;
+    }
 
-        &::before {
-            display: none;
-        }
+    @media #{$xl} {
+        padding-top: 191px;
+        padding-bottom: 94px;
+    }
 
-        .text {
-            padding: 17px;
-        }
+    @media #{$sm} {
+        padding-top: 141px;
+        padding-bottom: 54px;
     }
 }
