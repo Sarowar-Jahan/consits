@@ -1721,7 +1721,7 @@
         }
 
         @media #{$sm} {
-            max-width: 488px;
+            padding: 25px 20px 23px;
         }
     }
 
@@ -1729,18 +1729,27 @@
         font-family: var(--font_unbounded);
         font-weight: 600;
         font-size: 18px;
-        line-height: 24px;
+        line-height: 1.33;
         text-transform: capitalize;
         color: var(--black);
         display: inline-block;
+
+        @media #{$sm} {
+            font-size: 14px;
+        }
     }
 
     .title {
         font-weight: 600;
         font-size: 24px;
-        line-height: 32px;
+        line-height: 1.33;
         text-transform: uppercase;
         margin-top: 18px;
+
+        @media #{$sm} {
+            font-size: 20px;
+            margin-top: 8px;
+        }
     }
 
 
@@ -1748,6 +1757,10 @@
         width: 100%;
         aspect-ratio: 100/63;
         margin-top: 33px;
+
+        @media #{$sm} {
+            margin-top: 23px;
+        }
 
         img {
             width: 100%;
@@ -1764,6 +1777,11 @@
         max-width: 434px;
         margin-inline: auto;
         margin-top: 32px;
+
+        @media #{$sm} {
+            margin-top: 22px;
+
+        }
     }
 
 }
