@@ -15714,6 +15714,11 @@ section.hero-9-area {
 .team-4-wrapper-box {
   margin-top: 50px;
 }
+@media only screen and (max-width: 1199px) {
+  .team-4-wrapper-box {
+    margin-top: 40px;
+  }
+}
 
 .team-4-wrapper {
   display: grid;
@@ -15724,7 +15729,8 @@ section.hero-9-area {
 }
 @media only screen and (max-width: 991px) {
   .team-4-wrapper {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-around;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -15738,6 +15744,11 @@ section.hero-9-area {
   padding: 40px 0;
   position: relative;
 }
+@media only screen and (max-width: 1199px) {
+  .team-4-box {
+    padding: 20px 0;
+  }
+}
 .team-4-box:before {
   position: absolute;
   content: "";
@@ -15747,6 +15758,34 @@ section.hero-9-area {
   left: -50px;
   top: 0;
 }
+@media only screen and (max-width: 1199px) {
+  .team-4-box:before {
+    left: -25px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .team-4-box:before {
+    left: -80px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .team-4-box:before {
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: 0;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .team-4-box:nth-child(odd):before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .team-4-box:nth-child(odd):before {
+    display: block;
+  }
+}
 .team-4-box:nth-child(1):before {
   display: none;
 }
@@ -15755,6 +15794,13 @@ section.hero-9-area {
   height: 253px;
   border-radius: 50%;
   overflow: hidden;
+  margin-inline: auto;
+}
+@media only screen and (max-width: 1199px) {
+  .team-4-box .thumb {
+    width: 213px;
+    height: 213px;
+  }
 }
 .team-4-box .thumb img {
   width: 100%;
@@ -15773,7 +15819,7 @@ section.hero-9-area {
 }
 @media only screen and (max-width: 1199px) {
   .team-4-box .name {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .team-4-box .post {
@@ -18244,6 +18290,11 @@ section.hero-9-area {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media only screen and (max-width: 991px) {
+  .blog-9 .thumb img {
+    aspect-ratio: 100/80;
+  }
 }
 .blog-9 .content {
   margin-top: 22px;
@@ -22807,6 +22858,16 @@ section.hero-9-area {
 .cta-2-area-inner {
   padding: 100px 0;
 }
+@media only screen and (max-width: 1919px) {
+  .cta-2-area-inner {
+    padding: 80px 0;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .cta-2-area-inner {
+    padding: 60px 0;
+  }
+}
 
 .cta-2-content {
   padding: 54px 60px 60px;
@@ -22814,14 +22875,40 @@ section.hero-9-area {
   max-width: 532px;
   position: relative;
 }
+@media only screen and (max-width: 1919px) {
+  .cta-2-content {
+    padding: 34px 30px 40px;
+    max-width: 482px;
+  }
+}
 .cta-2-content .title {
   font-weight: 600;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 1.2;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 1199px) {
+  .cta-2-content .title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 575px) {
+  .cta-2-content .title {
+    font-size: 20px;
+  }
 }
 .cta-2-content .text-wrapper {
   margin-top: 118px;
+}
+@media only screen and (max-width: 1919px) {
+  .cta-2-content .text-wrapper {
+    margin-top: 68px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .cta-2-content .text-wrapper {
+    margin-top: 38px;
+  }
 }
 .cta-2-content .text {
   font-weight: 500;

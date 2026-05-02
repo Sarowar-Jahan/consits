@@ -131,6 +131,14 @@
 
 .cta-2-area-inner {
     padding: 100px 0;
+
+    @media #{$xxl} {
+        padding: 80px 0;
+    }
+
+    @media #{$lg} {
+        padding: 60px 0;
+    }
 }
 
 .cta-2-content {
@@ -139,16 +147,37 @@
     max-width: 532px;
     position: relative;
 
+    @media #{$xxl} {
+        padding: 34px 30px 40px;
+        max-width: 482px;
+    }
+
     .title {
         font-weight: 600;
         font-size: 30px;
-        line-height: 36px;
+        line-height: 1.2;
         text-transform: uppercase;
+
+        @media #{$lg} {
+            font-size: 24px;
+        }
+
+        @media #{$xs} {
+            font-size: 20px;
+        }
     }
 
     .text-wrapper {
 
         margin-top: 118px;
+
+        @media #{$xxl} {
+            margin-top: 68px;
+        }
+
+        @media #{$lg} {
+            margin-top: 38px;
+        }
     }
 
     .text {
