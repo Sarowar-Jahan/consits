@@ -2555,6 +2555,10 @@
     gap: 7px;
     align-items: center;
 
+    @media #{$md} {
+        justify-content: center;
+    }
+
     a {
         width: 40px;
         height: 40px;
@@ -2565,6 +2569,8 @@
         justify-content: center;
         align-items: center;
         border-radius: 50%;
+        position: relative;
+        z-index: 1;
 
         &:hover {
             color: var(--white);
@@ -2621,10 +2627,6 @@
         line-height: 1.3;
         text-transform: capitalize;
         color: var(--white);
-
-        @media #{$md} {
-            text-align: center;
-        }
     }
 
     .text {
@@ -2713,6 +2715,10 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+
+    @media #{$md} {
+        opacity: 0.2;
+    }
 }
 
 .copyright-7-top {
@@ -2750,6 +2756,8 @@
         font-size: 16px;
         line-height: 26px;
         color: var(--white);
+        position: relative;
+        z-index: 1;
 
         @media #{$md} {
             text-align: center;
@@ -2782,6 +2790,8 @@
         line-height: 26px;
         color: var(--white);
         display: inline-block;
+        position: relative;
+        z-index: 1;
 
         &:hover {
             color: var(--white-2);
@@ -2800,6 +2810,8 @@
 .footer-7-logo {
     img {
         width: 288px;
+        position: relative;
+        z-index: 1;
 
         @media #{$xxl} {
             width: 248px;
