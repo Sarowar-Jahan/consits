@@ -1458,8 +1458,16 @@
     .about-8-title {
         font-weight: 600;
         font-size: 30px;
-        line-height: 36px;
+        line-height: 1.2;
         text-transform: capitalize;
+
+        @media #{$lg} {
+            font-size: 24px;
+        }
+
+        @media #{$xs} {
+            font-size: 20px;
+        }
     }
 
     .text-wrapper {

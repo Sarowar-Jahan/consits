@@ -118,6 +118,11 @@
         border-radius: 50%;
         color: var(--white);
         font-size: 18px;
+
+        @media #{$xxl} {
+            width: 50px;
+            height: 50px;
+        }
     }
 
     .header-btn {
@@ -140,6 +145,11 @@
         color: var(--white);
         font-size: 18px;
         position: relative;
+
+        @media #{$xxl} {
+            width: 50px;
+            height: 50px;
+        }
     }
 
     .cart-item {
@@ -423,6 +433,11 @@
         color: var(--white);
         font-size: 18px;
         background-color: var(--black);
+
+        @media #{$xxl} {
+            width: 50px;
+            height: 50px;
+        }
     }
 
     .header-2-btn {
@@ -445,7 +460,13 @@
         color: var(--white);
         font-size: 18px;
         position: relative;
+
+        @media #{$xxl} {
+            width: 50px;
+            height: 50px;
+        }
     }
+
 
     .cart-item {
         width: 20px;
@@ -609,6 +630,11 @@
         color: var(--theme);
         font-size: 18px;
         background-color: var(--white);
+
+        @media #{$xxl} {
+            width: 50px;
+            height: 50px;
+        }
     }
 
     .header-3-btn {
@@ -631,7 +657,13 @@
         color: var(--white);
         font-size: 18px;
         position: relative;
+
+        @media #{$xxl} {
+            width: 50px;
+            height: 50px;
+        }
     }
+
 
     .cart-item {
         width: 20px;
@@ -819,6 +851,11 @@
         color: var(--white);
         font-size: 18px;
         background-color: var(--black);
+
+        @media #{$xxl} {
+            width: 50px;
+            height: 50px;
+        }
     }
 
     .header-4-btn {
@@ -841,7 +878,13 @@
         color: var(--white);
         font-size: 18px;
         position: relative;
+
+        @media #{$xxl} {
+            width: 50px;
+            height: 50px;
+        }
     }
+
 
     .cart-item {
         width: 20px;
@@ -1380,6 +1423,11 @@
         color: var(--white);
         font-size: 18px;
         background-color: var(--black);
+
+        @media #{$xxl} {
+            width: 50px;
+            height: 50px;
+        }
     }
 
     .header-6-btn {
@@ -1722,11 +1770,22 @@
         border-radius: 50%;
         color: var(--white);
         font-size: 18px;
+
+        @media #{$xxl} {
+            width: 50px;
+            height: 50px;
+        }
     }
 
     .header-7-btn {
         @media #{$md} {
             display: none;
+        }
+    }
+
+    .ui-btn {
+        @media #{$xxl} {
+            padding: 15px 24px;
         }
     }
 
@@ -1744,7 +1803,13 @@
         color: var(--white);
         font-size: 18px;
         position: relative;
+
+        @media #{$xxl} {
+            width: 50px;
+            height: 50px;
+        }
     }
+
 
     .cart-item {
         width: 20px;

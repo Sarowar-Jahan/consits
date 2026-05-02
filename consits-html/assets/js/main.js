@@ -363,7 +363,7 @@
     var project_slider = new Swiper(".project-slider", {
       loop: true,
       autoplay: {
-        delay: 222000,
+        delay: 2000,
         disableOnInteraction: false,
       },
       slidesPerView: 1,
@@ -416,7 +416,7 @@
     var project_4_slider = new Swiper(".project-4-slider", {
       loop: true,
       autoplay: {
-        delay: 222000,
+        delay: 2000,
         disableOnInteraction: false,
       },
       slidesPerView: 1,
@@ -457,7 +457,7 @@
     var project_5_slider = new Swiper(".project-5-slider", {
       loop: false,
       autoplay: {
-        delay: 222000,
+        delay: 2000,
         disableOnInteraction: false,
       },
       slidesPerView: 1,
@@ -522,7 +522,7 @@
     var service_3_slider = new Swiper(".service-3-slider", {
       loop: true,
       autoplay: {
-        delay: 222000,
+        delay: 2000,
         disableOnInteraction: false,
       },
       slidesPerView: 1,
@@ -559,7 +559,7 @@
     var service_4_slider = new Swiper(".service-4-slider", {
       loop: true,
       autoplay: {
-        delay: 222000,
+        delay: 2000,
         disableOnInteraction: false,
       },
       slidesPerView: 1,
@@ -596,7 +596,7 @@
     var service_5_slider = new Swiper(".service-5-slider", {
       loop: true,
       autoplay: {
-        delay: 222000,
+        delay: 2000,
         disableOnInteraction: false,
       },
       slidesPerView: 1,
@@ -676,7 +676,7 @@
     var project_3_slider = new Swiper(".project-3-slider", {
       loop: true,
       autoplay: {
-        delay: 222000,
+        delay: 2000,
         disableOnInteraction: false,
       },
       slidesPerView: 1,
@@ -927,7 +927,7 @@
     var testimonial_slider = new Swiper(".testimonial-slider", {
       loop: true,
       autoplay: {
-        delay: 222000,
+        delay: 2000,
         disableOnInteraction: false,
       },
       slidesPerView: 1,
@@ -964,7 +964,7 @@
     var testimonial_2_slider = new Swiper(".testimonial-2-slider", {
       loop: true,
       autoplay: {
-        delay: 222000,
+        delay: 2000,
         disableOnInteraction: false,
       },
       slidesPerView: 1,
@@ -1005,7 +1005,7 @@
         crossFade: true,
       },
       autoplay: {
-        delay: 222000,
+        delay: 2000,
         disableOnInteraction: false,
       },
       slidesPerView: 1,
@@ -1023,12 +1023,39 @@
     });
   }
 
+  // testimonial-4 slider
+  if (('.testimonial-4-slider').length) {
+    var testimonial_4_slider = new Swiper(".testimonial-4-slider", {
+      loop: true,
+      effect: "fade",
+      fadeEffect: {
+        crossFade: true,
+      },
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 1,
+      spaceBetween: 30,
+      speed: 1000,
+      watchSlidesProgress: true,
+      pagination: {
+        el: ".testimonial-4-pagination",
+        clickable: true,
+      },
+      navigation: {
+        prevEl: ".testimonial-4-button-prev",
+        nextEl: ".testimonial-4-button-next",
+      },
+    });
+  }
+
   // hero-6 slider
   if (('.hero-6-slider').length) {
     var hero_6_slider = new Swiper(".hero-6-slider", {
       loop: true,
       autoplay: {
-        delay: 222000,
+        delay: 2000,
         disableOnInteraction: false,
       },
       slidesPerView: 1,
@@ -1047,7 +1074,7 @@
     var blog_7_slider = new Swiper(".blog-7-slider", {
       loop: true,
       autoplay: {
-        delay: 222000,
+        delay: 2000,
         disableOnInteraction: false,
       },
       slidesPerView: 1,
