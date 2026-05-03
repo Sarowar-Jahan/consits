@@ -148,7 +148,7 @@
     height: 100%;
     position: absolute;
     content: "";
-    z-index: 0;
+    z-index: -1;
     bottom: 0;
     right: 0;
     overflow-y: clip;
