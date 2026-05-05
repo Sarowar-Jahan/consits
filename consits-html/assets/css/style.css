@@ -3622,6 +3622,11 @@ section {
     display: none;
   }
 }
+@media only screen and (max-width: 1919px) {
+  .header-area .ui-btn {
+    padding: 15px 24px;
+  }
+}
 @media only screen and (max-width: 991px) {
   .header-area .header-cart {
     display: none;
@@ -3900,6 +3905,11 @@ section {
 @media only screen and (max-width: 991px) {
   .header-2-area .header-2-btn {
     display: none;
+  }
+}
+@media only screen and (max-width: 1919px) {
+  .header-2-area .ui-btn {
+    padding: 15px 24px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -4273,6 +4283,11 @@ section {
     display: none;
   }
 }
+@media only screen and (max-width: 1919px) {
+  .header-4-area .ui-btn {
+    padding: 15px 24px;
+  }
+}
 @media only screen and (max-width: 991px) {
   .header-4-area .header-4-cart {
     display: none;
@@ -4546,9 +4561,20 @@ section {
   font-size: 18px;
   background-color: var(--black);
 }
+@media only screen and (max-width: 1919px) {
+  .header-5-area .search-box {
+    width: 50px;
+    height: 50px;
+  }
+}
 @media only screen and (max-width: 991px) {
   .header-5-area .header-5-btn {
     display: none;
+  }
+}
+@media only screen and (max-width: 1919px) {
+  .header-5-area .ui-btn {
+    padding: 15px 24px;
   }
 }
 .header-5-area .header-5-offcanvas {
@@ -4780,9 +4806,14 @@ section {
     display: none;
   }
 }
-.header-6-area .header-6-btn .ui-btn {
+.header-6-area .ui-btn {
   background-color: var(--black);
   border-color: var(--black);
+}
+@media only screen and (max-width: 1919px) {
+  .header-6-area .ui-btn {
+    padding: 15px 24px;
+  }
 }
 .header-6-area .header-6-offcanvas {
   display: none;
