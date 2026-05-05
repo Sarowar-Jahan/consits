@@ -1112,6 +1112,42 @@
   });
 
 
+  // webgl images hover displacement
+  if ($('.ui-hover-displacement').length) {
+    let hoverAnimation__do = function (t, n) {
+      let a = new hoverEffect({
+        parent: t.get(0),
+        intensity: t.data("intensity") || void 0,
+        speedIn: t.data("speedin") || void 0,
+        speedOut: t.data("speedout") || void 0,
+        easing: t.data("easing") || void 0,
+        hover: t.data("hover") || void 0,
+        image1: n.eq(0).attr("src"),
+        image2: n.eq(0).attr("src"),
+        displacementImage: t.data("displacement"),
+        imagesRatio: n[0].height / n[0].width,
+        hover: !1
+      });
+      t.closest(".ui-hover-displacement").on("mouseenter", function () {
+        a.next()
+      }).on("mouseleave", function () {
+        a.previous()
+      })
+    }
+    let hoverAnimation = function () {
+      $(".ui-hover-displacement-image").each(function () {
+        let n = $(this);
+        let e = n.find("img");
+        let i = e.eq(0);
+        i[0].complete ? hoverAnimation__do(n, e) : i.on("load", function () {
+          hoverAnimation__do(n, e)
+        })
+      })
+    }
+    hoverAnimation();
+  }
+
+
 })(jQuery);
 
 

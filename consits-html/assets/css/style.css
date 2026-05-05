@@ -1588,6 +1588,17 @@ h6 {
   color: var(--white);
 }
 
+.ui-hover-displacement-image {
+  position: relative;
+}
+.ui-hover-displacement-image canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 /* theme css */
 html {
   --container-max-widths: 1320px;

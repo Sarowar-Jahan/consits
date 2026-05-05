@@ -1448,3 +1448,19 @@
     }
   }
 }
+
+
+
+
+
+.ui-hover-displacement-image {
+  position: relative;
+
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
