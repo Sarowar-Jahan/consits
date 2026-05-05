@@ -107,6 +107,23 @@
   <div class="offcanvas-overlay"></div>
   <!-- side toggle end -->
 
+  <!-- search modal start -->
+  <div class="modal fade" id="search-template" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="search-template" aria-hidden="true">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form action="#" class="form-search">
+            <input type="text" placeholder="Search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- search modal end -->
+
 
 
 
@@ -214,7 +231,7 @@
                 </nav>
               </div>
               <div class="header-6-search">
-                <button class="search-box">
+                <button class="search-box" data-bs-toggle="modal" data-bs-target="#search-template">
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
               </div>
@@ -257,18 +274,18 @@
                     <div class="container ui-container-1350">
                       <div class="hero-8-content">
                         <div class="section-title-wrapper">
-                          <div class="subtitle-wrapper">
+                          <div class="subtitle-wrapper" data-animation="fadeInUp" data-delay="0.15s">
                             <span class="hero-8-subtitle"><span class="start-shape"><img
                                   src="assets/imgs/icon/icon-79.png" alt="image"></span><span class="text">welcome to
                                 consits</span><span class="end-shape"><img src="assets/imgs/icon/icon-79.png"
                                   alt="image"></span></span>
                           </div>
-                          <div class="title-wrapper">
+                          <div class="title-wrapper" data-animation="fadeInUp" data-delay="0.30s">
                             <h2 class="hero-8-title">Smart Robotics & <span class="ui-color-theme">Industrial
                                 Automation</span> Solutions</h2>
                           </div>
                         </div>
-                        <div class="btn-wrapper">
+                        <div class="btn-wrapper" data-animation="fadeInUp" data-delay="0.45s">
                           <a href="contact.html" class="ui-btn round-10">
                             <span class="btn-wrap">
                               <span class="text-one">Explore more <img src="assets/imgs/icon/icon-1.png"
@@ -296,18 +313,18 @@
                     <div class="container ui-container-1350">
                       <div class="hero-8-content">
                         <div class="section-title-wrapper">
-                          <div class="subtitle-wrapper">
+                          <div class="subtitle-wrapper" data-animation="fadeInUp" data-delay="0.15s">
                             <span class="hero-8-subtitle"><span class="start-shape"><img
                                   src="assets/imgs/icon/icon-79.png" alt="image"></span><span class="text">welcome to
                                 consits</span><span class="end-shape"><img src="assets/imgs/icon/icon-79.png"
                                   alt="image"></span></span>
                           </div>
-                          <div class="title-wrapper">
+                          <div class="title-wrapper" data-animation="fadeInUp" data-delay="0.30s">
                             <h2 class="hero-8-title">Smart Manufacturing & <span class="ui-color-theme">Intelligent
                                 Automation</span> Systems</h2>
                           </div>
                         </div>
-                        <div class="btn-wrapper">
+                        <div class="btn-wrapper" data-animation="fadeInUp" data-delay="0.45s">
                           <a href="contact.html" class="ui-btn round-10">
                             <span class="btn-wrap">
                               <span class="text-one">Explore more <img src="assets/imgs/icon/icon-1.png"
@@ -335,18 +352,18 @@
                     <div class="container ui-container-1350">
                       <div class="hero-8-content">
                         <div class="section-title-wrapper">
-                          <div class="subtitle-wrapper">
+                          <div class="subtitle-wrapper" data-animation="fadeInUp" data-delay="0.15">
                             <span class="hero-8-subtitle"><span class="start-shape"><img
                                   src="assets/imgs/icon/icon-79.png" alt="image"></span><span class="text">welcome to
                                 consits</span><span class="end-shape"><img src="assets/imgs/icon/icon-79.png"
                                   alt="image"></span></span>
                           </div>
-                          <div class="title-wrapper">
+                          <div class="title-wrapper" data-animation="fadeInUp" data-delay="0.30">
                             <h2 class="hero-8-title">Advanced Robotics & <span class="ui-color-theme">Automated
                                 Industrial</span> Solutions</h2>
                           </div>
                         </div>
-                        <div class="btn-wrapper">
+                        <div class="btn-wrapper" data-animation="fadeInUp" data-delay="0.45">
                           <a href="contact.html" class="ui-btn round-10">
                             <span class="btn-wrap">
                               <span class="text-one">Explore more <img src="assets/imgs/icon/icon-1.png"
@@ -432,26 +449,26 @@
                 </div>
               </div>
               <div class="about-7-info-wrapper">
-                <div class="about-7-info-box bordered fade-anim" data-delay="0.3">
+                <div class="about-7-info-box bordered fade-anim" data-delay="0.15" data-direction="left">
                   <div class="content">
                     <h3 class="title"><span class="ui-color-theme">20</span>+</h3>
                     <p class="text">Years of Automation Excellence</p>
                     <span class="year">// 2005-2025//</span>
                   </div>
                 </div>
-                <div class="about-7-info-box fade-anim" data-delay="0.5">
+                <div class="about-7-info-box fade-anim" data-delay="0.30" data-direction="left">
                   <div class="thumb">
                     <img src="assets/imgs/gallery/gallery-89.jpg" alt="image">
                   </div>
                 </div>
-                <div class="about-7-info-box fade-anim" data-delay="0.7">
+                <div class="about-7-info-box fade-anim" data-delay="0.45" data-direction="left">
                   <div class="content">
                     <h3 class="title"><span class="ui-color-theme">120</span>+</h3>
                     <p class="text">Trusted by Industrial Clients</p>
                     <span class="rating">4.9 / 5.0 <span class="stars">★★★★★</span></span>
                   </div>
                 </div>
-                <div class="about-7-info-box ui-bg-black fade-anim" data-delay="0.9">
+                <div class="about-7-info-box ui-bg-black fade-anim" data-delay="0.60" data-direction="left">
                   <div class="content">
                     <h3 class="title"><span class="ui-color-theme">550</span>+</h3>
                     <p class="text">Smart Components Delivered</p>
@@ -658,7 +675,7 @@
               </div>
               <div class="team-3-wrapper-box">
                 <div class="team-3-wrapper">
-                  <div class="team-3-box fade-anim" data-delay="0.3">
+                  <div class="team-3-box fade-anim" data-delay="0.15">
                     <div class="thumb">
                       <a href="team-details.html">
                         <img src="assets/imgs/team/team-18.jpg" alt="image">
@@ -677,7 +694,7 @@
                       <span class="post">Expert Engineer</span>
                     </div>
                   </div>
-                  <div class="team-3-box fade-anim" data-delay="0.5">
+                  <div class="team-3-box fade-anim" data-delay="0.30">
                     <div class="thumb">
                       <a href="team-details.html">
                         <img src="assets/imgs/team/team-19.jpg" alt="image">
@@ -696,7 +713,7 @@
                       <span class="post">Services Man</span>
                     </div>
                   </div>
-                  <div class="team-3-box fade-anim" data-delay="0.7">
+                  <div class="team-3-box fade-anim" data-delay="0.30">
                     <div class="thumb">
                       <a href="team-details.html">
                         <img src="assets/imgs/team/team-20.jpg" alt="image">
@@ -715,7 +732,7 @@
                       <span class="post">Mechanical Engineer</span>
                     </div>
                   </div>
-                  <div class="team-3-box fade-anim" data-delay="0.9">
+                  <div class="team-3-box fade-anim" data-delay="0.15">
                     <div class="thumb">
                       <a href="team-details.html">
                         <img src="assets/imgs/team/team-21.jpg" alt="image">
@@ -1269,8 +1286,8 @@
                 <div class="choose-3-thumb fade-anim" data-direction="left">
                   <img src="assets/imgs/gallery/gallery-93.jpg" alt="image">
                 </div>
-                <div class="choose-3-features-wrapper fade-anim" data-direction="right">
-                  <div class="choose-3-feature-box">
+                <div class="choose-3-features-wrapper">
+                  <div class="choose-3-feature-box fade-anim">
                     <div class="thumb">
                       <img src="assets/imgs/icon/icon-83.png" alt="image">
                     </div>
@@ -1279,7 +1296,7 @@
                       <p class="text">Advanced robotics systems designed to deliver accurate and consistent results.</p>
                     </div>
                   </div>
-                  <div class="choose-3-feature-box">
+                  <div class="choose-3-feature-box fade-anim">
                     <div class="thumb">
                       <img src="assets/imgs/icon/icon-84.png" alt="image">
                     </div>
@@ -1288,7 +1305,7 @@
                       <p class="text">Advanced automation that reduces human error and lowers operational costs.</p>
                     </div>
                   </div>
-                  <div class="choose-3-feature-box">
+                  <div class="choose-3-feature-box fade-anim">
                     <div class="thumb">
                       <img src="assets/imgs/icon/icon-85.png" alt="image">
                     </div>
@@ -1299,7 +1316,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="choose-3-feature-box">
+                  <div class="choose-3-feature-box fade-anim">
                     <div class="thumb">
                       <img src="assets/imgs/icon/icon-86.png" alt="image">
                     </div>
@@ -1348,7 +1365,7 @@
               </div>
               <div class="blogs-8-wrapper-box">
                 <div class="blogs-8-wrapper">
-                  <article class="blog-8 fade-anim" data-delay="0.3">
+                  <article class="blog-8 fade-anim" data-delay="0.15" data-direction="left">
                     <div class="thumb">
                       <a href="blog-details.html"><img src="assets/imgs/blog/blog-36.jpg" alt="blog image"></a>
                       <span class="date">22 <span>Aug</span></span>
@@ -1370,7 +1387,7 @@
                       </div>
                     </div>
                   </article>
-                  <article class="blog-8 fade-anim" data-delay="0.5">
+                  <article class="blog-8 fade-anim" data-delay="0.30" data-direction="left">
                     <div class="thumb">
                       <a href="blog-details.html"><img src="assets/imgs/blog/blog-37.jpg" alt="blog image"></a>
                       <span class="date">17 <span>Aug</span></span>
@@ -1392,7 +1409,7 @@
                       </div>
                     </div>
                   </article>
-                  <article class="blog-8 fade-anim" data-delay="0.7">
+                  <article class="blog-8 fade-anim" data-delay="0.45" data-direction="left">
                     <div class="thumb">
                       <a href="blog-details.html"><img src="assets/imgs/blog/blog-38.jpg" alt="blog image"></a>
                       <span class="date">05 <span>Aug</span></span>

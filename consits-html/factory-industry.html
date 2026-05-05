@@ -107,6 +107,23 @@
   <div class="offcanvas-overlay"></div>
   <!-- side toggle end -->
 
+  <!-- search modal start -->
+  <div class="modal fade" id="search-template" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="search-template" aria-hidden="true">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form action="#" class="form-search">
+            <input type="text" placeholder="Search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- search modal end -->
+
 
 
 
@@ -198,7 +215,7 @@
                 </nav>
               </div>
               <div class="header-2-search">
-                <button class="search-box">
+                <button class="search-box" data-bs-toggle="modal" data-bs-target="#search-template">
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
               </div>
@@ -241,7 +258,7 @@
                       </div>
                       <div class="container ui-container-1350">
                         <div class="hero-5-content">
-                          <div class="review-box">
+                          <div class="review-box" data-animation="fadeInUp" data-delay="0.15s">
                             <div class="rating">
                               <i class="fa-solid fa-star"></i>
                               <i class="fa-solid fa-star"></i>
@@ -251,15 +268,15 @@
                             </div>
                             <p class="text">100+ 5 Star Rating In Google Reviews</p>
                           </div>
-                          <div class="title-wrapper">
+                          <div class="title-wrapper" data-animation="fadeInUp" data-delay="0.30s">
                             <h2 class="hero-5-title">Forging the Future</h2>
                           </div>
-                          <div class="text-wrapper">
+                          <div class="text-wrapper" data-animation="fadeInUp" data-delay="0.45s">
                             <p class="text">Welcome to Industrie, a leading industry innovator with a rich history of
                               excellence.
                             </p>
                           </div>
-                          <div class="btn-wrapper">
+                          <div class="btn-wrapper" data-animation="fadeInUp" data-delay="0.60s">
                             <a href="contact.html" class="ui-btn round-6">
                               <span class="btn-wrap">
                                 <span class="text-one">Let’s Talk <img src="assets/imgs/icon/icon-1.png"
@@ -280,7 +297,7 @@
                       </div>
                       <div class="container ui-container-1350">
                         <div class="hero-5-content">
-                          <div class="review-box">
+                          <div class="review-box" data-animation="fadeInUp" data-delay="0.15s">
                             <div class="rating">
                               <i class="fa-solid fa-star"></i>
                               <i class="fa-solid fa-star"></i>
@@ -290,15 +307,15 @@
                             </div>
                             <p class="text">100+ 5 Star Rating In Google Reviews</p>
                           </div>
-                          <div class="title-wrapper">
+                          <div class="title-wrapper" data-animation="fadeInUp" data-delay="0.30s">
                             <h2 class="hero-5-title">Strength in Industry</h2>
                           </div>
-                          <div class="text-wrapper">
+                          <div class="text-wrapper" data-animation="fadeInUp" data-delay="0.45s">
                             <p class="text">Welcome to Industrie, a leading industry innovator with a rich history of
                               excellence.
                             </p>
                           </div>
-                          <div class="btn-wrapper">
+                          <div class="btn-wrapper" data-animation="fadeInUp" data-delay="0.60s">
                             <a href="contact.html" class="ui-btn round-6">
                               <span class="btn-wrap">
                                 <span class="text-one">Let’s Talk <img src="assets/imgs/icon/icon-1.png"
@@ -319,7 +336,7 @@
                       </div>
                       <div class="container ui-container-1350">
                         <div class="hero-5-content">
-                          <div class="review-box">
+                          <div class="review-box" data-animation="fadeInUp" data-delay="0.15s">
                             <div class="rating">
                               <i class="fa-solid fa-star"></i>
                               <i class="fa-solid fa-star"></i>
@@ -329,15 +346,15 @@
                             </div>
                             <p class="text">100+ 5 Star Rating In Google Reviews</p>
                           </div>
-                          <div class="title-wrapper">
+                          <div class="title-wrapper" data-animation="fadeInUp" data-delay="0.30s">
                             <h2 class="hero-5-title">Powering the Future</h2>
                           </div>
-                          <div class="text-wrapper">
+                          <div class="text-wrapper" data-animation="fadeInUp" data-delay="0.45s">
                             <p class="text">Welcome to Industrie, a leading industry innovator with a rich history of
                               excellence.
                             </p>
                           </div>
-                          <div class="btn-wrapper">
+                          <div class="btn-wrapper" data-animation="fadeInUp" data-delay="0.60s">
                             <a href="contact.html" class="ui-btn round-6">
                               <span class="btn-wrap">
                                 <span class="text-one">Let’s Talk <img src="assets/imgs/icon/icon-1.png"
@@ -372,8 +389,8 @@
           </div>
           <div class="container ui-container-1350">
             <div class="about-4-area-inner section-spacing">
-              <div class="about-4-content fade-anim">
-                <div class="content-first">
+              <div class="about-4-content">
+                <div class="content-first fade-anim">
                   <div class="subtitle-wrapper">
                     <span class="section-subtitle">
                       <span class="subtitle-text">About Us</span>
@@ -388,12 +405,12 @@
                   </div>
                 </div>
                 <div class="content-last">
-                  <div class="section-title-wrapper">
+                  <div class="section-title-wrapper fade-anim">
                     <div class="title-wrapper">
                       <h2 class="section-title">We're Here to assist You Build Skills & Expertise</h2>
                     </div>
                   </div>
-                  <div class="content-wrapper">
+                  <div class="content-wrapper fade-anim">
                     <div class="about-4-thumb-3">
                       <img src="assets/imgs/gallery/gallery-43.jpg" alt="image">
                     </div>
@@ -948,7 +965,7 @@
                       <div class="slide-toggle-btn">
                         <label for="price-1s" class="before_label active">Monthly</label>
                         <label for="price-1s" class="after_label">Yearly</label>
-                        <input type="checkbox" id="price-1s" />
+                        <input type="checkbox" id="price-1s">
                       </div>
                     </div>
                     <div class="toggle-content">
@@ -1218,11 +1235,11 @@
                   <p class="text"> Watch Our Story</p>
                 </div>
               </div>
-              <div class="faq-2-accordion-wrapper section-spacing fade-anim" data-direction="right">
+              <div class="faq-2-accordion-wrapper section-spacing">
                 <div class="faq-2-shape-1">
                   <img src="assets/imgs/gallery/gallery-34.png" alt="image">
                 </div>
-                <div class="section-title-wrapper">
+                <div class="section-title-wrapper fade-anim">
                   <div class="subtitle-wrapper">
                     <span class="section-subtitle">
                       <span class="subtitle-text">FAQ</span>
@@ -1233,7 +1250,7 @@
                     <h2 class="section-title">basic FAQ questions</h2>
                   </div>
                 </div>
-                <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion accordion-flush fade-anim" id="accordionFlushExample">
                   <div class="accordion-item wow fadeInUp">
                     <h2 class="accordion-header" id="flush-headingOne">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"

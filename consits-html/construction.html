@@ -107,7 +107,22 @@
   <div class="offcanvas-overlay"></div>
   <!-- side toggle end -->
 
-
+  <!-- search modal start -->
+  <div class="modal fade" id="search-template" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="search-template" aria-hidden="true">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form action="#" class="form-search">
+            <input type="text" placeholder="Search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- search modal end -->
 
 
   <div class="has-smooth" id="has_smooth"></div>
@@ -168,7 +183,7 @@
                 </nav>
               </div>
               <div class="header-search">
-                <button class="search-box">
+                <button class="search-box" data-bs-toggle="modal" data-bs-target="#search-template">
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
               </div>
@@ -216,18 +231,18 @@
           <div class="hero-area-inner">
             <div class="hero-content">
               <div class="hero-title-wrapper">
-                <div class="subtitle-wrapper fade-anim" data-animation="fadeInUp" data-delay=".3">
+                <div class="subtitle-wrapper fade-anim" data-animation="fadeInUp" data-delay=".15">
                   <span class="section-subtitle">
                     <span class="subtitle-line-first"></span>
                     <span class="subtitle-text">Building the Future Today</span>
                     <span class="subtitle-line-last"></span>
                   </span>
                 </div>
-                <div class="title-wrapper fade-anim" data-animation="fadeInUp" data-delay=".6">
+                <div class="title-wrapper fade-anim" data-animation="fadeInUp" data-delay=".30">
                   <h1 class="hero-title">Building Dreams One Brick at a Time.</h1>
                 </div>
               </div>
-              <div class="btn-wrapper fade-anim" data-animation="fadeInUp" data-delay=".9">
+              <div class="btn-wrapper fade-anim" data-animation="fadeInUp" data-delay=".45">
                 <a href="contact.html" class="ui-btn">
                   <span class="btn-wrap">
                     <span class="text-one">Let’s Talk <img src="assets/imgs/icon/icon-1.png" alt="image"></span>
@@ -252,7 +267,7 @@
               </div>
             </div>
             <div class="hero-review-image">
-              <div class="circle-text fade-anim" data-delay="1.2" data-ease="bounce" data-direction="top"
+              <div class="circle-text fade-anim" data-delay=".60" data-ease="bounce" data-direction="top"
                 data-offset="100">
                 <img class="text" src="assets/imgs/shape/shape-3.png" alt="image">
                 <img class="icon" src="assets/imgs/gallery/gallery-4.png" alt="image">
@@ -413,7 +428,7 @@
               </div>
               <div class="services-wrapper-box">
                 <div class="services-wrapper">
-                  <div class="service-box fade-anim" data-delay="0.3">
+                  <div class="service-box fade-anim" data-delay="0.15" data-direction="left">
                     <div class="thumb">
                       <a href="service-details.html"><img src="assets/imgs/service/service-1.jpg" alt="image"></a>
                     </div>
@@ -435,7 +450,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="service-box fade-anim" data-delay="0.5">
+                  <div class="service-box fade-anim" data-delay="0.30" data-direction="left">
                     <div class="thumb">
                       <a href="service-details.html"><img src="assets/imgs/service/service-2.jpg" alt="image"></a>
                     </div>
@@ -457,7 +472,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="service-box fade-anim" data-delay="0.7">
+                  <div class="service-box fade-anim" data-delay="0.45" data-direction="left">
                     <div class="thumb">
                       <a href="service-details.html"><img src="assets/imgs/service/service-3.jpg" alt="image"></a>
                     </div>
@@ -503,7 +518,7 @@
           <div class="container ui-container-1350">
             <div class="counter-area-inner">
               <div class="counter-wrapper">
-                <div class="counter-box fade-anim" data-delay="0.3">
+                <div class="counter-box fade-anim" data-delay="0.15" data-direction="left">
                   <div class="icon">
                     <img src="assets/imgs/icon/icon-5.png" alt="image">
                   </div>
@@ -512,7 +527,7 @@
                     <p class="text">Years Of Experience</p>
                   </div>
                 </div>
-                <div class="counter-box fade-anim" data-delay="0.5">
+                <div class="counter-box fade-anim" data-delay="0.30" data-direction="left">
                   <div class="icon">
                     <img src="assets/imgs/icon/icon-6.png" alt="image">
                   </div>
@@ -521,7 +536,7 @@
                     <p class="text">Project Done</p>
                   </div>
                 </div>
-                <div class="counter-box fade-anim" data-delay="0.7">
+                <div class="counter-box fade-anim" data-delay="0.45" data-direction="left">
                   <div class="icon">
                     <img src="assets/imgs/icon/icon-7.png" alt="image">
                   </div>
@@ -530,7 +545,7 @@
                     <p class="text">Clients Satisfy</p>
                   </div>
                 </div>
-                <div class="counter-box fade-anim" data-delay="0.9">
+                <div class="counter-box fade-anim" data-delay="0.60" data-direction="left">
                   <div class="icon">
                     <img src="assets/imgs/icon/icon-8.png" alt="image">
                   </div>
@@ -752,7 +767,7 @@
           <div class="feature-area-inner">
             <div class="container ui-container-1350">
               <div class="feature-content section-spacing">
-                <div class="section-title-wrapper">
+                <div class="section-title-wrapper fade-anim">
                   <div class="subtitle-wrapper">
                     <span class="section-subtitle">
                       <span class="subtitle-text">why we choose us</span>
@@ -860,7 +875,7 @@
                     <a class="cta-btn" href="contact.html">Contact With Us <i class="fa-solid fa-arrow-right"></i></a>
                   </div>
                 </div>
-                <div class="feature-info-image">
+                <div class="feature-info-image img-reveal-anim">
                   <img class="image" src="assets/imgs/gallery/gallery-12.jpg" alt="image">
                 </div>
               </div>
@@ -897,7 +912,7 @@
                       <div class="slide-toggle-btn">
                         <label for="price-1s" class="before_label active">Monthly Membership</label>
                         <label for="price-1s" class="after_label">Yearly Membership</label>
-                        <input type="checkbox" id="price-1s" />
+                        <input type="checkbox" id="price-1s">
                         <label for="price-1s" class="switcher"></label>
                       </div>
                       <ul class="feature-list">
@@ -1112,7 +1127,7 @@
               </div>
               <div class="team-wrapper-box">
                 <div class="team-wrapper">
-                  <div class="team-box fade-anim" data-delay="0.3">
+                  <div class="team-box fade-anim" data-delay="0.15" data-direction="left">
                     <div class="thumb">
                       <a href="team-details.html">
                         <img src="assets/imgs/team/team-1.jpg" alt="image">
@@ -1132,7 +1147,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="team-box fade-anim" data-delay="0.5">
+                  <div class="team-box fade-anim" data-delay="0.30" data-direction="left">
                     <div class="thumb">
                       <a href="team-details.html">
                         <img src="assets/imgs/team/team-2.jpg" alt="image">
@@ -1152,7 +1167,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="team-box fade-anim" data-delay="0.7">
+                  <div class="team-box fade-anim" data-delay="0.45" data-direction="left">
                     <div class="thumb">
                       <a href="team-details.html">
                         <img src="assets/imgs/team/team-3.jpg" alt="image">
@@ -1172,7 +1187,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="team-box fade-anim" data-delay="0.9">
+                  <div class="team-box fade-anim" data-delay="0.60" data-direction="left">
                     <div class="thumb">
                       <a href="team-details.html">
                         <img src="assets/imgs/team/team-4.jpg" alt="image">
@@ -1237,7 +1252,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper text-slider-2-active fade-anim" dir="rtl">
+              <div class="swiper text-slider-2-active fade-anim" dir="rtl" data-delay="0.30">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="text-slider-item">
@@ -1299,8 +1314,8 @@
               </div>
               <div class="blogs-wrapper-box">
                 <div class="blogs-wrapper">
-                  <article class="blog fade-anim" data-delay="0.3">
-                    <div class="thumb">
+                  <article class="blog fade-anim" data-delay="0.15">
+                    <div class="thumb image-shadow-anim">
                       <a href="blog-details.html"><img src="assets/imgs/blog/blog-1.jpg" alt="blog image"></a>
                       <span class="date">10 July, 2025</span>
                     </div>
@@ -1321,8 +1336,8 @@
                       </div>
                     </div>
                   </article>
-                  <article class="blog fade-anim" data-delay="0.5">
-                    <div class="thumb">
+                  <article class="blog fade-anim" data-delay="0.30">
+                    <div class="thumb image-shadow-anim">
                       <a href="blog-details.html"><img src="assets/imgs/blog/blog-2.jpg" alt="blog image"></a>
                       <span class="date">08 July, 2025</span>
                     </div>
@@ -1343,8 +1358,8 @@
                       </div>
                     </div>
                   </article>
-                  <article class="blog fade-anim" data-delay="0.7">
-                    <div class="thumb">
+                  <article class="blog fade-anim" data-delay="0.45">
+                    <div class="thumb image-shadow-anim">
                       <a href="blog-details.html"><img src="assets/imgs/blog/blog-3.jpg" alt="blog image"></a>
                       <span class="date">02 July, 2025</span>
                     </div>

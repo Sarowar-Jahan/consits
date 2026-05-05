@@ -107,6 +107,23 @@
   <div class="offcanvas-overlay"></div>
   <!-- side toggle end -->
 
+  <!-- search modal start -->
+  <div class="modal fade" id="search-template" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="search-template" aria-hidden="true">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form action="#" class="form-search">
+            <input type="text" placeholder="Search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- search modal end -->
+
 
 
 
@@ -198,7 +215,7 @@
                 </nav>
               </div>
               <div class="header-5-search">
-                <button class="search-box">
+                <button class="search-box" data-bs-toggle="modal" data-bs-target="#search-template">
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
               </div>
@@ -443,7 +460,7 @@
               </div>
               <div class="services-6-wrapper-box">
                 <div class="services-6-wrapper ">
-                  <div class="service-6-box fade-anim" data-delay="0.3">
+                  <div class="service-6-box fade-anim" data-delay="0.15" data-direction="left">
                     <div class="thumb">
                       <div class="icon">
                         <img src="assets/imgs/icon/icon-65.png" alt="image">
@@ -467,7 +484,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="service-6-box fade-anim" data-delay="0.5">
+                  <div class="service-6-box fade-anim" data-delay="0.30" data-direction="left">
                     <div class="thumb">
                       <div class="icon">
                         <img src="assets/imgs/icon/icon-66.png" alt="image">
@@ -491,7 +508,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="service-6-box fade-anim" data-delay="0.7">
+                  <div class="service-6-box fade-anim" data-delay="0.45" data-direction="left">
                     <div class="thumb">
                       <div class="icon">
                         <img src="assets/imgs/icon/icon-67.png" alt="image">
@@ -515,7 +532,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="service-6-box fade-anim" data-delay="0.9">
+                  <div class="service-6-box fade-anim" data-delay="0.60" data-direction="left">
                     <div class="thumb">
                       <div class="icon">
                         <img src="assets/imgs/icon/icon-68.png" alt="image">
@@ -585,7 +602,7 @@
                       <div class="slide-toggle-btn">
                         <label for="price-1s" class="before_label active">Monthly</label>
                         <label for="price-1s" class="after_label">Yearly</label>
-                        <input type="checkbox" id="price-1s" />
+                        <input type="checkbox" id="price-1s">
                       </div>
                     </div>
                     <div class="toggle-content">

@@ -107,6 +107,23 @@
   <div class="offcanvas-overlay"></div>
   <!-- side toggle end -->
 
+  <!-- search modal start -->
+  <div class="modal fade" id="search-template" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="search-template" aria-hidden="true">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form action="#" class="form-search">
+            <input type="text" placeholder="Search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- search modal end -->
+
 
 
 
@@ -168,7 +185,7 @@
                 </nav>
               </div>
               <div class="header-7-search">
-                <button class="search-box">
+                <button class="search-box" data-bs-toggle="modal" data-bs-target="#search-template">
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
               </div>
@@ -235,7 +252,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="projects-7-wrapper-box">
+                <div class="projects-7-wrapper-box fade-anim" data-direction="right">
                   <div class="projects-7-wrapper">
                     <div class="swiper project-7-slider">
                       <div class="swiper-wrapper">
@@ -295,7 +312,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="hero-9-social-links">
+                <div class="hero-9-social-links fade-anim" data-direction="left">
                   <a href="https://www.facebook.com/"><span class="short">Fb.</span> <span
                       class="hover-text">Facebook</span></a>
                   <a href="https://x.com/?lang=en"><span class="short">Tw.</span> <span
@@ -425,7 +442,15 @@
                         <span class="number"><span class="ui-color-theme">01</span> - 04</span>
                         <h3 class="title"><a href="service-details.html">Architectural Design</a></h3>
                         <div class="thumb">
-                          <a href="service-details.html"><img src="assets/imgs/service/service-21.jpg" alt="image"></a>
+                          <a href="service-details.html">
+                            <div class="ui-hover-displacement">
+                              <div class="ui-hover-displacement-image"
+                                data-displacement="assets/imgs/gallery/displacement.jpg" data-intensity="0.6"
+                                data-speedin="1" data-speedout="1">
+                                <img src="assets/imgs/service/service-21.jpg" alt="image">
+                              </div>
+                            </div>
+                          </a>
                         </div>
                         <p class="text">We create innovative and functional architectural designs that combine
                           creativity
@@ -442,7 +467,15 @@
                         <span class="number"><span class="ui-color-theme">02</span> - 04</span>
                         <h3 class="title"><a href="service-details.html">Architectural Design</a></h3>
                         <div class="thumb">
-                          <a href="service-details.html"><img src="assets/imgs/service/service-22.jpg" alt="image"></a>
+                          <a href="service-details.html">
+                            <div class="ui-hover-displacement">
+                              <div class="ui-hover-displacement-image"
+                                data-displacement="assets/imgs/gallery/displacement.jpg" data-intensity="0.6"
+                                data-speedin="1" data-speedout="1">
+                                <img src="assets/imgs/service/service-22.jpg" alt="image">
+                              </div>
+                            </div>
+                          </a>
                         </div>
                         <p class="text">We create innovative and functional architectural designs that combine
                           creativity
@@ -459,7 +492,15 @@
                         <span class="number"><span class="ui-color-theme">03</span> - 04</span>
                         <h3 class="title"><a href="service-details.html">Architectural Design</a></h3>
                         <div class="thumb">
-                          <a href="service-details.html"><img src="assets/imgs/service/service-23.jpg" alt="image"></a>
+                          <a href="service-details.html">
+                            <div class="ui-hover-displacement">
+                              <div class="ui-hover-displacement-image"
+                                data-displacement="assets/imgs/gallery/displacement.jpg" data-intensity="0.6"
+                                data-speedin="1" data-speedout="1">
+                                <img src="assets/imgs/service/service-23.jpg" alt="image">
+                              </div>
+                            </div>
+                          </a>
                         </div>
                         <p class="text">We create innovative and functional architectural designs that combine
                           creativity
@@ -476,7 +517,15 @@
                         <span class="number"><span class="ui-color-theme">04</span> - 04</span>
                         <h3 class="title"><a href="service-details.html">Architectural Design</a></h3>
                         <div class="thumb">
-                          <a href="service-details.html"><img src="assets/imgs/service/service-24.jpg" alt="image"></a>
+                          <a href="service-details.html">
+                            <div class="ui-hover-displacement">
+                              <div class="ui-hover-displacement-image"
+                                data-displacement="assets/imgs/gallery/displacement.jpg" data-intensity="0.6"
+                                data-speedin="1" data-speedout="1">
+                                <img src="assets/imgs/service/service-24.jpg" alt="image">
+                              </div>
+                            </div>
+                          </a>
                         </div>
                         <p class="text">We create innovative and functional architectural designs that combine
                           creativity
@@ -495,12 +544,12 @@
         <div class="award-area section-spacing">
           <div class="container ui-container-1350">
             <div class="award-inner">
-              <h2 class="award-section-title fade-anim" data-direction="top" data-ease="bounce">Award</h2>
+              <h2 class="award-section-title fade-anim">Award</h2>
               <div class="award-wrapper-box fade-anim">
                 <div class="award-wrapper">
                   <div class="award-left-column">
                     <div class="award-box recent-award">
-                      <div class="recent-meta-circle">
+                      <div class="recent-meta-circle fade-anim" data-direction="top" data-ease="bounce">
                         <span class="number">03</span>
                         <div class="award-logo">
                           <img src="assets/imgs/gallery/gallery-99.png" alt="image">
@@ -517,7 +566,7 @@
                   </div>
                   <div class="award-right-column">
                     <div class="award-box second-award">
-                      <div class="second-meta-circle">
+                      <div class="second-meta-circle fade-anim" data-direction="top" data-ease="bounce">
                         <span class="number">02</span>
                         <div class="award-logo-wrapper">
                           <div class="award-logo">
@@ -539,7 +588,7 @@
                       </p>
                     </div>
                     <div class="award-box first-award">
-                      <div class="first-meta-circle">
+                      <div class="first-meta-circle fade-anim" data-direction="top" data-ease="bounce">
                         <span class="number">01</span>
                         <div class="award-logo-wrapper">
                           <div class="award-logo">
@@ -593,7 +642,7 @@
                           <div class="ui-hover-displacement-image"
                             data-displacement="assets/imgs/gallery/displacement.jpg" data-intensity="0.6"
                             data-speedin="1" data-speedout="1">
-                            <img src="assets/imgs/project/project-33.jpg" alt="image not found">
+                            <img src="assets/imgs/project/project-33.jpg" alt="image">
                           </div>
                         </div>
                       </a>
@@ -622,7 +671,7 @@
                           <div class="ui-hover-displacement-image"
                             data-displacement="assets/imgs/gallery/displacement.jpg" data-intensity="0.6"
                             data-speedin="1" data-speedout="1">
-                            <img src="assets/imgs/project/project-34.jpg" alt="image not found">
+                            <img src="assets/imgs/project/project-34.jpg" alt="image">
                           </div>
                         </div>
                       </a>
@@ -651,7 +700,7 @@
                           <div class="ui-hover-displacement-image"
                             data-displacement="assets/imgs/gallery/displacement.jpg" data-intensity="0.6"
                             data-speedin="1" data-speedout="1">
-                            <img src="assets/imgs/project/project-35.jpg" alt="image not found">
+                            <img src="assets/imgs/project/project-35.jpg" alt="image">
                           </div>
                         </div>
                       </a>
@@ -680,7 +729,7 @@
                           <div class="ui-hover-displacement-image"
                             data-displacement="assets/imgs/gallery/displacement.jpg" data-intensity="0.6"
                             data-speedin="1" data-speedout="1">
-                            <img src="assets/imgs/project/project-36.jpg" alt="image not found">
+                            <img src="assets/imgs/project/project-36.jpg" alt="image">
                           </div>
                         </div>
                       </a>
@@ -709,7 +758,7 @@
                           <div class="ui-hover-displacement-image"
                             data-displacement="assets/imgs/gallery/displacement.jpg" data-intensity="0.6"
                             data-speedin="1" data-speedout="1">
-                            <img src="assets/imgs/project/project-37.jpg" alt="image not found">
+                            <img src="assets/imgs/project/project-37.jpg" alt="image">
                           </div>
                         </div>
                       </a>
@@ -1166,7 +1215,7 @@
               </div>
               <div class="team-4-wrapper-box">
                 <div class="team-4-wrapper">
-                  <div class="team-4-box fade-anim" data-delay="0.3">
+                  <div class="team-4-box fade-anim" data-delay="0.15" data-direction="left">
                     <div class="thumb">
                       <a href="team-details.html">
                         <img src="assets/imgs/team/team-22.jpg" alt="image">
@@ -1186,7 +1235,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="team-4-box fade-anim" data-delay="0.5">
+                  <div class="team-4-box fade-anim" data-delay="0.30" data-direction="left">
                     <div class="thumb">
                       <a href="team-details.html">
                         <img src="assets/imgs/team/team-23.jpg" alt="image">
@@ -1206,7 +1255,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="team-4-box fade-anim" data-delay="0.7">
+                  <div class="team-4-box fade-anim" data-delay="0.45" data-direction="left">
                     <div class="thumb">
                       <a href="team-details.html">
                         <img src="assets/imgs/team/team-24.jpg" alt="image">
@@ -1226,7 +1275,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="team-4-box fade-anim" data-delay="0.9">
+                  <div class="team-4-box fade-anim" data-delay="0.60" data-direction="left">
                     <div class="thumb">
                       <a href="team-details.html">
                         <img src="assets/imgs/team/team-25.jpg" alt="image">
@@ -1260,18 +1309,18 @@
           </div>
           <div class="container ui-container-1350">
             <div class="cta-2-area-inner">
-              <div class="cta-2-content-wrapper fade-anim">
+              <div class="cta-2-content-wrapper">
                 <div class="cta-2-content">
                   <span class="line-1"></span>
                   <span class="line-2"></span>
                   <span class="line-3"></span>
                   <span class="line-4"></span>
-                  <h3 class="title">Ready to Transform Your Space with consits Architecture?</h3>
-                  <div class="text-wrapper">
+                  <h3 class="title fade-anim">Ready to Transform Your Space with consits Architecture?</h3>
+                  <div class="text-wrapper fade-anim">
                     <p class="text">From Concept to Completion, We Deliver Bespoke Architectural Designs That Combine
                       Modern kind Elegance, Smart Functionality, and a Strong good Sense of Identity</p>
                   </div>
-                  <div class="btn-wrapper">
+                  <div class="btn-wrapper fade-anim">
                     <a href="team.html" class="ui-btn">
                       <span class="btn-wrap">
                         <span class="text-one">Book A consultation <img src="assets/imgs/icon/icon-1.png"
@@ -1308,9 +1357,17 @@
               </div>
               <div class="blog-9-wrapper-box">
                 <div class="blog-9-wrapper">
-                  <article class="blog-9 fade-anim" data-delay="0.3">
+                  <article class="blog-9 fade-anim" data-delay="0.15" data-direction="left">
                     <div class="thumb">
-                      <a href="blog-details.html"><img src="assets/imgs/blog/blog-39.jpg" alt="blog image"></a>
+                      <a href="blog-details.html">
+                        <div class="ui-hover-displacement">
+                          <div class="ui-hover-displacement-image"
+                            data-displacement="assets/imgs/gallery/displacement.jpg" data-intensity="0.6"
+                            data-speedin="1" data-speedout="1">
+                            <img src="assets/imgs/blog/blog-39.jpg" alt="blog image">
+                          </div>
+                        </div>
+                      </a>
                     </div>
                     <div class="content">
                       <div class="meta">
@@ -1323,9 +1380,17 @@
                     </div>
 
                   </article>
-                  <article class="blog-9 fade-anim" data-delay="0.5">
+                  <article class="blog-9 fade-anim" data-delay="0.30" data-direction="left">
                     <div class="thumb">
-                      <a href="blog-details.html"><img src="assets/imgs/blog/blog-40.jpg" alt="blog image"></a>
+                      <a href="blog-details.html">
+                        <div class="ui-hover-displacement">
+                          <div class="ui-hover-displacement-image"
+                            data-displacement="assets/imgs/gallery/displacement.jpg" data-intensity="0.6"
+                            data-speedin="1" data-speedout="1">
+                            <img src="assets/imgs/blog/blog-40.jpg" alt="blog image">
+                          </div>
+                        </div>
+                      </a>
                     </div>
                     <div class="content">
                       <div class="meta">
@@ -1338,9 +1403,17 @@
                     </div>
 
                   </article>
-                  <article class="blog-9 fade-anim" data-delay="0.7">
+                  <article class="blog-9 fade-anim" data-delay="0.45" data-direction="left">
                     <div class="thumb">
-                      <a href="blog-details.html"><img src="assets/imgs/blog/blog-41.jpg" alt="blog image"></a>
+                      <a href="blog-details.html">
+                        <div class="ui-hover-displacement">
+                          <div class="ui-hover-displacement-image"
+                            data-displacement="assets/imgs/gallery/displacement.jpg" data-intensity="0.6"
+                            data-speedin="1" data-speedout="1">
+                            <img src="assets/imgs/blog/blog-41.jpg" alt="blog image">
+                          </div>
+                        </div>
+                      </a>
                     </div>
                     <div class="content">
                       <div class="meta">
@@ -1353,9 +1426,17 @@
                     </div>
 
                   </article>
-                  <article class="blog-9 fade-anim" data-delay="0.9">
+                  <article class="blog-9 fade-anim" data-delay="0.60" data-direction="left">
                     <div class="thumb">
-                      <a href="blog-details.html"><img src="assets/imgs/blog/blog-42.jpg" alt="blog image"></a>
+                      <a href="blog-details.html">
+                        <div class="ui-hover-displacement">
+                          <div class="ui-hover-displacement-image"
+                            data-displacement="assets/imgs/gallery/displacement.jpg" data-intensity="0.6"
+                            data-speedin="1" data-speedout="1">
+                            <img src="assets/imgs/blog/blog-42.jpg" alt="blog image">
+                          </div>
+                        </div>
+                      </a>
                     </div>
                     <div class="content">
                       <div class="meta">

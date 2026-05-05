@@ -107,6 +107,23 @@
   <div class="offcanvas-overlay"></div>
   <!-- side toggle end -->
 
+  <!-- search modal start -->
+  <div class="modal fade" id="search-template" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="search-template" aria-hidden="true">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form action="#" class="form-search">
+            <input type="text" placeholder="Search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- search modal end -->
+
 
 
 
@@ -193,7 +210,7 @@
                 </nav>
               </div>
               <div class="header-4-search">
-                <button class="search-box">
+                <button class="search-box" data-bs-toggle="modal" data-bs-target="#search-template">
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
               </div>
@@ -230,18 +247,18 @@
                     <div class="container ui-container-1350">
                       <div class="hero-6-content">
                         <div class="section-title-wrapper">
-                          <div class="subtitle-wrapper">
+                          <div class="subtitle-wrapper" data-animation="fadeInUp" data-delay="0.15s">
                             <span class="section-subtitle">
                               <span class="subtitle-line-first"></span>
                               <span class="subtitle-text">Premium Flat Roof Solutions</span>
                               <span class="subtitle-line-last"></span>
                             </span>
                           </div>
-                          <div class="title-wrapper">
+                          <div class="title-wrapper" data-animation="fadeInUp" data-delay="0.30s">
                             <h2 class="hero-6-title">Roofing Done Right the First Time</h2>
                           </div>
                         </div>
-                        <div class="btn-wrapper">
+                        <div class="btn-wrapper" data-animation="fadeInUp" data-delay="0.45s">
                           <a href="contact.html" class="ui-btn round-6">
                             <span class="btn-wrap">
                               <span class="text-one">Explore more <img src="assets/imgs/icon/icon-1.png"
@@ -263,18 +280,18 @@
                     <div class="container ui-container-1350">
                       <div class="hero-6-content">
                         <div class="section-title-wrapper">
-                          <div class="subtitle-wrapper">
+                          <div class="subtitle-wrapper" data-animation="fadeInUp" data-delay="0.15s">
                             <span class="section-subtitle">
                               <span class="subtitle-line-first"></span>
                               <span class="subtitle-text">Premium Flat Roof Solutions</span>
                               <span class="subtitle-line-last"></span>
                             </span>
                           </div>
-                          <div class="title-wrapper">
+                          <div class="title-wrapper" data-animation="fadeInUp" data-delay="0.30s">
                             <h2 class="hero-6-title">Quality Roofing You Can Trust</h2>
                           </div>
                         </div>
-                        <div class="btn-wrapper">
+                        <div class="btn-wrapper" data-animation="fadeInUp" data-delay="0.45s">
                           <a href="contact.html" class="ui-btn round-6">
                             <span class="btn-wrap">
                               <span class="text-one">Explore more <img src="assets/imgs/icon/icon-1.png"
@@ -296,18 +313,18 @@
                     <div class="container ui-container-1350">
                       <div class="hero-6-content">
                         <div class="section-title-wrapper">
-                          <div class="subtitle-wrapper">
+                          <div class="subtitle-wrapper" data-animation="fadeInUp" data-delay="0.15s">
                             <span class="section-subtitle">
                               <span class="subtitle-line-first"></span>
                               <span class="subtitle-text">Premium Flat Roof Solutions</span>
                               <span class="subtitle-line-last"></span>
                             </span>
                           </div>
-                          <div class="title-wrapper">
+                          <div class="title-wrapper" data-animation="fadeInUp" data-delay="0.30s">
                             <h2 class="hero-6-title">Protecting Homes One Roof at a Time</h2>
                           </div>
                         </div>
-                        <div class="btn-wrapper">
+                        <div class="btn-wrapper" data-animation="fadeInUp" data-delay="0.45s">
                           <a href="contact.html" class="ui-btn round-6">
                             <span class="btn-wrap">
                               <span class="text-one">Explore more <img src="assets/imgs/icon/icon-1.png"
@@ -1331,7 +1348,7 @@
               </div>
               <div class="team-2-wrapper-box">
                 <div class="team-2-wrapper">
-                  <div class="team-2-box fade-anim" data-delay="0.3">
+                  <div class="team-2-box fade-anim" data-delay="0.15" data-direction="left">
                     <div class="thumb">
                       <a href="team-details.html">
                         <img src="assets/imgs/team/team-14.jpg" alt="image">
@@ -1351,7 +1368,7 @@
                       <span class="post">Expert Engineer</span>
                     </div>
                   </div>
-                  <div class="team-2-box fade-anim" data-delay="0.5">
+                  <div class="team-2-box fade-anim" data-delay="0.30" data-direction="left">
                     <div class="thumb">
                       <a href="team-details.html">
                         <img src="assets/imgs/team/team-15.jpg" alt="image">
@@ -1371,7 +1388,7 @@
                       <span class="post">Mechanical Engineer</span>
                     </div>
                   </div>
-                  <div class="team-2-box fade-anim" data-delay="0.7">
+                  <div class="team-2-box fade-anim" data-delay="0.45" data-direction="left">
                     <div class="thumb">
                       <a href="team-details.html">
                         <img src="assets/imgs/team/team-16.jpg" alt="image">
@@ -1391,7 +1408,7 @@
                       <span class="post">Senior Engineer</span>
                     </div>
                   </div>
-                  <div class="team-2-box fade-anim" data-delay="0.9">
+                  <div class="team-2-box fade-anim" data-delay="0.60" data-direction="left">
                     <div class="thumb">
                       <a href="team-details.html">
                         <img src="assets/imgs/team/team-17.jpg" alt="image">

@@ -1452,7 +1452,7 @@
 
 
 
-
+/* ui-hover-displacement-image style  */
 .ui-hover-displacement-image {
   position: relative;
 
@@ -1462,5 +1462,83 @@
     left: 0;
     right: 0;
     bottom: 0;
+  }
+}
+
+/* modal style */
+.modal {
+  background-color: var(--primary);
+  z-index: 99999;
+}
+
+.modal-content {
+  background-color: transparent;
+  border: 0;
+}
+
+.form-search {
+  input {
+    width: 100%;
+    height: 55px;
+    background: transparent;
+    border: 0;
+    color: var(--white);
+
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+
+.form-search {
+  display: flex;
+  gap: 10px;
+  border: 1px solid #19242B;
+  border-radius: 70px;
+  padding: 0 15px;
+
+  button {
+    i {
+      color: var(--white);
+    }
+  }
+}
+
+.btn-close {
+  content: "\e92d";
+  font-family: "icomoon";
+  font-size: 16px;
+  opacity: 1;
+  filter: brightness(100) contrast(0);
+  border-radius: 50px;
+  width: 2em;
+  height: 2em;
+  border: 1px solid var(--white);
+  position: absolute;
+  inset-inline-end: 20px;
+  top: 20px;
+  transition: unset;
+}
+
+.image-shadow-anim {
+  position: relative;
+  overflow: hidden;
+
+  &:hover:after {
+    height: 250%;
+    transition: all 600ms linear;
+    background-color: transparent;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, .3);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
   }
 }
