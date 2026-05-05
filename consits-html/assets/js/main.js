@@ -868,7 +868,7 @@
       loop: true,
       effect: "fade",
       autoplay: {
-        delay: 5000,
+        delay: 4000,
       },
 
       // If we need pagination
@@ -1005,7 +1005,7 @@
         crossFade: true,
       },
       autoplay: {
-        delay: 2000,
+        delay: 4000,
         disableOnInteraction: false,
       },
       slidesPerView: 1,

@@ -9227,7 +9227,7 @@ section.hero-4-area {
   font-size: 66px;
   line-height: 1.12;
   color: var(--white);
-  max-width: 915px;
+  max-width: 1000px;
   margin-inline: auto;
 }
 @media only screen and (max-width: 1919px) {
