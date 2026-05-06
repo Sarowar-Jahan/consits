@@ -11348,11 +11348,18 @@ section.hero-9-area {
   }
 }
 
+.service-box:hover .thumb img {
+  transform: scale(1.05);
+}
+.service-box .thumb {
+  overflow: hidden;
+}
 .service-box .thumb img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.5s;
 }
 .service-box .content {
   background-color: var(--white);
@@ -12305,6 +12312,9 @@ section.hero-9-area {
   }
 }
 
+.service-5-box:hover .thumb img {
+  transform: scale(1.05);
+}
 .service-5-box:hover .icon {
   background-color: var(--black);
 }
@@ -12326,6 +12336,7 @@ section.hero-9-area {
 }
 .service-5-box .thumb img {
   width: 100%;
+  transition: all 0.5s;
 }
 .service-5-box .content {
   background-color: var(--white);
@@ -12445,6 +12456,9 @@ section.hero-9-area {
   }
 }
 
+.service-6-box:hover .thumb img {
+  transform: scale(1.05);
+}
 .service-6-box:hover .icon {
   background-color: var(--black);
 }
@@ -12461,6 +12475,7 @@ section.hero-9-area {
 }
 .service-6-box .thumb img {
   width: 100%;
+  transition: all 0.5s;
 }
 .service-6-box .icon {
   width: 70px;
@@ -12473,7 +12488,8 @@ section.hero-9-area {
   position: absolute;
   left: 20px;
   top: 0;
-  transition: all 0.3s;
+  transition: all 0.5s;
+  z-index: 1;
 }
 .service-6-box .icon img {
   width: 40px;
@@ -12518,6 +12534,7 @@ section.hero-9-area {
 .service-6-box .ui-btn-dashed-border .btn-icon {
   width: 40px;
   height: 40px;
+  transition: all 0.5s;
 }
 .service-6-box .ui-btn-dashed-border .btn-icon:before {
   width: 110%;
@@ -13310,11 +13327,18 @@ section.hero-9-area {
 .project-box {
   position: relative;
 }
+.project-box:hover .thumb img {
+  transform: scale(1.05);
+}
 .project-box:hover .content-wrapper {
   opacity: 1;
 }
+.project-box .thumb {
+  overflow: hidden;
+}
 .project-box .thumb img {
   width: 100%;
+  transition: all 0.5s;
 }
 .project-box .content-wrapper {
   position: absolute;
@@ -13694,6 +13718,9 @@ section.hero-9-area {
 .project-3-box {
   position: relative;
 }
+.project-3-box:hover .thumb img {
+  transform: scale(1.05);
+}
 .project-3-box:hover .content {
   opacity: 1;
 }
@@ -13703,6 +13730,7 @@ section.hero-9-area {
 }
 .project-3-box .thumb img {
   width: 100%;
+  transition: all 0.5s;
 }
 .project-3-box .content {
   position: absolute;
@@ -13857,11 +13885,18 @@ section.hero-9-area {
   border-radius: 10px;
   overflow: hidden;
 }
+.project-4-box:hover .thumb img {
+  transform: scale(1.05);
+}
 .project-4-box:hover .content-wrapper {
   opacity: 1;
 }
+.project-4-box .thumb {
+  overflow: hidden;
+}
 .project-4-box .thumb img {
   width: 100%;
+  transition: all 0.5s;
 }
 .project-4-box .content-wrapper {
   position: absolute;
@@ -14108,14 +14143,18 @@ section.hero-9-area {
   overflow: hidden;
   border-radius: 20px;
 }
+.project-5-box:hover .thumb img {
+  transform: scale(1.05);
+}
 .project-5-box:hover .content {
   background-color: var(--black);
   border-color: var(--theme);
 }
 .project-5-box .thumb {
   position: relative;
+  overflow: hidden;
 }
-.project-5-box .thumb :after {
+.project-5-box .thumb:after {
   position: absolute;
   content: "";
   width: 100%;
@@ -14130,6 +14169,7 @@ section.hero-9-area {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.5s;
 }
 .project-5-box .content-wrapper {
   margin-inline: 40px;
@@ -15061,6 +15101,11 @@ section.hero-9-area {
 .team-box:hover .thumb {
   border-color: var(--theme);
 }
+.team-box:hover .thumb:after {
+  height: 250%;
+  transition: all 600ms linear;
+  background-color: transparent;
+}
 .team-box:hover .content {
   background-color: var(--theme);
 }
@@ -15079,11 +15124,24 @@ section.hero-9-area {
   border-right: 0;
   margin-bottom: 25px;
   transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
 }
 @media only screen and (max-width: 1199px) {
   .team-box .thumb {
     padding: 9px 0 9px 9px;
   }
+}
+.team-box .thumb:after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%) rotate(-45deg);
+  z-index: 1;
 }
 .team-box .thumb img {
   width: 100%;
@@ -15099,6 +15157,7 @@ section.hero-9-area {
   right: 0;
   padding: 24px 20px 23px;
   transition: all 0.5s;
+  z-index: 1;
 }
 @media only screen and (max-width: 1199px) {
   .team-box .content {
@@ -15573,8 +15632,14 @@ section.hero-9-area {
   }
 }
 
+.team-2-box:hover .thumb img {
+  transform: scale(1.05);
+}
 .team-2-box:hover .content {
   background-color: var(--theme);
+}
+.team-2-box:hover .social .share-icon {
+  background-color: var(--black);
 }
 .team-2-box .thumb {
   border-radius: 20px;
@@ -15592,6 +15657,7 @@ section.hero-9-area {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.5s;
 }
 .team-2-box .social {
   position: absolute;
@@ -15619,7 +15685,7 @@ section.hero-9-area {
   z-index: -1;
   bottom: 0;
   left: 50%;
-  border: 1px solid var(--theme);
+  border: 1px solid var(--black);
   border-radius: 20px;
   background-color: var(--white);
   width: 100%;
@@ -15790,6 +15856,9 @@ section.hero-9-area {
 .team-3-box:hover .thumb:before {
   opacity: 1;
 }
+.team-3-box:hover .thumb img {
+  transform: scale(1.05);
+}
 .team-3-box:hover .social {
   transform: translateX(-50%) scale(1);
   opacity: 1;
@@ -15810,6 +15879,7 @@ section.hero-9-area {
   border-radius: 10px;
   opacity: 0;
   transition: all 0.3s;
+  z-index: 1;
 }
 @media only screen and (max-width: 1199px) {
   .team-3-box .thumb:before {
@@ -15821,6 +15891,7 @@ section.hero-9-area {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.5s;
 }
 .team-3-box .social {
   position: absolute;
@@ -15946,6 +16017,9 @@ section.hero-9-area {
     padding: 20px 0;
   }
 }
+.team-4-box:hover .thumb img {
+  transform: scale(1.05);
+}
 .team-4-box:before {
   position: absolute;
   content: "";
@@ -16004,6 +16078,7 @@ section.hero-9-area {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.5s;
 }
 .team-4-box .content {
   margin-top: 14px;
@@ -17268,6 +17343,9 @@ section.hero-9-area {
 .blog-2:hover {
   background-color: var(--theme);
 }
+.blog-2:hover .thumb img {
+  transform: scale(1.05);
+}
 .blog-2:hover .category {
   border-color: var(--white);
   color: var(--white);
@@ -17302,6 +17380,7 @@ section.hero-9-area {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.5s;
 }
 .blog-2 .date {
   font-weight: 600;
@@ -17634,6 +17713,9 @@ section.hero-9-area {
   border-radius: 10px;
   overflow: hidden;
 }
+.blog-4:hover .thumb img {
+  transform: scale(1.05);
+}
 .blog-4 .thumb {
   position: relative;
   overflow: hidden;
@@ -17643,6 +17725,7 @@ section.hero-9-area {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.5s;
 }
 .blog-4 .date {
   font-family: var(--font_unbounded);
@@ -17878,6 +17961,9 @@ section.hero-9-area {
   border-radius: 30px;
   z-index: 1;
 }
+.blog-6:hover .thumb img {
+  transform: scale(1.05);
+}
 .blog-6 .shape-1 {
   position: absolute;
   bottom: 0;
@@ -17900,6 +17986,7 @@ section.hero-9-area {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.5s;
 }
 .blog-6 .tag {
   font-weight: 600;
@@ -18122,6 +18209,9 @@ section.hero-9-area {
   border-radius: 10px;
   overflow: hidden;
 }
+.blog-7:hover .thumb img {
+  transform: scale(1.05);
+}
 .blog-7:hover .tag {
   background-color: var(--black);
 }
@@ -18141,6 +18231,7 @@ section.hero-9-area {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.5s;
 }
 .blog-7 .tag {
   font-weight: 500;
@@ -18155,7 +18246,7 @@ section.hero-9-area {
   padding: 7px 24px;
   background-color: var(--theme);
   border-radius: 30px;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 .blog-7 .content {
   padding: 25px 30px 30px;
@@ -18223,6 +18314,9 @@ section.hero-9-area {
 }
 .blog-7 .btn-wrapper {
   margin-top: 23px;
+}
+.blog-7 .ui-btn-dashed-border .btn-icon {
+  transition: all 0.5s;
 }
 
 .blog-7-nav-button {
@@ -18323,6 +18417,9 @@ section.hero-9-area {
   }
 }
 
+.blog-8:hover .thumb img {
+  transform: scale(1.05);
+}
 .blog-8 .thumb {
   position: relative;
   overflow: hidden;
@@ -18333,6 +18430,7 @@ section.hero-9-area {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.5s;
 }
 .blog-8 .date {
   font-family: var(--font_unbounded);

@@ -1058,6 +1058,12 @@
     &:hover {
         background-color: var(--theme);
 
+        .thumb {
+            img {
+                transform: scale(1.05);
+            }
+        }
+
         .category {
             border-color: var(--white);
             color: var(--white);
@@ -1103,6 +1109,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: all 0.5s;
         }
     }
 
@@ -1482,6 +1489,14 @@
     border-radius: 10px;
     overflow: hidden;
 
+    &:hover {
+        .thumb {
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+
     .thumb {
         position: relative;
         overflow: hidden;
@@ -1490,6 +1505,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: all 0.5s;
         }
     }
 
@@ -1745,6 +1761,14 @@
     border-radius: 30px;
     z-index: 1;
 
+    &:hover {
+        .thumb {
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+
     .shape-1 {
         position: absolute;
         bottom: 0;
@@ -1766,6 +1790,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: all 0.5s;
         }
     }
 
@@ -2006,6 +2031,12 @@
     overflow: hidden;
 
     &:hover {
+        .thumb {
+            img {
+                transform: scale(1.05);
+            }
+        }
+
         .tag {
             background-color: var(--black);
         }
@@ -2026,12 +2057,11 @@
         overflow: hidden;
         border-radius: 10px;
 
-
-
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: all 0.5s;
         }
     }
 
@@ -2049,7 +2079,7 @@
         padding: 7px 24px;
         background-color: var(--theme);
         border-radius: 30px;
-        transition: all 0.3s;
+        transition: all 0.5s;
     }
 
     .content {
@@ -2121,6 +2151,12 @@
 
     .btn-wrapper {
         margin-top: 23px;
+    }
+
+    .ui-btn-dashed-border {
+        .btn-icon {
+            transition: all 0.5s;
+        }
     }
 }
 
@@ -2230,6 +2266,13 @@
 }
 
 .blog-8 {
+    &:hover {
+        .thumb {
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
 
     .thumb {
         position: relative;
@@ -2240,6 +2283,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: all 0.5s;
         }
     }
 
