@@ -109,6 +109,22 @@
     position: absolute;
     bottom: 0;
     left: 757px;
+
+    @media #{$xxl} {
+        left: 557px;
+    }
+
+    @media #{$lg} {
+        left: 457px;
+    }
+
+    img {
+        width: 218px;
+
+        @media #{$xxl} {
+            width: 188px;
+        }
+    }
 }
 
 .hero-content {
@@ -1062,6 +1078,10 @@ section.hero-4-area {
         .subtitle-text {
             text-transform: uppercase;
             font-family: var(--font_unbounded);
+
+            @media #{$xs} {
+                line-height: 1;
+            }
         }
 
         .subtitle-line-first {

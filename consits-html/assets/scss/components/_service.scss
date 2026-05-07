@@ -75,6 +75,12 @@
                 transform: scale(1.05);
             }
         }
+
+        .icon {
+            img {
+                animation: t-spin-y 0.5s;
+            }
+        }
     }
 
     .thumb {
@@ -120,12 +126,16 @@
             width: 60px;
             height: 60px;
         }
+
+        img {
+            transition: all 0.5s;
+        }
     }
 
     .title {
         font-weight: 600;
         font-size: 24px;
-        line-height: 32px;
+        line-height: 1.33;
         text-transform: capitalize;
 
         @media #{$lg} {
@@ -462,7 +472,7 @@
     .title {
         font-weight: 600;
         font-size: 24px;
-        line-height: 32px;
+        line-height: 1.33;
         text-transform: capitalize;
         margin-top: 13px;
 
@@ -658,14 +668,18 @@
         line-height: 1.33;
         text-transform: capitalize;
         margin-top: 23px;
-        transition: all 0.3s;
+        transition: all 0.5s;
 
         @media #{$lg} {
             font-size: 22px;
         }
 
         a {
-            transition: all 0.3s;
+            transition: none;
+
+            &:hover {
+                color: var(--white);
+            }
         }
     }
 
@@ -902,7 +916,11 @@
         }
 
         a {
-            transition: all 0.3s;
+            transition: none;
+
+            &:hover {
+                color: var(--white);
+            }
         }
     }
 

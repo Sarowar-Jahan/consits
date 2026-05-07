@@ -312,15 +312,34 @@
 
     }
 
+    &:hover {
+        .thumb {
+            img {
+                animation: t-spin-y 0.5s;
+            }
+        }
+    }
+
     .thumb {
         width: 113px;
+        min-width: 113px;
         height: 100px;
         background: var(--theme);
         border-radius: 10px;
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        min-width: 113px;
+        padding: 20px;
+
+        @media #{$sm} {
+            width: 83px;
+            min-width: 83px;
+            height: 70px;
+        }
+
+        img {
+            transition: all 0.5s;
+        }
     }
 
     .content {
@@ -450,8 +469,8 @@
 
         @media #{$md} {
             transform: none;
-            top: 20px;
-            left: 20px;
+            top: 90px;
+            left: 90px;
         }
 
         &::before {

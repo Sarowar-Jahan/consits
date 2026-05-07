@@ -561,6 +561,7 @@
 
         .content {
             opacity: 1;
+            transform: translateY(0px);
         }
     }
 
@@ -588,6 +589,7 @@
         opacity: 0;
         transition: all 0.5s;
         padding: 30px 30px;
+        transform: translateY(10px);
 
         @media #{$lg} {
             width: calc(100% - 30px);

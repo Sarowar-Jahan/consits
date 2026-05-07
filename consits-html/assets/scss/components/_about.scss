@@ -16,6 +16,10 @@
         margin-top: 21px;
     }
 
+    .section-title {
+        max-width: 670px;
+    }
+
     .content-wrapper {
         margin-top: 37px;
         display: grid;
@@ -42,6 +46,9 @@
         object-fit: cover;
         border-radius: 10px;
 
+        @media #{$xs} {
+            max-width: 257px;
+        }
     }
 
     .thumb-border {
@@ -135,7 +142,8 @@
         margin-top: 33px;
         display: flex;
         align-items: start;
-        gap: 25px;
+        gap: 10px 25px;
+        flex-wrap: wrap;
     }
 }
 
@@ -226,6 +234,10 @@
         line-height: 1.21;
         text-transform: capitalize;
         color: var(--white);
+
+        @media #{$sm} {
+            font-size: 37px;
+        }
     }
 
     .text {
@@ -674,6 +686,7 @@
         display: flex;
         gap: 30px;
         flex-wrap: wrap;
+        align-items: center;
     }
 
     .founder {

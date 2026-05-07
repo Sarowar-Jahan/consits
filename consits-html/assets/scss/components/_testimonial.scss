@@ -291,11 +291,17 @@
     left: 18px;
     bottom: 87px;
     z-index: -1;
+    width: 266px;
+
+    @media #{$xxl} {
+        width: 216px;
+    }
 
     @media #{$md} {
         width: 166px;
 
     }
+
 }
 
 

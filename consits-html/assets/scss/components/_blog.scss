@@ -1174,7 +1174,7 @@
         }
 
         a {
-            transition: all 0.3s;
+            transition: none;
 
         }
     }
@@ -1565,7 +1565,7 @@
     .author {
         font-weight: 500;
         font-size: 16px;
-        line-height: 26px;
+        line-height: 1.6;
         color: #737373;
         display: inline-flex;
         gap: 10px;
@@ -1583,7 +1583,7 @@
     .comment {
         font-weight: 500;
         font-size: 16px;
-        line-height: 26px;
+        line-height: 1.6;
         color: #737373;
         display: inline-flex;
         gap: 10px;
@@ -1618,6 +1618,11 @@
         margin-top: 23px;
         padding-top: 30px;
         border-top: 1px dashed var(--border);
+
+        @media #{$lg} {
+            margin-top: 18px;
+            padding-top: 20px;
+        }
     }
 }
 

@@ -66,6 +66,14 @@
     gap: 23px;
     align-items: center;
 
+    &:hover {
+        .icon {
+            img {
+                animation: t-spin-y 0.5s;
+            }
+        }
+    }
+
     &:nth-child(2n+2) {
         flex-direction: column-reverse;
 
@@ -199,6 +207,10 @@
         @media #{$md} {
             width: 100px;
             height: 100px;
+        }
+
+        img {
+            transition: all 0.5s;
         }
     }
 

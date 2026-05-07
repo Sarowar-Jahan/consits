@@ -151,6 +151,9 @@
         color: var(--white);
         font-size: 18px;
         position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
 
         @media #{$xxl} {
             width: 50px;
@@ -472,6 +475,9 @@
         color: var(--white);
         font-size: 18px;
         position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
 
         @media #{$xxl} {
             width: 50px;
@@ -493,6 +499,7 @@
         justify-content: center;
         align-items: center;
         color: var(--theme);
+
     }
 
     .header-2-offcanvas {
@@ -669,6 +676,9 @@
         color: var(--white);
         font-size: 18px;
         position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
 
         @media #{$xxl} {
             width: 50px;
@@ -896,6 +906,9 @@
         color: var(--white);
         font-size: 18px;
         position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
 
         @media #{$xxl} {
             width: 50px;
@@ -965,6 +978,11 @@
     position: relative;
     clip-path: polygon(calc(323px/2) 0, 100% 0, 100% 100%, 0 100%);
 
+    @media #{$xxl} {
+        clip-path: polygon(141.5px 0, 100% 0, 100% 100%, 0 100%);
+        padding: 0 11px 0 323px;
+    }
+
     &:before {
         position: absolute;
         content: "";
@@ -974,6 +992,10 @@
         left: 0;
         top: 0;
         clip-path: polygon(50% 0, 100% 100%, 0 100%);
+
+        @media #{$xxl} {
+            width: 283px;
+        }
     }
 }
 
@@ -1832,6 +1854,9 @@
         color: var(--white);
         font-size: 18px;
         position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
 
         @media #{$xxl} {
             width: 50px;
