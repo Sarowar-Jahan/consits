@@ -1247,6 +1247,11 @@ section.hero-4-area {
     z-index: 1;
     padding-top: 300px;
     padding-bottom: 140px;
+
+    @media #{$lg} {
+        padding-top: 180px;
+        padding-bottom: 100px;
+    }
 }
 
 .hero-7-shape-1 {
@@ -1256,6 +1261,22 @@ section.hero-4-area {
     position: absolute;
     top: -139px;
     left: calc(100% - 305px);
+
+    @media #{$lg} {
+        width: 493px;
+        height: 493px;
+    }
+
+    @media #{$md} {
+        width: 293px;
+        height: 293px;
+        top: -39px;
+        left: calc(100% - 205px);
+    }
+
+    @media #{$sm} {
+        display: none;
+    }
 
     img {
         width: 100%;
@@ -1269,6 +1290,10 @@ section.hero-4-area {
 .hero-7-content {
     position: relative;
     padding: 57px 0 57px 45px;
+
+    @media #{$sm} {
+        padding: 37px 0 37px 25px;
+    }
 
     .section-subtitle {
         color: var(--white);
@@ -1286,6 +1311,10 @@ section.hero-4-area {
     .text {
         color: var(--white);
         max-width: 574px;
+
+        @media #{$lg} {
+            max-width: 434px;
+        }
     }
 
 
@@ -1331,6 +1360,32 @@ section.hero-4-area {
     line-height: 1.12;
     color: #FFFFFF;
     max-width: 782px;
+
+    @media #{$xxl} {
+        font-size: 55px;
+        max-width: 682px;
+
+    }
+
+    @media #{$xl} {
+        font-size: 50px;
+    }
+
+    @media #{$lg} {
+        font-size: 46px;
+    }
+
+    @media #{$md} {
+        font-size: 44px;
+    }
+
+    @media #{$sm} {
+        font-size: 42px;
+    }
+
+    @media #{$xs} {
+        font-size: 32px;
+    }
 }
 
 .hero-7-thumb {
@@ -1338,6 +1393,22 @@ section.hero-4-area {
     right: 144px;
     bottom: 0px;
     z-index: -1;
+    width: 493px;
+
+    @media #{$lg} {
+        width: 393px;
+
+    }
+
+    @media #{$md} {
+        width: 293px;
+        right: -56px;
+
+    }
+
+    @media #{$sm} {
+        display: none;
+    }
 }
 
 .hero-7-content-shapes {
@@ -1359,6 +1430,10 @@ section.hero-4-area {
             background-color: var(--theme);
             border-radius: 10px;
 
+            @media #{$sm} {
+                height: 4px;
+            }
+
             &:nth-child(1) {
                 width: 108px;
             }
@@ -1376,6 +1451,10 @@ section.hero-4-area {
             height: 100%;
             background-color: var(--theme);
             border-radius: 10px;
+
+            @media #{$sm} {
+                width: 4px;
+            }
         }
     }
 
@@ -1391,6 +1470,10 @@ section.hero-4-area {
             height: 10px;
             background-color: var(--theme);
             border-radius: 10px;
+
+            @media #{$sm} {
+                height: 4px;
+            }
 
             &:nth-child(1) {
                 width: 230px;

@@ -1286,6 +1286,14 @@
         left: calc(100% - 385px);
         z-index: -1;
         clip-path: polygon(22px 0, 100% 0, 100% 100%, 0 100%);
+
+        @media #{$xxl} {
+            left: calc(100% - 325px);
+        }
+
+        @media #{$xl} {
+            left: calc(100% - 285px);
+        }
     }
 }
 
