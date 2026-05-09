@@ -238,6 +238,19 @@
     display: grid;
     gap: 40px 60px;
     grid-template-columns: 540px auto;
+
+    @media #{$lg} {
+        padding: 30px 30px;
+        gap: 40px 40px;
+        grid-template-columns: 400px auto;
+    }
+
+    @media #{$md} {
+        grid-template-columns: auto;
+        padding: 15px 15px;
+        gap: 30px 40px;
+    }
+
 }
 
 .skill-2-thumb {
@@ -272,13 +285,23 @@
 }
 
 .skill-2-content {
-    margin-top: -8px;
 
     .title {
         font-weight: 600;
         font-size: 36px;
         line-height: 1.28;
         text-transform: capitalize;
+        margin-top: -8px;
+
+        @media #{$lg} {
+            font-size: 30px;
+            margin-top: -5px;
+        }
+
+        @media #{$md} {
+            font-size: 24px;
+            margin-top: 0;
+        }
     }
 
     .text-wrapper {

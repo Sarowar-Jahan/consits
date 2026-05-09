@@ -1094,7 +1094,7 @@
           slidesPerView: 2,
         },
         992: {
-          slidesPerView: 2,
+          slidesPerView: 3,
         },
         1201: {
           slidesPerView: 3,

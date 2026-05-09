@@ -2152,6 +2152,11 @@
         @media #{$xxl} {
             font-size: 22px;
         }
+
+        @media #{$lg} {
+            font-size: 18px;
+
+        }
     }
 
     .btn-wrapper {

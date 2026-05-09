@@ -375,13 +375,14 @@
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
 
     @media #{$lg} {
-        padding: 34px 24px 30px;
-        margin-inline: -24px;
+        padding: 24px 24px 20px;
+        margin-inline: 0;
     }
 
-    @media #{$sm} {
-        margin-inline: 0px;
+    @media #{$xs} {
+        padding: 14px 14px 20px;
     }
+
 
 }
 
@@ -389,6 +390,17 @@
     display: grid;
     gap: 40px 65px;
     grid-template-columns: 690px 1fr;
+
+    @media #{$lg} {
+        grid-template-columns: 590px 1fr;
+        gap: 40px 40px;
+
+    }
+
+    @media #{$md} {
+        grid-template-columns: 1fr;
+
+    }
 }
 
 .contact-2-wrap {
@@ -396,11 +408,23 @@
     border: 1px solid var(--border);
     border-radius: 15px;
 
+    @media #{$lg} {
+        padding: 23px 29px 29px;
+    }
+
+    @media #{$sm} {
+        padding: 23px 19px 29px;
+    }
+
     .title {
         font-weight: 600;
         font-size: 30px;
-        line-height: 36px;
+        line-height: 1.2;
         text-transform: capitalize;
+
+        @media #{$xs} {
+            font-size: 20px;
+        }
     }
 
     .contact-formwrap {
@@ -529,7 +553,7 @@
 
     .product-category {
         display: flex;
-        gap: 40px;
+        gap: 15px 40px;
         flex-wrap: wrap;
         margin-top: 32px;
     }
@@ -625,6 +649,11 @@
     gap: 30px 30px;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media #{$lg} {
+        margin-top: 40px;
+
+    }
 }
 
 .contact-2-meta-item {
@@ -634,6 +663,7 @@
 
     .icon {
         width: 63px;
+        min-width: 63px;
         height: 63px;
         border: 1px solid rgba(30, 32, 35, 0.1);
         display: inline-flex;
@@ -642,6 +672,12 @@
         border-radius: 50%;
         position: relative;
         z-index: 1;
+
+        @media #{$lg} {
+            width: 53px;
+            min-width: 53px;
+            height: 53px;
+        }
 
         &:before {
             position: absolute;
@@ -674,7 +710,7 @@
         color: var(--black);
         margin-top: 3px;
 
-        @media #{$sm} {
+        @media #{$lg} {
             font-size: 16px;
         }
 

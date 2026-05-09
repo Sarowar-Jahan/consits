@@ -1364,6 +1364,10 @@
         transition: all 0.5s;
         z-index: 1;
 
+        @media #{$lg} {
+            left: 10px;
+        }
+
         img {
             width: 40px;
         }
@@ -1432,6 +1436,10 @@
     gap: 20px 0;
     align-items: center;
     flex-wrap: wrap;
+
+    @media #{$lg} {
+        margin-top: 40px;
+    }
 
     .text {
         font-weight: 500;
