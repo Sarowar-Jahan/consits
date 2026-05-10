@@ -200,59 +200,6 @@
   }
   // Preloader end
 
-  // side-toggle animaton
-  document.addEventListener("DOMContentLoaded", () => {
-    const dotGrid = document.querySelector(".side-toggle");
-
-    if (dotGrid) {
-      const dotSize = 4;
-      const gapX = 5;
-      const gapY = 5;
-      const centerOffset = 27;
-
-      const baseOffset = dotSize + gapX;
-      const baseOffsetY = dotSize + gapY;
-
-      const positions = [
-        { x: 0, y: 0 },
-        { x: baseOffset, y: 0 },
-        { x: baseOffset * 2, y: 0 },
-        { x: 0, y: baseOffsetY },
-        { x: baseOffset, y: baseOffsetY },
-        { x: baseOffset, y: baseOffsetY * 2 },
-        { x: baseOffset * 2, y: baseOffsetY * 2 },
-      ];
-
-      const originalPositions = [...positions];
-      const dots = [];
-
-      function setDotPosition(dot, pos) {
-        dot.style.left = `${centerOffset + pos.x - baseOffset}px`;
-        dot.style.top = `${centerOffset + pos.y - baseOffsetY}px`;
-      }
-
-      positions.forEach(pos => {
-        const dot = document.createElement("div");
-        dot.classList.add("dot");
-        setDotPosition(dot, pos);
-        dotGrid.appendChild(dot);
-        dots.push(dot);
-      });
-
-      function applyShuffledPositions() {
-        const shuffled = [...positions].sort(() => Math.random() - 0.5);
-        dots.forEach((dot, i) => setDotPosition(dot, shuffled[i]));
-      }
-
-      function resetPositions() {
-        dots.forEach((dot, i) => setDotPosition(dot, originalPositions[i]));
-      }
-
-      dotGrid.addEventListener("mouseenter", applyShuffledPositions);
-      dotGrid.addEventListener("mouseleave", resetPositions);
-    }
-  });
-
   // Side Info Js
   $(".side-info-close,.offcanvas-overlay").on("click", function () {
     $(".side-info").removeClass("info-open");

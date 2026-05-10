@@ -1524,8 +1524,8 @@
         transition: all 0.3s;
 
         &:hover {
-            background-color: var(--action);
-            color: var(--white);
+            background-color: var(--white);
+            color: var(--black);
         }
 
 
@@ -1547,7 +1547,11 @@
     display: flex;
     gap: 20px;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 17px 0;
+
+    @media #{$xxl} {
+        padding: 12px 0;
+    }
 }
 
 

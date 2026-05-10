@@ -4947,8 +4947,8 @@ section {
   transition: all 0.3s;
 }
 .header-6-area .side-toggle:hover {
-  background-color: var(--action);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--black);
 }
 
 /* header-6-top area style  */
@@ -4965,7 +4965,12 @@ section {
   display: flex;
   gap: 20px;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 17px 0;
+}
+@media only screen and (max-width: 1919px) {
+  .header-6-top-inner {
+    padding: 12px 0;
+  }
 }
 
 .header-6-social {
@@ -9436,19 +9441,28 @@ section.hero-4-area {
   transition: all 8s ease-out 0s;
 }
 
-.hero-8-content {
-  margin: 378px 0 243px 0;
-  text-align: center;
+.hero-8-content-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 162px;
+  padding-bottom: 60px;
 }
 @media only screen and (max-width: 1919px) {
-  .hero-8-content {
-    margin: 278px 0 143px 0;
+  .hero-8-content-wrapper {
+    padding-top: 142px;
   }
 }
 @media only screen and (max-width: 1199px) {
-  .hero-8-content {
-    margin: 228px 0 143px 0;
+  .hero-8-content-wrapper {
+    padding-top: 182px;
+    padding-bottom: 130px;
   }
+}
+
+.hero-8-content {
+  text-align: center;
 }
 .hero-8-content .hero-8-subtitle {
   display: inline-flex;
@@ -9462,6 +9476,12 @@ section.hero-4-area {
   line-height: 24px;
   text-transform: uppercase;
   color: var(--white);
+}
+@media only screen and (max-width: 1919px) {
+  .hero-8-content .hero-8-subtitle .text {
+    font-size: 16px;
+    font-weight: 500;
+  }
 }
 @media only screen and (max-width: 1199px) {
   .hero-8-content .hero-8-subtitle .text {
@@ -9482,16 +9502,29 @@ section.hero-4-area {
 @media only screen and (max-width: 1919px) {
   .hero-8-content .hero-8-title {
     font-size: 56px;
+    max-width: 900px;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .hero-8-content .hero-8-title {
+    font-size: 50px;
+    max-width: 800px;
   }
 }
 @media only screen and (max-width: 1199px) {
   .hero-8-content .hero-8-title {
     font-size: 40px;
+    max-width: 700px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .hero-8-content .hero-8-title {
+    font-size: 34px;
   }
 }
 @media (max-width: 575px) {
   .hero-8-content .hero-8-title {
-    font-size: 34px;
+    font-size: 30px;
   }
 }
 .hero-8-content .hero-8-title .ui-color-theme {
@@ -9528,7 +9561,7 @@ section.hero-4-area {
 }
 @media only screen and (max-width: 1199px) {
   .hero-8-paginations {
-    bottom: 20px;
+    bottom: 30px;
   }
 }
 .hero-8-paginations .slider-active-paginations-wrapper {

@@ -1553,17 +1553,27 @@ section.hero-4-area {
     }
 }
 
-.hero-8-content {
-    margin: 378px 0 243px 0;
-    text-align: center;
+.hero-8-content-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 162px;
+    padding-bottom: 60px;
 
     @media #{$xxl} {
-        margin: 278px 0 143px 0;
+
+        padding-top: 142px;
     }
 
     @media #{$lg} {
-        margin: 228px 0 143px 0;
+        padding-top: 182px;
+        padding-bottom: 130px;
     }
+}
+
+.hero-8-content {
+    text-align: center;
 
     .hero-8-subtitle {
         display: inline-flex;
@@ -1577,6 +1587,11 @@ section.hero-4-area {
             line-height: 24px;
             text-transform: uppercase;
             color: var(--white);
+
+            @media #{$xxl} {
+                font-size: 16px;
+                font-weight: 500;
+            }
 
             @media #{$lg} {
                 font-size: 14px;
@@ -1598,14 +1613,28 @@ section.hero-4-area {
 
         @media #{$xxl} {
             font-size: 56px;
+            max-width: 900px;
+
+        }
+
+        @media #{$xl} {
+            font-size: 50px;
+            max-width: 800px;
+
         }
 
         @media #{$lg} {
             font-size: 40px;
+            max-width: 700px;
+
+        }
+
+        @media #{$sm} {
+            font-size: 34px;
         }
 
         @media #{$xs} {
-            font-size: 34px;
+            font-size: 30px;
         }
 
         .ui-color-theme {
@@ -1654,7 +1683,7 @@ section.hero-4-area {
     z-index: 1;
 
     @media #{$lg} {
-        bottom: 20px;
+        bottom: 30px;
     }
 
     .slider-active-paginations-wrapper {
