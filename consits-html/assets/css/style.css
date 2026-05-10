@@ -11247,6 +11247,11 @@ section.hero-9-area {
   line-height: 1.2;
   text-transform: capitalize;
 }
+@media (max-width: 575px) {
+  .about-7-content .about-7-title {
+    font-size: 28px;
+  }
+}
 .about-7-content .about-7-title .title-img {
   display: inline-flex;
   width: 68px;
@@ -11269,6 +11274,7 @@ section.hero-9-area {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  align-items: center;
 }
 .about-7-content .founder {
   display: flex;
@@ -12898,6 +12904,16 @@ section.hero-9-area {
   opacity: 0.1;
   writing-mode: sideways-rl;
 }
+@media only screen and (max-width: 1919px) {
+  .service-7-shape-1 {
+    font-size: 107px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .service-7-shape-1 {
+    font-size: 87px;
+  }
+}
 
 .services-7-wrapper {
   display: grid;
@@ -12912,14 +12928,24 @@ section.hero-9-area {
 .service-7-box.active {
   padding-bottom: 60px;
 }
+@media only screen and (max-width: 1199px) {
+  .service-7-box.active {
+    padding-bottom: 40px;
+  }
+}
 .service-7-box.active .header {
   margin-bottom: 60px;
+}
+@media only screen and (max-width: 1199px) {
+  .service-7-box.active .header {
+    margin-bottom: 40px;
+  }
 }
 .service-7-box.active .icon img {
   transform: rotate(90deg);
 }
 .service-7-box.active .content {
-  height: 170px;
+  height: auto;
   opacity: 1;
 }
 .service-7-box .header {
@@ -12930,6 +12956,16 @@ section.hero-9-area {
   margin-bottom: 0;
   transition: all 0.5s;
 }
+@media only screen and (max-width: 991px) {
+  .service-7-box .header {
+    grid-template-columns: 45px 1fr auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .service-7-box .header {
+    grid-template-columns: 1fr auto;
+  }
+}
 .service-7-box .number {
   font-family: var(--font_unbounded);
   font-weight: 600;
@@ -12939,11 +12975,42 @@ section.hero-9-area {
   color: #FFFFFF;
   display: inline-block;
 }
+@media only screen and (max-width: 767px) {
+  .service-7-box .number {
+    grid-column: span 2;
+  }
+}
 .service-7-box .title {
   font-weight: 600;
   font-size: 66px;
   line-height: 0.8;
   color: #FFFFFF;
+}
+@media only screen and (max-width: 1919px) {
+  .service-7-box .title {
+    font-size: 52px;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .service-7-box .title {
+    font-size: 48px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .service-7-box .title {
+    font-size: 34px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .service-7-box .title {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .service-7-box .title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 .service-7-box .icon img {
   transition: all 0.5s;
@@ -12959,6 +13026,23 @@ section.hero-9-area {
   opacity: 0;
   align-items: flex-start;
 }
+@media only screen and (max-width: 1199px) {
+  .service-7-box .content {
+    margin-right: 55px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .service-7-box .content {
+    grid-template-columns: 1fr 385px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .service-7-box .content {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 .service-7-box .content .text {
   color: var(--white);
 }
@@ -12966,7 +13050,7 @@ section.hero-9-area {
   display: inline-block;
   text-align: center;
   width: 100%;
-  padding: 10px 10px;
+  padding: 10px 15px;
   background: #1A1A1A;
   border-radius: 5px;
   font-weight: 500;
@@ -12974,14 +13058,40 @@ section.hero-9-area {
   line-height: 26px;
   color: #FFFFFF;
 }
+@media only screen and (max-width: 991px) {
+  .service-7-box .tag {
+    width: auto;
+  }
+}
 .service-7-box .tags-wrapper {
   display: flex;
   gap: 20px;
   flex-direction: column;
 }
+@media only screen and (max-width: 991px) {
+  .service-7-box .tags-wrapper {
+    flex-direction: row;
+    grid-column: span 2;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .service-7-box .tags-wrapper {
+    grid-column: auto;
+  }
+}
 .service-7-box .thumbs-wrapper {
   display: flex;
   gap: 20px;
+}
+@media only screen and (max-width: 1199px) {
+  .service-7-box .thumbs-wrapper {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .service-7-box .thumbs-wrapper {
+    flex-direction: row;
+  }
 }
 .service-7-box .thumb {
   border-radius: 5px;
@@ -12993,6 +13103,12 @@ section.hero-9-area {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
+  aspect-ratio: 100/38;
+}
+@media only screen and (max-width: 1919px) {
+  .service-7-box .thumb img {
+    aspect-ratio: 100/58;
+  }
 }
 .service-7-box .btn-wrapper {
   margin-top: 23px;
