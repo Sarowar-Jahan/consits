@@ -569,6 +569,10 @@
     gap: 40px 0;
     grid-template-columns: calc(100% - 870px) 870px;
     align-items: center;
+
+    @media #{$lg} {
+        grid-template-columns: auto;
+    }
 }
 
 .choose-3-thumb {
@@ -576,6 +580,10 @@
     overflow: hidden;
     margin-right: -80px;
     position: relative;
+
+    @media #{$lg} {
+        display: none;
+    }
 
     &:before {
         position: absolute;
@@ -603,7 +611,11 @@
     position: relative;
     z-index: 1;
 
-    @media #{$xs} {
+    @media #{$lg} {
+        gap: 20px 20px;
+    }
+
+    @media #{$sm} {
         grid-template-columns: 1fr;
 
     }
@@ -622,6 +634,10 @@
     @media #{$lg} {
         grid-template-columns: 1fr;
 
+    }
+
+    @media #{$xs} {
+        padding: 13px 17px 17px;
     }
 
     .thumb {
