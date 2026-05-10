@@ -472,8 +472,24 @@
     position: relative;
     padding: 76px 80px 64px;
 
+    @media #{$xxl} {
+        padding: 56px 60px 44px;
+    }
+
+    @media #{$lg} {
+        padding: 36px 40px 34px;
+    }
+
+    @media #{$sm} {
+        padding: 26px 20px 0px;
+    }
+
     .content {
         max-width: 680px;
+
+        @media #{$md} {
+            max-width: 580px;
+        }
     }
 
     .icon-wrapper {
@@ -501,9 +517,13 @@
         font-family: var(--font_unbounded);
         font-weight: 600;
         font-size: 18px;
-        line-height: 27px;
+        line-height: 1.5;
         text-transform: capitalize;
         color: #FFFFFF;
+
+        @media #{$sm} {
+            font-size: 16px;
+        }
     }
 
     .text-wrapper {
@@ -517,11 +537,15 @@
     .name {
         font-weight: 600;
         font-size: 24px;
-        line-height: 32px;
+        line-height: 1.33;
         text-transform: capitalize;
         color: #FFFFFF;
         display: flex;
         align-items: center;
+
+        @media #{$sm} {
+            font-size: 20px;
+        }
 
         &:before {
             content: "";
@@ -546,19 +570,42 @@
         right: 113px;
         bottom: 0;
         z-index: -1;
+        max-width: 420px;
+
+        @media #{$xxl} {
+            max-width: 380px;
+        }
+
+        @media #{$lg} {
+            max-width: 340px;
+        }
+
+        @media #{$sm} {
+            max-width: fit-content;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
 
         &:before {
             position: absolute;
             content: "";
             width: 287px;
             height: 287px;
-            left: 75px;
+            left: 50%;
+            transform: translateX(-50%);
             top: 84px;
             background: #FA5E07;
             box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
             border-radius: 50%;
             z-index: -1;
             outline: 30px solid rgba(250, 94, 7, 0.3);
+
+            @media #{$xxl} {
+                width: 237px;
+                height: 237px;
+                outline-width: 25px;
+            }
         }
     }
 
@@ -571,6 +618,9 @@
     top: 50%;
     transform: translateX(-50%) rotate(90deg);
 
+    @media #{$sm} {
+        right: -95px;
+    }
 
 
     .slider-active-paginations-wrapper {

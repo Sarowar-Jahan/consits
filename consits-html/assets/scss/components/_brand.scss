@@ -220,7 +220,7 @@
 .brand-3-area-bg {
     position: absolute;
     width: 100%;
-    height: 732px;
+    height: calc(100% - 238px);
     top: 0;
     left: 0;
     z-index: -1;
@@ -253,6 +253,14 @@
     gap: 40px 50px;
     grid-template-columns: 515px 1fr;
     align-items: center;
+
+    @media #{$lg} {
+        grid-template-columns: 365px 1fr;
+    }
+
+    @media #{$md} {
+        grid-template-columns: 1fr;
+    }
 }
 
 .brand-3-shape-1 {
@@ -260,6 +268,11 @@
     top: 50px;
     left: 33%;
     transform: rotate(-60deg);
+
+    @media #{$md} {
+        top: 110px;
+        left: 85%;
+    }
 }
 
 .brand-3-content {
