@@ -227,10 +227,12 @@
     }
 
     .rating {
+        font-family: var(--font_unbounded);
         font-weight: 700;
         font-size: 50px;
         line-height: 1.14;
         text-transform: capitalize;
+        display: inline-block;
         color: var(--white);
 
         @media #{$xxl} {

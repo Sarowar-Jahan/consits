@@ -1498,8 +1498,12 @@
         .name {
             font-weight: 600;
             font-size: 20px;
-            line-height: 26px;
+            line-height: 1.3;
             text-transform: capitalize;
+
+            @media #{$xs} {
+                font-size: 18px;
+            }
         }
 
 

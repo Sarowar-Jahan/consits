@@ -8169,10 +8169,12 @@ section {
   }
 }
 .hero-review-box .rating {
+  font-family: var(--font_unbounded);
   font-weight: 700;
   font-size: 50px;
   line-height: 1.14;
   text-transform: capitalize;
+  display: inline-block;
   color: var(--white);
 }
 @media only screen and (max-width: 1919px) {
@@ -11471,8 +11473,13 @@ section.hero-9-area {
 .about-8-content .founder-info .name {
   font-weight: 600;
   font-size: 20px;
-  line-height: 26px;
+  line-height: 1.3;
   text-transform: capitalize;
+}
+@media (max-width: 575px) {
+  .about-8-content .founder-info .name {
+    font-size: 18px;
+  }
 }
 .about-8-content .founder-info .post {
   font-weight: 500;
