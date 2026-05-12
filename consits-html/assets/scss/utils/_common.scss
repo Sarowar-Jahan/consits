@@ -1059,6 +1059,17 @@
         background-color: var(--white);
         padding: 10px 10px 10px 25px;
         border-radius: 50px;
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: var(--theme);
+          color: var(--white);
+
+          .icon {
+            background-color: var(--white);
+            color: var(--theme);
+          }
+        }
 
         .icon {
           width: 40px;
@@ -1069,6 +1080,7 @@
           align-items: center;
           color: var(--white);
           border-radius: 50%;
+          transition: all 0.3s;
         }
       }
 
@@ -1397,7 +1409,7 @@
       margin-top: 5px;
 
       a:hover {
-        color: var(--black-2);
+        color: var(--theme);
       }
     }
   }

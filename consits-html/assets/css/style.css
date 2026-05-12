@@ -1245,6 +1245,15 @@ h6 {
   background-color: var(--white);
   padding: 10px 10px 10px 25px;
   border-radius: 50px;
+  transition: all 0.3s;
+}
+.sidebar-category-box .sidebar-category-list li a:hover {
+  background-color: var(--theme);
+  color: var(--white);
+}
+.sidebar-category-box .sidebar-category-list li a:hover .icon {
+  background-color: var(--white);
+  color: var(--theme);
 }
 .sidebar-category-box .sidebar-category-list li a .icon {
   width: 40px;
@@ -1255,6 +1264,7 @@ h6 {
   align-items: center;
   color: var(--white);
   border-radius: 50%;
+  transition: all 0.3s;
 }
 .sidebar-category-box .sidebar-title + .title-line {
   margin-top: 15px;
@@ -1549,7 +1559,7 @@ h6 {
   margin-top: 5px;
 }
 .sidebar-blog-box .sidebar-blog .title a:hover {
-  color: var(--black-2);
+  color: var(--theme);
 }
 .sidebar-blog-box .sidebar-title + .title-line {
   margin-top: 15px;
@@ -17601,6 +17611,9 @@ section.hero-9-area {
 .blog-details .blog-contact-wrap .submit-btn {
   margin-top: 27px;
 }
+.blog-details .blog-contact-wrap .submit-btn .ui-btn {
+  border-radius: 30px;
+}
 .blog-details .contact-formwrap {
   display: grid;
   gap: 20px 30px;
@@ -17947,6 +17960,9 @@ section.hero-9-area {
 .blog-2 .title a {
   transition: none;
 }
+.blog-2 .title a:hover {
+  color: var(--white);
+}
 .blog-2 .btn-wrapper {
   margin-top: 23px;
 }
@@ -18005,6 +18021,9 @@ section.hero-9-area {
   border-radius: 20px;
   overflow: hidden;
 }
+.blog-3:hover .thumb img {
+  transform: scale(1.05);
+}
 .blog-3:hover .content {
   background-color: var(--theme);
 }
@@ -18047,6 +18066,7 @@ section.hero-9-area {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.5s;
 }
 .blog-3 .date {
   font-family: var(--font_unbounded);
@@ -18138,7 +18158,10 @@ section.hero-9-area {
   }
 }
 .blog-3 .title a {
-  transition: all 0.5s;
+  transition: none;
+}
+.blog-3 .title a:hover {
+  color: var(--white);
 }
 .blog-3 .text {
   font-weight: 500;
