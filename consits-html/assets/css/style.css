@@ -3881,7 +3881,7 @@ section {
   color: var(--white);
 }
 .header-contact-item .text a:hover {
-  color: var(--white-2);
+  color: var(--theme);
 }
 
 /* header-2 area style  */
