@@ -10,11 +10,39 @@
 // Smooth active
 // GSAP Fade Animation 
 // Preloader Animation
-// side-toggle animaton
 // Side Info Js
 // meanmenu activation 
 // Magnific Video popup
 // GSAP title animation
+// brand-slider activation
+// brand-2-slider activation
+// odometer active 
+// project slider
+// project-4 slider
+// project-5 slider
+// project-7 slider
+// service-3 slider
+// service-4 slider
+// service-5 slider
+// service-9 slider
+// project-3 slider
+// feature slider
+// text-slider active 
+// text-slider-2 active 
+// text-slider-3 active 
+// text-slider-4 active 
+// text-slider-5 active 
+// text-slider-6 active 
+// price tab switcher
+// slider active 
+// testimonial slider
+// testimonial-2 slider
+// testimonial-3 slider
+// testimonial-4 slider
+// hero-6 slider
+// blog-7 slider
+// service-7 hover active 
+// webgl images hover displacement
 
 
 ****************************************************/
@@ -196,9 +224,7 @@
     },
       "-=1.5"
     );
-
   }
-  // Preloader end
 
   // Side Info Js
   $(".side-info-close,.offcanvas-overlay").on("click", function () {
@@ -1094,7 +1120,21 @@
     hoverAnimation();
   }
 
-
+  // Cart Quantity Js
+  $(".cart-minus").click(function () {
+    var $input = $(this).parent().find("input");
+    var count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+  });
+  $(".cart-plus").click(function () {
+    var $input = $(this).parent().find("input");
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
+  });
 
 })(jQuery);
 

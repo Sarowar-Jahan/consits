@@ -270,11 +270,12 @@
                 <div class="breadcrumb-wrapper fade-anim" data-delay="0.30">
                   <ul class="breadcrumb">
                     <li><a href="index.html">Home</a></li>
-                    <li>Checkout</li>
+                    <li>Product Details</li>
                   </ul>
                 </div>
                 <div class="title-wrapper fade-anim" data-delay="0.45">
-                  <h1 class="section-title">Book consultation at <br> <span class="ui-color-theme">Checkout</span></h1>
+                  <h1 class="section-title">View <span class="ui-color-theme">Product details</span> for <br>
+                    consultation packages</h1>
                 </div>
               </div>
             </div>
@@ -282,28 +283,269 @@
         </section>
         <!-- hero-3 area end  -->
 
-        <!-- cart area start  -->
-        <div class="cart-area">
+        <!-- shop details area start  -->
+        <section class="shop-details-area section-spacing-top">
           <div class="container ui-container-1350">
-            <div class="cart-area-inner section-spacing">
-              <div class="cart-wrapper-box">
-                <div class="cart-message">
-                  <p class="text"><span class="icon"><img src="assets/imgs/icon/icon-28.webp" alt="image"></span>Your
-                    cart is currently empty.</p>
+            <div class="product-details-info-wrapper">
+              <div class="product-image-tab-wrapper">
+                <div class="product-image-nav">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pro-1-tab" data-bs-toggle="tab" data-bs-target="#pro-1"
+                        type="button" role="tab" aria-controls="pro-1" aria-selected="false">
+                        <div class="product-thumb">
+                          <img src="assets/imgs/product/product-2-2.png" alt="image">
+                        </div>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pro-2-tab" data-bs-toggle="tab" data-bs-target="#pro-2" type="button"
+                        role="tab" aria-controls="pro-2" aria-selected="true">
+                        <div class="product-thumb">
+                          <img src="assets/imgs/product/product-2-3.png" alt="image">
+                        </div>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pro-3-tab" data-bs-toggle="tab" data-bs-target="#pro-3" type="button"
+                        role="tab" aria-controls="pro-3" aria-selected="false">
+                        <div class="product-thumb">
+                          <img src="assets/imgs/product/product-2-4.png" alt="image">
+                        </div>
+                      </button>
+                    </li>
+                  </ul>
                 </div>
-                <div class="btn-wrapper">
-                  <a href="shop.html" class="ui-btn">
+                <div class="product-image-tab">
+                  <div class="tab-content" id="productDetailsTab">
+                    <div class="tab-pane fade active show" id="pro-1" role="tabpanel" aria-labelledby="pro-1-tab">
+                      <div class="product-thumb">
+                        <img src="assets/imgs/product/product-2-2.png" alt="image">
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pro-2" role="tabpanel" aria-labelledby="pro-2-tab">
+                      <div class="product-thumb">
+                        <img src="assets/imgs/product/product-2-3.png" alt="image">
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pro-3" role="tabpanel" aria-labelledby="pro-3-tab">
+                      <div class="product-thumb">
+                        <img src="assets/imgs/product/product-2-4.png" alt="image">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-side-info">
+                <div class="review-box">
+                  <div class="ratings">
+                    <div class="rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text">| 3 review</p>
+                  </div>
+                </div>
+                <h4 class="product-name">Safety Helmet</h4>
+                <span class="product-price">$1250.00 <span class="stock-status">in stock</span></span>
+                <p class="text">Lorem ipsum dolor sit amet, conse elit, sedid that was eiusmod
+                  aboret dolore magna aliqua conseel usndi daimond the laois
+                  sitamet sedid sedid eiusm.</p>
+                <div class="product-quantity-cart">
+                  <div class="product-quantity-form">
+                    <form action="#">
+                      <button class="cart-minus"><i class="fas fa-angle-down"></i></button>
+                      <input class="cart-input" type="text" value="1">
+                      <button class="cart-plus"><i class="fas fa-angle-up"></i></button>
+                    </form>
+                  </div>
+                  <a href="cart.html" class="ui-btn">
                     <span class="btn-wrap">
-                      <span class="text-one">Return to Shop <img src="assets/imgs/icon/icon-1.webp" alt="image"></span>
-                      <span class="text-two">Return to Shop <img src="assets/imgs/icon/icon-1-dark.webp" alt=""></span>
+                      <span class="text-one">add to cart</span>
+                      <span class="text-two">add to cart</span>
                     </span>
                   </a>
+                </div>
+                <a href="#" class="wishlist-btn"><i class="fa-regular fa-heart"></i>Add to Wishlist</a>
+                <div class="product-details-categories tagcloud">
+                  <span class="title">Categories : </span>
+                  <div class="tags">
+                    <a href="#" rel="tag">round</a>
+                    <a href="#" rel="tag">dial</a>
+                    <a href="#" rel="tag">class</a>
+                  </div>
+                </div>
+                <div class="product-details-tag tagcloud">
+                  <span class="title">Tags : </span>
+                  <div class="tags">
+                    <a href="#" rel="tag">silver</a>
+                    <a href="#" rel="tag">pink</a>
+                    <a href="#" rel="tag">green</a>
+                  </div>
+                </div>
+                <div class="product-details-share">
+                  <span class="title">Share : </span>
+                  <div class="social">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://x.com/?lang=en" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                      aria-label="Instagram">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product_info-faq-area section-spacing-top">
+              <div class="">
+                <nav class="product-details-nav">
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link show" id="nav-general-tab" data-bs-toggle="tab" href="#nav-general"
+                      role="tab" aria-selected="false">Description</a>
+                    <a class="nav-item nav-link active" id="nav-seller-tab" data-bs-toggle="tab" href="#nav-seller"
+                      role="tab" aria-selected="true">Reviews</a>
+                  </div>
+                </nav>
+                <div class="tab-content product-details-content" id="nav-tabContent">
+                  <div class="tab-pane fade" id="nav-general" role="tabpanel">
+                    <div class="tabs-wrapper">
+                      <div class="product__details-des">
+                        <h3 class="title">Why choose product?</h3>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, dolore magna eiusmod
+                          tempor
+                          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruremod thats
+                          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade active show" id="nav-seller" role="tabpanel">
+                    <div class="tabs-wrapper">
+                      <div class="product-comment-item">
+                        <div class="product-comments-img">
+                          <a href="#"><img src="assets/imgs/client/client-1.webp" alt="image not found"></a>
+                        </div>
+                        <div class="product-comment-list">
+                          <h5><a href="#">Jofra Archer</a></h5>
+                          <div class="course-start-icon">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>30 min ago</span>
+                          </div>
+                          <p>Very clean and organized with easy to follow tutorials, Exercises, and
+                            solutions.
+                            This course does start from the beginning with very little knowledge and
+                            gives a
+                            great overview of common tools used for data science and progresses into
+                            more
+                            complex concepts and ideas.</p>
+                        </div>
+                      </div>
+                      <div class="product-comment-item">
+                        <div class="product-comments-img">
+                          <a href="#"><img src="assets/imgs/client/client-2.webp" alt="image not found"></a>
+                        </div>
+                        <div class="product-comment-list">
+                          <h5><a href="#">Samantha</a></h5>
+                          <div class="course-start-icon">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>45 min ago</span>
+                          </div>
+                          <p>The course is good at explaining very basic intuition of the concepts. It
+                            will get
+                            you scratching the surface so to say. where this course is unique is the
+                            implementation methods are so well defined Thank you to the team !.</p>
+                        </div>
+                      </div>
+                      <div class="product-comment-item">
+                        <div class="product-comments-img">
+                          <a href="#"><img src="assets/imgs/client/client-3.webp" alt="image not found"></a>
+                        </div>
+                        <div class="product-comment-list">
+                          <h5><a href="#">Michell Mariya</a></h5>
+                          <div class="course-start-icon">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>55 min ago</span>
+                          </div>
+                          <p>This course is amazing..!
+                            I started this course as a beginner and learnt a lot. Instructors are great.
+                            Query
+                            handling can be improved.Overall very happy with the course.</p>
+                        </div>
+                      </div>
+                      <div class="product__details-comment ">
+                        <div class="comment-title">
+                          <h3>Add a review</h3>
+                          <p>Your email address will not be published. Required fields are marked *</p>
+                        </div>
+                        <div class="comment-rating mb-20">
+                          <span>Overall ratings</span>
+                          <ul>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                            <li><a href="#"><i class="fal fa-star"></i></a></li>
+                          </ul>
+                        </div>
+                        <div class="comment-input-box">
+                          <form action="#">
+                            <div class="row">
+                              <div class="col-xxl-12">
+                                <textarea placeholder="Your review"
+                                  class="comment-input comment-textarea mb-20"></textarea>
+                              </div>
+                              <div class="col-xxl-6">
+                                <div class="comment-input mb-20">
+                                  <input type="text" placeholder="Your Name">
+                                </div>
+                              </div>
+                              <div class="col-xxl-6">
+                                <div class="comment-input">
+                                  <input type="email" placeholder="Your Email">
+                                </div>
+                              </div>
+                              <div class="col-xxl-12">
+                                <div class="comment-submit">
+                                  <button type="submit" class="ui-btn">
+                                    <span class="btn-wrap">
+                                      <span class="text-one">Submit</span>
+                                      <span class="text-two">Submit</span>
+                                    </span>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- cart area end  -->
+        </section>
+        <!-- shop details area end  -->
 
       </main>
 
