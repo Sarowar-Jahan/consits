@@ -235,6 +235,10 @@
         line-height: 22px;
         text-transform: capitalize;
         color: var(--white);
+
+        @media #{$xxl} {
+            font-size: 14px;
+        }
     }
 
 }
@@ -318,6 +322,10 @@
         line-height: 22px;
         text-transform: capitalize;
         color: var(--white);
+
+        @media #{$xxl} {
+            font-size: 14px;
+        }
 
         a:hover {
             color: var(--theme);
@@ -1067,6 +1075,10 @@
         text-transform: capitalize;
         color: var(--white);
 
+        @media #{$xxl} {
+            font-size: 14px;
+        }
+
         a:hover {
             color: var(--white-2);
         }
@@ -1632,6 +1644,10 @@
         line-height: 22px;
         text-transform: capitalize;
         color: var(--white);
+
+        @media #{$xxl} {
+            font-size: 14px;
+        }
 
         a:hover {
             color: var(--white-2);

@@ -151,24 +151,6 @@ body {
   text-transform: uppercase;
 }
 
-/* Progress */
-.progress-wrap {
-  width: 320px;
-  height: 10px;
-  background: #2a2a2a;
-  border-radius: 20px;
-  overflow: hidden;
-  margin: 40px auto 0;
-}
-
-.progress-bar {
-  width: 0%;
-  height: 100%;
-  background: linear-gradient(90deg, #f4b400, #ffcf40);
-  border-radius: 20px;
-  animation: loadingBar 3s ease forwards;
-}
-
 /* Animations */
 
 @keyframes letterGlow {
@@ -210,6 +192,27 @@ body {
 }
 
 /* Responsive */
+
+@media(max-width:1600px) {
+
+  .loader-title {
+    font-size: 60px;
+    letter-spacing: 2px;
+  }
+
+  .loader-subtitle {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  .progress-wrap {
+    width: 240px;
+  }
+
+  .helmet {
+    width: 100px;
+  }
+}
 
 @media(max-width:768px) {
 

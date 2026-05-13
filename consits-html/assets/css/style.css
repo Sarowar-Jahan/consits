@@ -2016,24 +2016,6 @@ body {
   text-transform: uppercase;
 }
 
-/* Progress */
-.progress-wrap {
-  width: 320px;
-  height: 10px;
-  background: #2a2a2a;
-  border-radius: 20px;
-  overflow: hidden;
-  margin: 40px auto 0;
-}
-
-.progress-bar {
-  width: 0%;
-  height: 100%;
-  background: linear-gradient(90deg, #f4b400, #ffcf40);
-  border-radius: 20px;
-  animation: loadingBar 3s ease forwards;
-}
-
 /* Animations */
 @keyframes letterGlow {
   from {
@@ -2067,6 +2049,22 @@ body {
   }
 }
 /* Responsive */
+@media (max-width: 1600px) {
+  .loader-title {
+    font-size: 60px;
+    letter-spacing: 2px;
+  }
+  .loader-subtitle {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  .progress-wrap {
+    width: 240px;
+  }
+  .helmet {
+    width: 100px;
+  }
+}
 @media (max-width: 768px) {
   .loader-title {
     font-size: 40px;
@@ -3956,6 +3954,11 @@ body {
   text-transform: capitalize;
   color: var(--white);
 }
+@media only screen and (max-width: 1919px) {
+  .header-social .social-title {
+    font-size: 14px;
+  }
+}
 
 .header-social-links {
   display: flex;
@@ -4029,6 +4032,11 @@ body {
   line-height: 22px;
   text-transform: capitalize;
   color: var(--white);
+}
+@media only screen and (max-width: 1919px) {
+  .header-contact-item .text {
+    font-size: 14px;
+  }
 }
 .header-contact-item .text a:hover {
   color: var(--theme);
@@ -4695,6 +4703,11 @@ body {
   text-transform: capitalize;
   color: var(--white);
 }
+@media only screen and (max-width: 1919px) {
+  .header-4-contact-item .text {
+    font-size: 14px;
+  }
+}
 .header-4-contact-item .text a:hover {
   color: var(--white-2);
 }
@@ -5201,6 +5214,11 @@ body {
   line-height: 22px;
   text-transform: capitalize;
   color: var(--white);
+}
+@media only screen and (max-width: 1919px) {
+  .header-6-contact-item .text {
+    font-size: 14px;
+  }
 }
 .header-6-contact-item .text a:hover {
   color: var(--white-2);

@@ -208,12 +208,6 @@
       duration: 0.5
     }, "-=0.4");
 
-    tl.from(".progress-wrap", {
-      opacity: 0,
-      scaleX: 0,
-      duration: 0.5
-    }, "-=0.3");
-
     // Exit animation
     tl.to(".loader-content", {
       delay: 2,
