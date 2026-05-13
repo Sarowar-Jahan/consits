@@ -48,6 +48,8 @@
 
 .feature-wrapper-box {
     margin-top: 45px;
+    position: relative;
+    z-index: 2;
 }
 
 .feature-wrapper {
@@ -148,7 +150,7 @@
     height: 100%;
     position: absolute;
     content: "";
-    z-index: -1;
+    z-index: 1;
     bottom: 0;
     right: 0;
     overflow-y: clip;
@@ -343,6 +345,10 @@
         display: inline-flex;
         align-items: center;
         gap: 11px;
+
+        &:hover {
+            color: var(--theme);
+        }
     }
 
 }

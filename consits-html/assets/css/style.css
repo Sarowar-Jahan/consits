@@ -345,6 +345,10 @@ h6 {
   background-color: var(--white);
 }
 
+.ui-bg-smoke {
+  background-color: var(--smoke);
+}
+
 .ui-bg-black {
   background-color: var(--black);
 }
@@ -1900,6 +1904,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: none;
 }
 
 /* Grid Background */
@@ -8562,6 +8567,11 @@ body {
   line-height: 1.15;
   color: var(--theme);
 }
+@media only screen and (max-width: 1919px) {
+  .hero-2-content .breadcrumb li {
+    font-size: 18px;
+  }
+}
 @media only screen and (max-width: 1199px) {
   .hero-2-content .breadcrumb li {
     font-size: 16px;
@@ -15211,6 +15221,8 @@ section.hero-9-area {
 
 .feature-wrapper-box {
   margin-top: 45px;
+  position: relative;
+  z-index: 2;
 }
 
 .feature-wrapper {
@@ -15304,7 +15316,7 @@ section.hero-9-area {
   height: 100%;
   position: absolute;
   content: "";
-  z-index: -1;
+  z-index: 1;
   bottom: 0;
   right: 0;
   overflow-y: clip;
@@ -15504,6 +15516,9 @@ section.hero-9-area {
   display: inline-flex;
   align-items: center;
   gap: 11px;
+}
+.feature-cta-box .cta-btn:hover {
+  color: var(--theme);
 }
 
 .feature-info-image {
@@ -21954,7 +21969,6 @@ section.hero-9-area {
 .pricing-6-area {
   position: relative;
   z-index: 1;
-  background-color: var(--smoke);
 }
 
 .pricing-6-bg {

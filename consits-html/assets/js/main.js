@@ -174,85 +174,85 @@
   }
 
   // Preloader Animation
-  window.addEventListener("load", () => {
+  // window.addEventListener("load", () => {
 
-    const tl = gsap.timeline();
+  //   const tl = gsap.timeline();
 
-    const loaderPath = document.getElementById("loader-path");
+  //   const loaderPath = document.getElementById("loader-path");
 
-    const curve =
-      "M0 502S175 272 500 272s500 230 500 230V0H0Z";
+  //   const curve =
+  //     "M0 502S175 272 500 272s500 230 500 230V0H0Z";
 
-    const flat =
-      "M0 2S175 1 500 1s500 1 500 1V0H0Z";
+  //   const flat =
+  //     "M0 2S175 1 500 1s500 1 500 1V0H0Z";
 
-    // Intro animation
-    tl.from(".helmet", {
-      duration: 1,
-      scale: 0,
-      rotate: -180,
-      ease: "back.out(1.7)"
-    });
+  //   // Intro animation
+  //   tl.from(".helmet", {
+  //     duration: 1,
+  //     scale: 0,
+  //     rotate: -180,
+  //     ease: "back.out(1.7)"
+  //   });
 
-    tl.from(".loader-title span", {
-      duration: 0.8,
-      y: 120,
-      opacity: 0,
-      stagger: 0.08,
-      ease: "power4.out"
-    }, "-=0.5");
+  //   tl.from(".loader-title span", {
+  //     duration: 0.8,
+  //     y: 120,
+  //     opacity: 0,
+  //     stagger: 0.08,
+  //     ease: "power4.out"
+  //   }, "-=0.5");
 
-    tl.from(".loader-subtitle", {
-      opacity: 0,
-      y: 30,
-      duration: 0.5
-    }, "-=0.4");
+  //   tl.from(".loader-subtitle", {
+  //     opacity: 0,
+  //     y: 30,
+  //     duration: 0.5
+  //   }, "-=0.4");
 
-    // Exit animation
-    tl.to(".loader-content", {
-      delay: 2,
-      y: -100,
-      opacity: 0,
-      duration: 0.8,
-      ease: "power2.inOut"
-    });
+  //   // Exit animation
+  //   tl.to(".loader-content", {
+  //     delay: 2,
+  //     y: -100,
+  //     opacity: 0,
+  //     duration: 0.8,
+  //     ease: "power2.inOut"
+  //   });
 
-    // SVG wave animation
-    tl.to(loaderPath, {
-      duration: 0.8,
-      attr: {
-        d: curve
-      },
-      ease: "power2.in"
-    });
+  //   // SVG wave animation
+  //   tl.to(loaderPath, {
+  //     duration: 0.8,
+  //     attr: {
+  //       d: curve
+  //     },
+  //     ease: "power2.in"
+  //   });
 
-    tl.to(loaderPath, {
-      duration: 0.8,
-      attr: {
-        d: flat
-      },
-      ease: "power2.out"
-    });
+  //   tl.to(loaderPath, {
+  //     duration: 0.4,
+  //     attr: {
+  //       d: flat
+  //     },
+  //     ease: "power2.out"
+  //   });
 
-    // Move loader away
-    tl.to(".construction-loader", {
-      y: -1500,
-      duration: 1,
-      ease: "power4.inOut"
-    });
+  //   // Move loader away
+  //   tl.to(".construction-loader", {
+  //     y: -1500,
+  //     duration: 0.5,
+  //     ease: "power4.inOut"
+  //   });
 
-    tl.set(".construction-loader", {
-      display: "none"
-    });
+  //   tl.set(".construction-loader", {
+  //     display: "none"
+  //   });
 
-    // Main content reveal
-    tl.from("main", {
-      opacity: 0,
-      y: 80,
-      duration: 1
-    }, "-=1");
+  //   // Main content reveal
+  //   tl.from("main", {
+  //     opacity: 0,
+  //     y: 80,
+  //     duration: 0.5
+  //   }, "-=1");
 
-  });
+  // });
 
   // Side Info Js
   $(".side-info-close,.offcanvas-overlay").on("click", function () {
